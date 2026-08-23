@@ -168,6 +168,22 @@
   letter-spacing: 0.05em;
 }
 
+/* Mobile toggles inside nav menu */
+.nav-mobile-toggles {
+  display: none;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 600px) {
+  .nav-mobile-toggles {
+    display: flex;
+  }
+}
+
 /* ── Hero / Header ── */
 .hero {
   padding: 8rem 0 4rem;

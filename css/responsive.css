@@ -31,6 +31,10 @@
     justify-content: center;
   }
 
+  .about-highlights {
+    justify-content: center;
+  }
+
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
@@ -61,20 +65,29 @@
   }
 
   .section {
-    padding: 3.5rem 0;
+    padding: 3rem 0;
   }
 
+  .section + .section {
+    border-top: 1px solid var(--border);
+  }
+
+  /* Hero */
   .hero {
-    padding: 5rem 0 2.5rem;
+    padding: 4.5rem 0 2rem;
   }
 
   .hero-avatar {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .hero-title {
+    font-size: 0.95rem;
   }
 
   /* Navbar mobile */
@@ -85,11 +98,13 @@
     width: 75%;
     max-width: 300px;
     height: 100vh;
+    height: 100dvh;
     background: var(--bg);
     border-left: 1px solid var(--border);
     flex-direction: column;
     justify-content: center;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 2rem;
     padding: 2rem;
     transition: right var(--duration-slow) var(--ease-out);
     z-index: 99;
@@ -99,9 +114,17 @@
     right: 0;
   }
 
+  .nav-links a {
+    font-size: 1rem;
+  }
+
   .nav-toggle {
     display: flex;
     z-index: 101;
+  }
+
+  .nav-toggles {
+    display: none;
   }
 
   .nav-cta {
@@ -126,41 +149,165 @@
     pointer-events: all;
   }
 
+  /* Badges */
+  .badges {
+    gap: 0.4rem;
+  }
+
+  .badge {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  /* About */
+  .about-text {
+    font-size: 0.95rem;
+  }
+
+  .about-highlights {
+    gap: 1rem;
+  }
+
+  .highlight-item {
+    padding: 1rem 1.5rem;
+    min-width: 100px;
+  }
+
+  .highlight-num {
+    font-size: 1.4rem;
+  }
+
+  .highlight-label {
+    font-size: 0.65rem;
+  }
+
   /* Cards */
   .info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    padding: 1.2rem 1.4rem;
   }
 
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
+  .skill-card {
+    padding: 1.4rem;
+  }
+
   .lang-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Education */
   .edu-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1.5rem;
   }
 
+  .edu-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+
+  .edu-body .degree {
+    font-size: 1rem;
+  }
+
+  /* Timeline */
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 0.4rem;
+    padding: 1.2rem 0;
   }
 
+  .timeline-content .role {
+    font-size: 1rem;
+  }
+
+  .timeline-content .desc {
+    font-size: 0.85rem;
+  }
+
+  /* Tags */
+  .tags {
+    gap: 0.4rem;
+  }
+
+  .tag {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  /* Certificates */
+  .cert-card {
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+
+  .cert-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .cert-body .cert-name {
+    font-size: 0.88rem;
+  }
+
+  /* Contact */
   .contact-card {
     padding: 2rem 1.5rem;
   }
 
+  .contact-link {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 3rem 0;
+  }
+
   .footer-socials {
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-socials a {
+    font-size: 0.8rem;
+  }
+
+  /* Section labels */
+  .section-label {
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 /* ── Small mobile (< 400px) ── */
 @media (max-width: 400px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-avatar {
+    width: 90px;
+    height: 90px;
+  }
+
   .hero-actions {
     flex-direction: column;
     width: 100%;
@@ -169,14 +316,53 @@
   .hero-actions .btn {
     width: 100%;
     justify-content: center;
-  }
-
-  .badges {
-    gap: 0.4rem;
+    padding: 0.65rem 1.2rem;
+    font-size: 0.82rem;
   }
 
   .badge {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.7rem;
+    font-size: 0.68rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .about-highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-item {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .info-val {
+    font-size: 0.88rem;
+  }
+
+  .contact-links {
+    gap: 0.6rem;
+  }
+
+  .contact-link {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* ── Landscape phones ── */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+    min-height: auto;
+  }
+
+  .hero-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .section {
+    padding: 2rem 0;
   }
 }

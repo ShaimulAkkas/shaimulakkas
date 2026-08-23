@@ -7,6 +7,7 @@
 
   // ── Theme Toggle ──
   const themeToggle = document.getElementById('theme-toggle');
+  const themeToggleMobile = document.getElementById('theme-toggle-mobile');
   const html = document.documentElement;
 
   function getPreferredTheme() {
@@ -22,23 +23,30 @@
   }
 
   function updateThemeIcon(theme) {
-    if (!themeToggle) return;
-    themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-    themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    const icon = theme === 'dark' ? '☀️' : '🌙';
+    const label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+    if (themeToggle) {
+      themeToggle.textContent = icon;
+      themeToggle.setAttribute('aria-label', label);
+    }
+    if (themeToggleMobile) {
+      themeToggleMobile.textContent = icon;
+      themeToggleMobile.setAttribute('aria-label', label);
+    }
   }
 
-  if (themeToggle) {
-    setTheme(getPreferredTheme());
-    themeToggle.addEventListener('click', () => {
-      const current = html.getAttribute('data-theme');
-      setTheme(current === 'dark' ? 'light' : 'dark');
-    });
-  } else {
-    setTheme(getPreferredTheme());
+  function toggleTheme() {
+    const current = html.getAttribute('data-theme');
+    setTheme(current === 'dark' ? 'light' : 'dark');
   }
+
+  setTheme(getPreferredTheme());
+  if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+  if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
 
   // ── Language Toggle ──
   const langToggle = document.getElementById('lang-toggle');
+  const langToggleMobile = document.getElementById('lang-toggle-mobile');
   let currentLang = localStorage.getItem('lang') || 'en';
 
   function setLanguage(lang) {
@@ -50,9 +58,16 @@
   }
 
   function updateLangIcon(lang) {
-    if (!langToggle) return;
-    langToggle.textContent = lang === 'en' ? 'বাং' : 'EN';
-    langToggle.setAttribute('aria-label', lang === 'en' ? 'Switch to Bangla' : 'Switch to English');
+    const text = lang === 'en' ? 'বাং' : 'EN';
+    const label = lang === 'en' ? 'Switch to Bangla' : 'Switch to English';
+    if (langToggle) {
+      langToggle.textContent = text;
+      langToggle.setAttribute('aria-label', label);
+    }
+    if (langToggleMobile) {
+      langToggleMobile.textContent = text;
+      langToggleMobile.setAttribute('aria-label', label);
+    }
   }
 
   function translatePage(lang) {
@@ -72,14 +87,13 @@
     });
   }
 
-  if (langToggle) {
-    setLanguage(currentLang);
-    langToggle.addEventListener('click', () => {
-      setLanguage(currentLang === 'en' ? 'bn' : 'en');
-    });
-  } else {
-    setLanguage(currentLang);
+  function toggleLang() {
+    setLanguage(currentLang === 'en' ? 'bn' : 'en');
   }
+
+  setLanguage(currentLang);
+  if (langToggle) langToggle.addEventListener('click', toggleLang);
+  if (langToggleMobile) langToggleMobile.addEventListener('click', toggleLang);
 
   // ── Scroll-triggered animations ──
   const animateObserver = new IntersectionObserver(
