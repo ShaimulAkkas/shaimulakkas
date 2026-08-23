@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shaimul-akkas.netlify.app/sitemap.xml

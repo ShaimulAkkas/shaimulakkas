@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Getting Started with Computer Networking — by Shaimul Akkas Shahin">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <title>Getting Started with Computer Networking — Shaimul Akkas Shahin</title>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <div class="mesh-bg" aria-hidden="true">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+  </div>
+
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-dot"></span>
+        Shaimul Akkas
+      </a>
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../projects/index.html">Projects</a>
+        <a href="index.html" class="active">Blog</a>
+        <a href="../contact/index.html" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <article class="section" id="main-content" style="padding-top: 8rem;">
+    <div class="wrapper" style="max-width: 750px;">
+      <a href="index.html" class="text-mono animate-in" style="font-size: 0.85rem; color: var(--primary); display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 2rem;">← Back to Blog</a>
+
+      <p class="blog-date animate-in delay-1">August 2026</p>
+      <h1 class="animate-in delay-2" style="margin-bottom: 1.5rem; line-height: 1.3;">Getting Started with Computer Networking</h1>
+
+      <div class="animate-in delay-3" style="line-height: 1.9; color: var(--text-secondary);">
+        <p style="margin-bottom: 1.5rem;">
+          Computer networking is the backbone of modern IT infrastructure. Whether you're setting up a small home network or configuring enterprise-grade systems, understanding the fundamentals is essential.
+        </p>
+
+        <h2 style="font-size: 1.3rem; color: var(--text); margin: 2rem 0 1rem;">What is a Computer Network?</h2>
+        <p style="margin-bottom: 1.5rem;">
+          A computer network is a collection of interconnected devices that share resources and communicate with each other using defined protocols. Networks can range from a simple two-device connection to complex global systems spanning thousands of nodes.
+        </p>
+
+        <h2 style="font-size: 1.3rem; color: var(--text); margin: 2rem 0 1rem;">The OSI Model</h2>
+        <p style="margin-bottom: 1rem;">
+          The Open Systems Interconnection (OSI) model is a conceptual framework that standardizes network communication into seven layers:
+        </p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; list-style: disc;">
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Physical Layer</strong> — Cables, switches, and raw bit transmission</li>
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Data Link Layer</strong> — MAC addressing, frames, error detection</li>
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Network Layer</strong> — IP addressing, routing (IP, ICMP)</li>
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Transport Layer</strong> — TCP/UDP, port numbers, reliability</li>
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Session Layer</strong> — Session management</li>
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Presentation Layer</strong> — Data formatting, encryption</li>
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Application Layer</strong> — HTTP, FTP, SMTP, DNS</li>
+        </ul>
+
+        <h2 style="font-size: 1.3rem; color: var(--text); margin: 2rem 0 1rem;">TCP/IP Protocol</h2>
+        <p style="margin-bottom: 1.5rem;">
+          TCP/IP is the practical model used in real-world networks. It condenses the OSI layers into four: Link, Internet, Transport, and Application. Understanding TCP three-way handshake (SYN, SYN-ACK, ACK) is fundamental to network troubleshooting.
+        </p>
+
+        <h2 style="font-size: 1.3rem; color: var(--text); margin: 2rem 0 1rem;">Practical Tips</h2>
+        <p style="margin-bottom: 1rem;">Here are some essential commands for network troubleshooting:</p>
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.2rem 1.5rem; font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); margin-bottom: 1.5rem;">
+          <p>ping 8.8.8.8 &nbsp;&nbsp;&nbsp; <span style="color: var(--muted);"># Test connectivity</span></p>
+          <p>ipconfig /all &nbsp;&nbsp;&nbsp; <span style="color: var(--muted);"># View network config</span></p>
+          <p>nslookup google.com &nbsp;&nbsp;&nbsp; <span style="color: var(--muted);"># DNS lookup</span></p>
+          <p>tracert google.com &nbsp;&nbsp;&nbsp; <span style="color: var(--muted);"># Trace route</span></p>
+        </div>
+
+        <p>
+          Mastering these fundamentals will give you a strong foundation for any IT career. In future posts, we'll dive deeper into VLAN configuration, MikroTik router setup, and advanced troubleshooting techniques.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <p class="footer-name">Shaimul Akkas Shahin</p>
+      <p class="footer-line">IT Trainer · GAMPI · Chittagong, Bangladesh</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/shaimul-akkas" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ShaimulAkkas" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://shaimul-akkas.netlify.app" target="_blank" rel="noopener noreferrer">Website</a>
+        <a href="mailto:shaimulakkas@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
