@@ -809,6 +809,18 @@
   color: var(--muted);
 }
 
+.project-thumb-network {
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.12), rgba(99, 102, 241, 0.08));
+}
+
+.project-thumb-lab {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.06));
+}
+
+.project-thumb-cctv {
+  background: linear-gradient(135deg, rgba(248, 113, 113, 0.1), rgba(239, 68, 68, 0.06));
+}
+
 .project-body {
   padding: 1.5rem;
 }
