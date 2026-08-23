@@ -26,19 +26,27 @@
 
   <div class="nav-overlay" aria-hidden="true"></div>
 
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="../index.html" class="nav-logo">
         <span class="logo-dot"></span>
         Shaimul Akkas
       </a>
       <div class="nav-links">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#experience">Experience</a>
-        <a href="../projects/index.html">Projects</a>
-        <a href="../blog/index.html">Blog</a>
-        <a href="index.html" class="nav-cta active">Contact</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../index.html#skills" data-i18n="nav.skills">Skills</a>
+        <a href="../index.html#experience" data-i18n="nav.experience">Experience</a>
+        <a href="../projects/index.html" data-i18n="nav.projects">Projects</a>
+        <a href="../blog/index.html" data-i18n="nav.blog">Blog</a>
+        <a href="index.html" class="nav-cta active" data-i18n="nav.contact">Contact</a>
+        <div class="nav-mobile-toggles">
+          <button class="toggle-btn lang-btn" id="lang-toggle-mobile" aria-label="Switch to Bangla">বাং</button>
+          <button class="toggle-btn" id="theme-toggle-mobile" aria-label="Switch to light mode">☀️</button>
+        </div>
+      </div>
+      <div class="nav-toggles">
+        <button class="toggle-btn lang-btn" id="lang-toggle" aria-label="Switch to Bangla">বাং</button>
+        <button class="toggle-btn" id="theme-toggle" aria-label="Switch to light mode">☀️</button>
       </div>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span>
@@ -90,12 +98,13 @@
       <div class="footer-socials">
         <a href="https://linkedin.com/in/shaimul-akkas" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/ShaimulAkkas" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://shaimul-akkas.netlify.app" target="_blank" rel="noopener noreferrer">Website</a>
+        <a href="https://shaimulakkas.github.io/shaimulakkas/" target="_blank" rel="noopener noreferrer">Website</a>
         <a href="mailto:shaimulakkas@gmail.com">Email</a>
       </div>
     </div>
   </footer>
 
+  <script src="../js/translations.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>
