@@ -1,0 +1,288 @@
+[
+  {
+    "slug": "campus-network",
+    "title": "Campus Network Setup",
+    "org": "Gausul Azam Maizbhandari Polytechnic Institute",
+    "role": "Lead Network Engineer",
+    "date": "Oct 2024",
+    "scope": "Campus-wide",
+    "status": "Completed",
+    "heroClass": "project-hero-network",
+    "heroIcon": "\ud83c\udf10",
+    "stats": [
+      { "value": "700+", "label": "Active Devices", "count": 700 },
+      { "value": "5", "label": "Buildings", "count": 5 },
+      { "value": "5+", "label": "VLANs", "count": 5 },
+      { "value": "99.8%", "label": "Uptime" }
+    ],
+    "sections": [
+      {
+        "title": "The Challenge",
+        "content": "<p>Gausul Azam Maizbhandari Polytechnic Institute operated across five separate buildings with no unified network infrastructure. Each building ran independently with ad-hoc connectivity, leading to IP conflicts, no centralized monitoring, and frequent downtime affecting 700+ devices including computers, IP phones, CCTV cameras, printers, and IoT equipment.</p>"
+      },
+      {
+        "title": "My Approach",
+        "content": "<p>I conducted a full site survey across all five buildings, mapped every access point, and designed a scalable network architecture from scratch. The implementation was done floor-by-floor to minimize disruption to daily classes.</p>",
+        "steps": [
+          { "num": "01", "title": "Survey & Planning", "desc": "Mapped all 5 buildings, identified 700+ device endpoints, designed VLAN scheme and IP allocation strategy." },
+          { "num": "02", "title": "Cabling & Infrastructure", "desc": "Installed Cat6A and OS2 fiber backbone, patched all endpoints, set up distribution racks in each building." },
+          { "num": "03", "title": "Configuration & VLANs", "desc": "Configured MikroTik routers, set up 5+ VLANs (Office, Lab, College, Schools, Hostel), enabled DHCP, NAT, and VPN." },
+          { "num": "04", "title": "Monitoring & Launch", "desc": "Deployed PRTG for real-time monitoring, configured alerts, tested failover, and went live building by building." }
+        ]
+      },
+      {
+        "title": "Network Architecture",
+        "architecture": {
+          "icon": "\ud83d\uddfa\ufe0f",
+          "title": "Campus Network Topology",
+          "desc": "5 Buildings \u00b7 3 Distribution Racks \u00b7 Core Router \u00b7 5+ VLANs \u00b7 Fiber Backbone",
+          "core": "\ud83c\udf10 Core Router",
+          "coreSub": "MikroTik CCR",
+          "branches": [
+            { "icon": "\ud83c\udfe2", "label": "Building 1", "sub": "Admin + Office" },
+            { "icon": "\ud83c\udfeb", "label": "Building 2", "sub": "College Labs" },
+            { "icon": "\ud83c\udfeb", "label": "Building 3", "sub": "School Labs" },
+            { "icon": "\ud83c\udfe0", "label": "Building 4", "sub": "Hostel" },
+            { "icon": "\ud83c\udfd7\ufe0f", "label": "Building 5", "sub": "Workshop" }
+          ],
+          "note": "[ Replace with actual network diagram from draw.io ]"
+        }
+      },
+      {
+        "title": "Key Highlights",
+        "highlights": [
+          { "icon": "\ud83d\udd0c", "title": "Structured Cabling", "desc": "Cat6A copper and OS2 fiber backbone connecting all 5 buildings with redundancy." },
+          { "icon": "\ud83d\udce1", "title": "Wi-Fi 6E Coverage", "desc": "Wireless access points across all buildings with zone-based security and roaming." },
+          { "icon": "\ud83d\udd10", "title": "VLAN Segmentation", "desc": "5+ VLANs isolating Office, Lab, College, Schools, and Hostel traffic." },
+          { "icon": "\ud83d\udcca", "title": "Real-time Monitoring", "desc": "PRTG dashboard with device tracking, bandwidth alerts, and uptime reports." },
+          { "icon": "\ud83d\udee1\ufe0f", "title": "Zone-based Security", "desc": "Firewall rules, NAT, and VPN access for remote management." },
+          { "icon": "\u26a1", "title": "700+ Devices Connected", "desc": "Computers, IP phones, CCTV cameras, printers, and IoT devices \u2014 all managed centrally." }
+        ]
+      },
+      {
+        "title": "Results",
+        "content": "<p>The campus now operates on a unified, scalable network with <strong>99.8% uptime</strong>. IP conflicts are eliminated through proper VLAN segmentation and DHCP reservations. The IT team can monitor all 700+ devices from a single PRTG dashboard, reducing troubleshooting time by 40%. The infrastructure is ready for future expansion with fiber backbone capacity.</p>"
+      },
+      {
+        "title": "Technology Stack",
+        "techGroups": [
+          { "label": "Hardware", "tags": ["MikroTik CCR Router", "Cat6A Cable", "OS2 Fiber", "Wi-Fi 6E APs", "Patch Panels"] },
+          { "label": "Software", "tags": ["PRTG Network Monitor", "The Dude", "MikroTik WinBox"] },
+          { "label": "Protocols", "tags": ["VLAN", "NAT", "DHCP", "VPN", "SNMP"] }
+        ]
+      },
+      {
+        "title": "Configuration Snippet",
+        "configNote": "MikroTik VLAN configuration for building segmentation:",
+        "config": {
+          "filename": "mikrotik-vlan-config.rsc",
+          "code": "# Create VLAN interfaces\n/interface vlan add name=vlan10-office vlan-id=10 interface=ether1\n/interface vlan add name=vlan20-lab vlan-id=20 interface=ether1\n/interface vlan add name=vlan30-college vlan-id=30 interface=ether1\n/interface vlan add name=vlan40-schools vlan-id=40 interface=ether1\n/interface vlan add name=vlan50-hostel vlan-id=50 interface=ether1\n\n# DHCP Networks\n/ip dhcp-server network add address=10.10.10.0/24 gateway=10.10.10.1 dns-server=8.8.8.8\n/ip dhcp-server network add address=10.10.20.0/24 gateway=10.10.20.1 dns-server=8.8.8.8\n\n# Firewall Rules\n/ip firewall filter add chain=forward src-address=10.10.10.0/24 action=accept\n/ip firewall filter add chain=forward src-address=10.10.20.0/24 action=accept"
+        }
+      },
+      {
+        "title": "Before & After",
+        "beforeAfter": {
+          "before": { "label": "Before: Ad-hoc cabling, no labeling, no organization" },
+          "after": { "label": "After: Structured cabling, labeled patch panels, clean racks" }
+        }
+      },
+      {
+        "title": "What They Said",
+        "testimonial": {
+          "quote": "Shaimul designed and implemented our entire campus network from scratch. The system has been running reliably with 700+ devices connected. His work transformed our connectivity.",
+          "name": "[Supervisor Name]",
+          "role": "[Position], Gausul Azam Maizbhandari Polytechnic Institute"
+        }
+      }
+    ],
+    "tags": ["networking", "mikrotik", "fiber", "wifi", "monitoring"]
+  },
+  {
+    "slug": "computer-lab",
+    "title": "Complete Computer Lab Setup & Deployment",
+    "org": "Gausul Azam Maizbhandari Polytechnic Institute",
+    "role": "Lab Infrastructure Lead",
+    "date": "Jan 2024",
+    "scope": "Single Lab",
+    "status": "Completed",
+    "heroClass": "project-hero-lab",
+    "heroIcon": "\ud83d\udda5\ufe0f",
+    "stats": [
+      { "value": "30+", "label": "PCs Deployed", "count": 30 },
+      { "value": "25%", "label": "Downtime Cut" },
+      { "value": "0", "label": "Session Delays" },
+      { "value": "40+", "label": "Hours Saved Monthly", "count": 40 }
+    ],
+    "sections": [
+      {
+        "title": "The Challenge",
+        "content": "<p>The polytechnic's computer lab needed a complete overhaul. Outdated workstations, unreliable network connectivity, and frequent hardware failures were causing regular session delays for students. There was no standardized imaging, no preventive maintenance schedule, and the LAN infrastructure was unstable \u2014 affecting daily practical classes.</p>"
+      },
+      {
+        "title": "My Approach",
+        "content": "<p>I managed the end-to-end deployment from hardware assembly to network setup, ensuring every workstation was ready for daily use with zero downtime during practical sessions.</p>",
+        "steps": [
+          { "num": "01", "title": "Hardware Assembly & Imaging", "desc": "Assembled 30+ PC workstations from components, installed OS images, configured drivers, and deployed to lab stations." },
+          { "num": "02", "title": "LAN Infrastructure", "desc": "Executed RJ-45 Cat6 cabling, patch panel crimping, switch configuration, and static/dynamic IP allocations across all workstations." },
+          { "num": "03", "title": "Diagnostics & Testing", "desc": "Performed stress testing, bench diagnostics, and validated each workstation before going live to ensure reliability." },
+          { "num": "04", "title": "Preventive Maintenance", "desc": "Established routine maintenance schedules, dust cleaning, driver updates, and performance monitoring for long-term lab health." }
+        ]
+      },
+      {
+        "title": "Lab Architecture",
+        "architecture": {
+          "icon": "\ud83d\uddfa\ufe0f",
+          "title": "Lab Network Topology",
+          "desc": "30+ Workstations \u00b7 2 Core Switches \u00b7 Patch Panel \u00b7 Cat6 Cabling \u00b7 DHCP Server",
+          "core": "\ud83d\uddc4\ufe0f Core Switch",
+          "coreSub": "24-Port Managed",
+          "branches": [
+            { "icon": "\ud83d\udda5\ufe0f", "label": "Workstations 1-15", "sub": "Row A" },
+            { "icon": "\ud83d\udda5\ufe0f", "label": "Workstations 16-30", "sub": "Row B" },
+            { "icon": "\ud83d\udda8\ufe0f", "label": "Printers & Peripherals", "sub": "Shared" }
+          ],
+          "note": "[ Replace with actual lab layout diagram ]"
+        }
+      },
+      {
+        "title": "Key Highlights",
+        "highlights": [
+          { "icon": "\ud83d\udd27", "title": "Full Hardware Assembly", "desc": "Built 30+ PCs from components \u2014 motherboards, RAM, storage, PSUs \u2014 tested before deployment." },
+          { "icon": "\ud83d\udd0c", "title": "Cat6 LAN Cabling", "desc": "Complete RJ-45 crimping, patch panel wiring, and switch configuration for all workstations." },
+          { "icon": "\u26a1", "title": "25% Downtime Reduction", "desc": "Standardized imaging and preventive maintenance eliminated recurring hardware failures." },
+          { "icon": "\ud83d\udcca", "title": "Zero Session Delays", "desc": "Every workstation validated before class \u2014 no more student waiting during practical sessions." }
+        ]
+      },
+      {
+        "title": "Results",
+        "content": "<p>The lab now runs <strong>30+ workstations</strong> with <strong>zero session delays</strong> for daily practical classes. Downtime reduced by <strong>25%</strong> through standardized imaging and preventive maintenance. The network infrastructure supports stable LAN connectivity with proper IP management, and the maintenance schedule ensures long-term reliability.</p>"
+      },
+      {
+        "title": "Technology Stack",
+        "techGroups": [
+          { "label": "Hardware", "tags": ["Desktop Components", "RJ-45 Cat6 Cable", "Patch Panels", "Managed Switches", "Printers"] },
+          { "label": "Software", "tags": ["Windows 10/11", "Linux (Ubuntu)", "Disk Imaging Tools"] },
+          { "label": "Protocols", "tags": ["DHCP", "Static IP", "TCP/IP"] }
+        ]
+      },
+      {
+        "title": "Configuration Snippet",
+        "configNote": "DHCP configuration for lab workstation IP allocation:",
+        "config": {
+          "filename": "dhcp-config.sh",
+          "code": "# Lab DHCP Range Configuration\n# Subnet: 192.168.10.0/24\n# Gateway: 192.168.10.1\n\n# Static reservations for printers\ndhcp-host=AA:BB:CC:DD:EE:01,192.168.10.201,printer-main\ndhcp-host=AA:BB:CC:DD:EE:02,192.168.10.202,printer-secondary\n\n# Dynamic range for workstations\ndhcp-range=192.168.10.50,192.168.10.199,255.255.255.0,12h\n\n# DNS\ndhcp-option=6,8.8.8.8,8.8.4.4"
+        }
+      },
+      {
+        "title": "Before & After",
+        "beforeAfter": {
+          "before": { "label": "Before: Mixed old PCs, tangled cables, no labeling" },
+          "after": { "label": "After: Uniform workstations, organized cabling, clean setup" }
+        }
+      },
+      {
+        "title": "What They Said",
+        "testimonial": {
+          "quote": "Since Shaimul set up our lab, we haven't had a single session delay. The workstations run perfectly and the network is rock solid. Our students can focus on learning instead of waiting for fixes.",
+          "name": "[Supervisor Name]",
+          "role": "[Position], Gausul Azam Maizbhandari Polytechnic Institute"
+        }
+      }
+    ],
+    "tags": ["hardware", "networking", "lab", "cabling"]
+  },
+  {
+    "slug": "cctv-surveillance",
+    "title": "Campus-Wide CCTV Surveillance Infrastructure Setup",
+    "org": "Gausul Azam Maizbhandari Polytechnic Institute",
+    "role": "Security Infrastructure Lead",
+    "date": "2024",
+    "scope": "Campus-wide",
+    "status": "Completed",
+    "heroClass": "project-hero-cctv",
+    "heroIcon": "\ud83d\udcf9",
+    "stats": [
+      { "value": "HD", "label": "IP Cameras" },
+      { "value": "24/7", "label": "Recording" },
+      { "value": "NVR", "label": "Centralized Storage" },
+      { "value": "AI", "label": "Motion Detection" }
+    ],
+    "sections": [
+      {
+        "title": "The Challenge",
+        "content": "<p>The campus had no centralized surveillance system. Computer labs, classrooms, and administrative areas were unmonitored, creating security vulnerabilities. There was no recording infrastructure, no motion detection, and no way to review incidents after the fact.</p>"
+      },
+      {
+        "title": "My Approach",
+        "content": "<p>I planned the camera placement strategy, managed the cabling infrastructure, and configured the entire surveillance system from hardware mounting to centralized monitoring.</p>",
+        "steps": [
+          { "num": "01", "title": "Site Survey & Planning", "desc": "Surveyed all buildings, identified critical zones, planned camera angles and coverage areas for maximum visibility." },
+          { "num": "02", "title": "Camera Installation", "desc": "Mounted HD IP cameras across labs, classrooms, and admin areas with strategic positioning for full coverage." },
+          { "num": "03", "title": "NVR & Storage Setup", "desc": "Installed centralized NVR units, configured storage drives, set up motion-detection triggers and recording schedules." },
+          { "num": "04", "title": "Cabling & Monitoring", "desc": "Managed Ethernet cable routing, connector termination, and configured centralized monitoring screens for security staff." }
+        ]
+      },
+      {
+        "title": "System Architecture",
+        "architecture": {
+          "icon": "\ud83d\uddfa\ufe0f",
+          "title": "CCTV System Layout",
+          "desc": "HD IP Cameras \u00b7 NVR Units \u00b7 Motion Detection \u00b7 Centralized Monitoring \u00b7 24/7 Recording",
+          "core": "\ud83d\udda5\ufe0f Monitoring Station",
+          "coreSub": "Centralized Screens",
+          "branches": [
+            { "icon": "\ud83d\udcf9", "label": "NVR Unit 1", "sub": "Labs + Classrooms" },
+            { "icon": "\ud83d\udcf9", "label": "NVR Unit 2", "sub": "Admin + Entrance" },
+            { "icon": "\ud83c\udf10", "label": "Network Backbone", "sub": "Ethernet Cabling" }
+          ],
+          "note": "[ Replace with actual CCTV layout diagram ]"
+        }
+      },
+      {
+        "title": "Key Highlights",
+        "highlights": [
+          { "icon": "\ud83d\udcf9", "title": "HD IP Cameras", "desc": "High-definition surveillance cameras with night vision and wide-angle coverage." },
+          { "icon": "\ud83d\udcbe", "title": "Centralized NVR Storage", "desc": "Network Video Recorders with redundant storage for continuous 24/7 recording." },
+          { "icon": "\ud83d\udd14", "title": "Motion Detection", "desc": "AI-powered motion triggers with configurable sensitivity and alert zones." },
+          { "icon": "\ud83d\udda5\ufe0f", "title": "Centralized Monitoring", "desc": "Dedicated monitoring station with multi-screen display for real-time campus surveillance." }
+        ]
+      },
+      {
+        "title": "Results",
+        "content": "<p>The campus now has <strong>complete surveillance coverage</strong> across all critical areas. The system records <strong>24/7</strong> with motion-detection alerts, enabling rapid response to incidents. Centralized monitoring allows security staff to oversee the entire campus from a single station. The infrastructure supports future expansion with additional cameras and storage capacity.</p>"
+      },
+      {
+        "title": "Technology Stack",
+        "techGroups": [
+          { "label": "Hardware", "tags": ["HD IP Cameras", "NVR Units", "Surveillance HDDs", "PoE Switches", "Monitoring Screens"] },
+          { "label": "Software", "tags": ["NVR Management Software", "Motion Detection AI", "Remote Viewing App"] },
+          { "label": "Infrastructure", "tags": ["Ethernet Cabling", "RJ-45 Connectors", "Cable Routing", "PoE Delivery"] }
+        ]
+      },
+      {
+        "title": "Configuration Snippet",
+        "configNote": "NVR motion detection schedule configuration:",
+        "config": {
+          "filename": "nvr-motion-config.yaml",
+          "code": "# Motion Detection Configuration\nmotion_detection:\n  enabled: true\n  sensitivity: medium\n  zones:\n    - name: \"computer-lab\"\n      cameras: [cam-01, cam-02, cam-03]\n      schedule: \"24/7\"\n      alerts: [email, push]\n    - name: \"classroom\"\n      cameras: [cam-04, cam-05]\n      schedule: \"08:00-18:00\"\n      alerts: [push]\n    - name: \"admin-area\"\n      cameras: [cam-06]\n      schedule: \"24/7\"\n      alerts: [email, push]\n\n# Recording Schedule\nrecording:\n  mode: \"continuous\"\n  retention_days: 30\n  resolution: \"1080p\"\n  fps: 25"
+        }
+      },
+      {
+        "title": "Before & After",
+        "beforeAfter": {
+          "before": { "label": "Before: No surveillance, unmonitored campus areas" },
+          "after": { "label": "After: HD cameras everywhere, centralized monitoring, 24/7 recording" }
+        }
+      },
+      {
+        "title": "What They Said",
+        "testimonial": {
+          "quote": "The CCTV system Shaimul installed gives us complete peace of mind. We can monitor every corner of the campus from one screen, and the motion detection alerts have already helped us prevent incidents.",
+          "name": "[Supervisor Name]",
+          "role": "[Position], Gausul Azam Maizbhandari Polytechnic Institute"
+        }
+      }
+    ],
+    "tags": ["cctv", "security", "networking", "nvr"]
+  }
+]

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Portfolio CMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Login Gate -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-icon">🔒</div>
+      <h1>Portfolio Admin</h1>
+      <p>Enter password to access the CMS</p>
+      <form id="login-form">
+        <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <p class="login-hint" id="login-error"></p>
+    </div>
+  </div>
+
+  <!-- Admin Panel -->
+  <div id="admin-panel" class="admin-panel hidden">
+    <header class="admin-header">
+      <div class="admin-header-left">
+        <span class="admin-logo">📝</span>
+        <h1>Portfolio CMS</h1>
+      </div>
+      <div class="admin-header-right">
+        <a href="../index.html" class="btn btn-ghost" target="_blank">View Site ↗</a>
+        <button class="btn btn-ghost" id="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    <div class="admin-layout">
+      <!-- Sidebar -->
+      <aside class="admin-sidebar">
+        <div class="sidebar-section">
+          <h3>Blog Posts</h3>
+          <ul id="blog-list-admin" class="admin-list"></ul>
+          <button class="btn btn-small btn-primary" id="add-blog-btn">+ New Post</button>
+        </div>
+        <div class="sidebar-section">
+          <h3>Projects</h3>
+          <ul id="projects-list-admin" class="admin-list"></ul>
+          <button class="btn btn-small btn-primary" id="add-project-btn">+ New Project</button>
+        </div>
+      </aside>
+
+      <!-- Main Editor -->
+      <main class="admin-main">
+        <!-- Empty State -->
+        <div id="editor-empty" class="editor-empty">
+          <div class="empty-icon">📄</div>
+          <h2>Select a post or project to edit</h2>
+          <p>Or create a new one from the sidebar.</p>
+        </div>
+
+        <!-- Blog Editor -->
+        <div id="blog-editor" class="editor-form hidden">
+          <div class="editor-top-bar">
+            <h2 id="blog-editor-title">New Blog Post</h2>
+            <div class="editor-actions">
+              <button class="btn btn-ghost" id="blog-cancel-btn">Cancel</button>
+              <button class="btn btn-danger" id="blog-delete-btn" style="display:none;">Delete</button>
+              <button class="btn btn-primary" id="blog-save-btn">Save JSON</button>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="blog-title-input">Title</label>
+              <input type="text" id="blog-title-input" placeholder="Post title">
+            </div>
+            <div class="form-group form-group-small">
+              <label for="blog-slug-input">Slug</label>
+              <input type="text" id="blog-slug-input" placeholder="auto-generated">
+            </div>
+            <div class="form-group form-group-small">
+              <label for="blog-date-input">Date</label>
+              <input type="date" id="blog-date-input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="blog-excerpt-input">Excerpt</label>
+            <input type="text" id="blog-excerpt-input" placeholder="Short description for listing">
+          </div>
+
+          <div class="form-group">
+            <label for="blog-thumbnail-input">Thumbnail URL (optional)</label>
+            <input type="text" id="blog-thumbnail-input" placeholder="https://... or ../assets/images/...">
+          </div>
+
+          <div class="form-group">
+            <label for="blog-tags-input">Tags (comma-separated)</label>
+            <input type="text" id="blog-tags-input" placeholder="networking, beginner, tutorial">
+          </div>
+
+          <div class="form-group">
+            <label>Content</label>
+            <div id="blog-quill-editor"></div>
+          </div>
+        </div>
+
+        <!-- Project Editor -->
+        <div id="project-editor" class="editor-form hidden">
+          <div class="editor-top-bar">
+            <h2 id="project-editor-title">New Project</h2>
+            <div class="editor-actions">
+              <button class="btn btn-ghost" id="project-cancel-btn">Cancel</button>
+              <button class="btn btn-danger" id="project-delete-btn" style="display:none;">Delete</button>
+              <button class="btn btn-primary" id="project-save-btn">Save JSON</button>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="proj-title-input">Title</label>
+              <input type="text" id="proj-title-input" placeholder="Project title">
+            </div>
+            <div class="form-group form-group-small">
+              <label for="proj-slug-input">Slug</label>
+              <input type="text" id="proj-slug-input" placeholder="auto-generated">
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="proj-org-input">Organization</label>
+              <input type="text" id="proj-org-input" placeholder="Organization name">
+            </div>
+            <div class="form-group">
+              <label for="proj-role-input">Role</label>
+              <input type="text" id="proj-role-input" placeholder="Your role">
+            </div>
+          </div>
+
+          <div class="form-grid form-grid-3">
+            <div class="form-group">
+              <label for="proj-date-input">Date</label>
+              <input type="text" id="proj-date-input" placeholder="Oct 2024">
+            </div>
+            <div class="form-group">
+              <label for="proj-scope-input">Scope</label>
+              <input type="text" id="proj-scope-input" placeholder="Campus-wide">
+            </div>
+            <div class="form-group">
+              <label for="proj-status-input">Status</label>
+              <select id="proj-status-input">
+                <option value="Completed">Completed</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Planned">Planned</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="proj-hero-class-input">Hero CSS Class</label>
+              <select id="proj-hero-class-input">
+                <option value="project-hero-network">Network (blue)</option>
+                <option value="project-hero-lab">Lab (green)</option>
+                <option value="project-hero-cctv">CCTV (red)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="proj-hero-icon-input">Hero Icon (emoji)</label>
+              <input type="text" id="proj-hero-icon-input" placeholder="🌐">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Stats (format: value | label | count(optional))</label>
+            <textarea id="proj-stats-input" rows="4" placeholder="700+ | Active Devices | 700&#10;5 | Buildings | 5&#10;5+ | VLANs | 5&#10;99.8% | Uptime"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="proj-tags-input">Tags (comma-separated)</label>
+            <input type="text" id="proj-tags-input" placeholder="networking, mikrotik, fiber">
+          </div>
+
+          <div class="form-group">
+            <label>The Challenge</label>
+            <div id="proj-challenge-editor"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Approach Description</label>
+            <div id="proj-approach-desc-editor"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Approach Steps (format per line: num | title | description)</label>
+            <textarea id="proj-steps-input" rows="5" placeholder="01 | Survey & Planning | Mapped all 5 buildings...&#10;02 | Cabling & Infrastructure | Installed Cat6A..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Results</label>
+            <div id="proj-results-editor"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Additional Sections (HTML)</label>
+            <p class="form-hint">For architecture, highlights, tech stack, config, before/after, testimonials — add raw HTML below.</p>
+            <div id="proj-extras-editor"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

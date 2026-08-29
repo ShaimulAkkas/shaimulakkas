@@ -34,9 +34,9 @@
       </a>
       <div class="nav-links">
         <a href="../index.html#about" data-i18n="nav.about">About</a>
-        <a href="../index.html#skills" data-i18n="nav.skills">Skills</a>
         <a href="../index.html#experience" data-i18n="nav.experience">Experience</a>
-        <a href="index.html" class="active" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#skills" data-i18n="nav.skills">Skills</a>
         <a href="../blog/index.html" data-i18n="nav.blog">Blog</a>
         <a href="../contact/index.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
         <div class="nav-mobile-toggles">
@@ -56,43 +56,279 @@
     </div>
   </nav>
 
-  <section class="section" id="main-content" style="padding-top: 8rem;">
-    <div class="wrapper" style="max-width: 780px;">
+  <section class="section" id="main-content" style="padding-top: 6rem;">
+    <div class="wrapper project-page">
+
+      <nav class="breadcrumb animate-in" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="index.html">Projects</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Campus Network Setup</span>
+      </nav>
 
       <a href="index.html" class="back-link animate-in">← Back to Projects</a>
 
-      <div class="animate-in delay-1" style="margin-bottom: 2rem;">
-        <p class="section-label">// Campus Network Setup</p>
-        <h1 style="margin-bottom: 0.3rem;">Campus Network Setup</h1>
-        <p class="project-org" style="font-size: 0.88rem; margin-bottom: 0;">Gausul Azam Maizbhandari Polytechnic Institute</p>
+      <div class="project-hero project-hero-network animate-in delay-1">
+        <span class="project-hero-icon">🌐</span>
       </div>
 
-      <div class="project-detail animate-in delay-2">
-        <h3>Overview</h3>
-        <p>Designed and configured a complete five-building campus area network to support 700+ active devices across the institution. The infrastructure includes structured cabling, wireless coverage, VLAN segmentation, and centralized monitoring.</p>
-
-        <h3>Key Highlights</h3>
-        <ul class="project-details" style="font-size: 0.95rem;">
-          <li>Designed and configured a five-building campus area network.</li>
-          <li>700+ active devices including computers, phones, cameras, printers, and IoT devices.</li>
-          <li>Cat6A/OS2 fiber cabling, Wi-Fi 6E wireless, and zone-based security.</li>
-          <li>Configured 5+ VLANs (Office, Lab, College, Schools & Hostel).</li>
-          <li>Set up PRTG for real-time network monitoring, device tracking, and alerting.</li>
-        </ul>
-
-        <h3>Technology Stack</h3>
-        <div class="tags" style="margin-top: 0.5rem;">
-          <span class="tag">MikroTik RouterOS</span>
-          <span class="tag">The Dude</span>
-          <span class="tag">VLAN</span>
-          <span class="tag">NAT</span>
-          <span class="tag">DHCP</span>
-          <span class="tag">VPN</span>
-          <span class="tag">Cat6A</span>
-          <span class="tag">Fiber</span>
-          <span class="tag">Wi-Fi 6E</span>
-          <span class="tag">PRTG</span>
+      <div class="animate-in delay-2" style="margin-bottom: 2rem;">
+        <h1 style="margin-bottom: 0.5rem;">Campus Network Setup</h1>
+        <p class="project-org" style="font-size: 0.88rem; margin-bottom: 0.8rem;">Gausul Azam Maizbhandari Polytechnic Institute</p>
+        <div class="project-meta">
+          <span class="meta-badge">📅 Oct 2024</span>
+          <span class="meta-badge">👤 Lead Network Engineer</span>
+          <span class="meta-badge">🏫 Campus-wide</span>
+          <span class="meta-badge meta-badge-done">✅ Completed</span>
         </div>
+      </div>
+
+      <div class="project-stats stagger-children">
+        <div class="stat-card">
+          <span class="stat-num" data-count="700">0</span><span class="stat-num">+</span>
+          <span class="stat-label">Active Devices</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-label">Buildings</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="5">0</span><span class="stat-num">+</span>
+          <span class="stat-label">VLANs</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">99.8%</span>
+          <span class="stat-label">Uptime</span>
+        </div>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>The Challenge</h3>
+        <p>Gausul Azam Maizbhandari Polytechnic Institute operated across five separate buildings with no unified network infrastructure. Each building ran independently with ad-hoc connectivity, leading to IP conflicts, no centralized monitoring, and frequent downtime affecting 700+ devices including computers, IP phones, CCTV cameras, printers, and IoT equipment.</p>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>My Approach</h3>
+        <p>I conducted a full site survey across all five buildings, mapped every access point, and designed a scalable network architecture from scratch. The implementation was done floor-by-floor to minimize disruption to daily classes.</p>
+        <div class="approach-steps">
+          <div class="approach-step">
+            <span class="step-num">01</span>
+            <div>
+              <p class="step-title">Survey & Planning</p>
+              <p class="step-desc">Mapped all 5 buildings, identified 700+ device endpoints, designed VLAN scheme and IP allocation strategy.</p>
+            </div>
+          </div>
+          <div class="approach-step">
+            <span class="step-num">02</span>
+            <div>
+              <p class="step-title">Cabling & Infrastructure</p>
+              <p class="step-desc">Installed Cat6A and OS2 fiber backbone, patched all endpoints, set up distribution racks in each building.</p>
+            </div>
+          </div>
+          <div class="approach-step">
+            <span class="step-num">03</span>
+            <div>
+              <p class="step-title">Configuration & VLANs</p>
+              <p class="step-desc">Configured MikroTik routers, set up 5+ VLANs (Office, Lab, College, Schools, Hostel), enabled DHCP, NAT, and VPN.</p>
+            </div>
+          </div>
+          <div class="approach-step">
+            <span class="step-num">04</span>
+            <div>
+              <p class="step-title">Monitoring & Launch</p>
+              <p class="step-desc">Deployed PRTG for real-time monitoring, configured alerts, tested failover, and went live building by building.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>Network Architecture</h3>
+        <div class="architecture-placeholder">
+          <div class="arch-inner">
+            <span class="arch-icon">🗺️</span>
+            <p class="arch-title">Campus Network Topology</p>
+            <p class="arch-desc">5 Buildings · 3 Distribution Racks · Core Router · 5+ VLANs · Fiber Backbone</p>
+            <div class="arch-diagram">
+              <div class="arch-node arch-core">🌐 Core Router<br><small>MikroTik CCR</small></div>
+              <div class="arch-branches">
+                <div class="arch-node">🏢 Building 1<br><small>Admin + Office</small></div>
+                <div class="arch-node">🏫 Building 2<br><small>College Labs</small></div>
+                <div class="arch-node">🏫 Building 3<br><small>School Labs</small></div>
+                <div class="arch-node">🏠 Building 4<br><small>Hostel</small></div>
+                <div class="arch-node">🏗️ Building 5<br><small>Workshop</small></div>
+              </div>
+            </div>
+            <p class="arch-note">[ Replace with actual network diagram from draw.io ]</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>Key Highlights</h3>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <span class="highlight-icon">🔌</span>
+            <div>
+              <p class="highlight-title">Structured Cabling</p>
+              <p class="highlight-desc">Cat6A copper and OS2 fiber backbone connecting all 5 buildings with redundancy.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">📡</span>
+            <div>
+              <p class="highlight-title">Wi-Fi 6E Coverage</p>
+              <p class="highlight-desc">Wireless access points across all buildings with zone-based security and roaming.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">🔐</span>
+            <div>
+              <p class="highlight-title">VLAN Segmentation</p>
+              <p class="highlight-desc">5+ VLANs isolating Office, Lab, College, Schools, and Hostel traffic.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">📊</span>
+            <div>
+              <p class="highlight-title">Real-time Monitoring</p>
+              <p class="highlight-desc">PRTG dashboard with device tracking, bandwidth alerts, and uptime reports.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">🛡️</span>
+            <div>
+              <p class="highlight-title">Zone-based Security</p>
+              <p class="highlight-desc">Firewall rules, NAT, and VPN access for remote management.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">⚡</span>
+            <div>
+              <p class="highlight-title">700+ Devices Connected</p>
+              <p class="highlight-desc">Computers, IP phones, CCTV cameras, printers, and IoT devices — all managed centrally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>Results</h3>
+        <p>The campus now operates on a unified, scalable network with <strong>99.8% uptime</strong>. IP conflicts are eliminated through proper VLAN segmentation and DHCP reservations. The IT team can monitor all 700+ devices from a single PRTG dashboard, reducing troubleshooting time by 40%. The infrastructure is ready for future expansion with fiber backbone capacity.</p>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>Technology Stack</h3>
+        <div class="tech-group">
+          <p class="tech-group-label">Hardware</p>
+          <div class="tags">
+            <span class="tag">MikroTik CCR Router</span>
+            <span class="tag">Cat6A Cable</span>
+            <span class="tag">OS2 Fiber</span>
+            <span class="tag">Wi-Fi 6E APs</span>
+            <span class="tag">Patch Panels</span>
+          </div>
+        </div>
+        <div class="tech-group">
+          <p class="tech-group-label">Software</p>
+          <div class="tags">
+            <span class="tag">PRTG Network Monitor</span>
+            <span class="tag">The Dude</span>
+            <span class="tag">MikroTik WinBox</span>
+          </div>
+        </div>
+        <div class="tech-group">
+          <p class="tech-group-label">Protocols</p>
+          <div class="tags">
+            <span class="tag">VLAN</span>
+            <span class="tag">NAT</span>
+            <span class="tag">DHCP</span>
+            <span class="tag">VPN</span>
+            <span class="tag">SNMP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>Configuration Snippet</h3>
+        <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem;">MikroTik VLAN configuration for building segmentation:</p>
+        <div class="config-block">
+          <div class="config-header">
+            <span class="config-dot config-dot-red"></span>
+            <span class="config-dot config-dot-yellow"></span>
+            <span class="config-dot config-dot-green"></span>
+            <span class="config-title">mikrotik-vlan-config.rsc</span>
+          </div>
+          <pre class="config-code"><code># Create VLAN interfaces
+/interface vlan add name=vlan10-office vlan-id=10 interface=ether1
+/interface vlan add name=vlan20-lab vlan-id=20 interface=ether1
+/interface vlan add name=vlan30-college vlan-id=30 interface=ether1
+/interface vlan add name=vlan40-schools vlan-id=40 interface=ether1
+/interface vlan add name=vlan50-hostel vlan-id=50 interface=ether1
+
+# DHCP Networks
+/ip dhcp-server network add address=10.10.10.0/24 gateway=10.10.10.1 dns-server=8.8.8.8
+/ip dhcp-server network add address=10.10.20.0/24 gateway=10.10.20.1 dns-server=8.8.8.8
+
+# Firewall Rules
+/ip firewall filter add chain=forward src-address=10.10.10.0/24 action=accept
+/ip firewall filter add chain=forward src-address=10.10.20.0/24 action=accept</code></pre>
+        </div>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>Before & After</h3>
+        <div class="before-after-grid">
+          <div class="before-after-card">
+            <div class="before-after-img placeholder-img placeholder-before">
+              <span>📸</span>
+              <p>Before: Ad-hoc cabling,<br>no labeling, no organization</p>
+            </div>
+            <p class="before-after-label">Before</p>
+          </div>
+          <div class="before-after-card">
+            <div class="before-after-img placeholder-img placeholder-after">
+              <span>📸</span>
+              <p>After: Structured cabling,<br>labeled patch panels, clean racks</p>
+            </div>
+            <p class="before-after-label">After</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section animate-in">
+        <h3>What They Said</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">
+            <span class="testimonial-mark">"</span>
+            <p>Shaimul designed and implemented our entire campus network from scratch. The system has been running reliably with 700+ devices connected. His work transformed our connectivity.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar placeholder-avatar">
+              <span>👤</span>
+            </div>
+            <div>
+              <p class="testimonial-name">[Supervisor Name]</p>
+              <p class="testimonial-role">[Position], Gausul Azam Maizbhandari Polytechnic Institute</p>
+            </div>
+          </div>
+          <div class="testimonial-logo placeholder-logo">
+            <span>🏫</span>
+            <p>GAMPI Logo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-nav">
+        <a href="cctv-surveillance.html" class="project-nav-link project-nav-prev">
+          <span class="project-nav-dir">← Previous</span>
+          <span class="project-nav-title">CCTV Surveillance</span>
+        </a>
+        <a href="computer-lab.html" class="project-nav-link project-nav-next">
+          <span class="project-nav-dir">Next →</span>
+          <span class="project-nav-title">Computer Lab Setup</span>
+        </a>
       </div>
 
     </div>

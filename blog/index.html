@@ -34,9 +34,10 @@
       </a>
       <div class="nav-links">
         <a href="../index.html#about" data-i18n="nav.about">About</a>
-        <a href="../index.html#skills" data-i18n="nav.skills">Skills</a>
         <a href="../index.html#experience" data-i18n="nav.experience">Experience</a>
-        <a href="../projects/index.html" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#skills" data-i18n="nav.skills">Skills</a>
+        <a href="../index.html#certificates" data-i18n="nav.certificates">Certificates</a>
         <a href="index.html" class="active" data-i18n="nav.blog">Blog</a>
         <a href="../contact/index.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
         <div class="nav-mobile-toggles">
@@ -64,35 +65,7 @@
         Thoughts on IT support, networking, and technology.
       </p>
 
-      <div class="blog-grid stagger-children">
-
-        <a href="getting-started-networking.html" class="blog-card" style="text-decoration: none;">
-          <p class="blog-date">Aug 2026</p>
-          <p class="blog-title">Getting Started with Computer Networking</p>
-          <p class="blog-excerpt">
-            An introduction to networking fundamentals — from LAN setup to understanding the OSI model and TCP/IP protocols.
-          </p>
-          <span class="blog-link">Read More →</span>
-        </a>
-
-        <a href="troubleshooting-common-pc-issues.html" class="blog-card" style="text-decoration: none;">
-          <p class="blog-date">Jul 2026</p>
-          <p class="blog-title">Troubleshooting Common PC Issues</p>
-          <p class="blog-excerpt">
-            A practical guide to diagnosing and fixing the most common hardware and software problems you'll encounter.
-          </p>
-          <span class="blog-link">Read More →</span>
-        </a>
-
-        <a href="cctv-installation-guide.html" class="blog-card" style="text-decoration: none;">
-          <p class="blog-date">Jun 2026</p>
-          <p class="blog-title">CCTV Installation: A Beginner's Guide</p>
-          <p class="blog-excerpt">
-            Step-by-step guide to planning, installing, and maintaining a CCTV surveillance system for small institutions.
-          </p>
-          <span class="blog-link">Read More →</span>
-        </a>
-
+      <div class="blog-grid" id="blog-list">
       </div>
     </div>
   </section>
@@ -112,5 +85,7 @@
 
   <script src="../js/translations.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/renderer.js"></script>
+  <script>Renderer.renderBlogList('blog-list');</script>
 </body>
 </html>

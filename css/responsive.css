@@ -366,3 +366,150 @@
     padding: 2rem 0;
   }
 }
+
+/* ── Project Detail Pages — Tablet ── */
+@media (max-width: 900px) {
+  .project-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .before-after-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Project Detail Pages — Mobile ── */
+@media (max-width: 600px) {
+  .project-hero {
+    height: 160px;
+  }
+
+  .project-hero-icon {
+    font-size: 3rem;
+  }
+
+  .project-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+
+  .stat-card {
+    padding: 0.8rem;
+  }
+
+  .stat-num {
+    font-size: 1.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.62rem;
+  }
+
+  .project-meta {
+    gap: 0.4rem;
+  }
+
+  .meta-badge {
+    font-size: 0.62rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .project-section h3 {
+    font-size: 1rem;
+  }
+
+  .approach-step {
+    padding: 0.8rem;
+    gap: 0.6rem;
+  }
+
+  .step-num {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .step-title {
+    font-size: 0.85rem;
+  }
+
+  .step-desc {
+    font-size: 0.78rem;
+  }
+
+  .config-code {
+    font-size: 0.7rem;
+    padding: 0.8rem;
+  }
+
+  .project-nav {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .project-nav-link {
+    padding: 0.8rem;
+  }
+
+  .highlight-card {
+    padding: 0.8rem;
+    gap: 0.6rem;
+  }
+
+  .highlight-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+  }
+
+  .highlight-title {
+    font-size: 0.82rem;
+  }
+
+  .highlight-desc {
+    font-size: 0.78rem;
+  }
+
+  .testimonial-card {
+    padding: 1.2rem;
+  }
+
+  .testimonial-quote p {
+    font-size: 0.88rem;
+  }
+
+  .arch-diagram {
+    padding: 1rem;
+  }
+
+  .arch-node {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .arch-branches {
+    gap: 0.4rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.65rem;
+  }
+}
+
+/* ── Project Detail Pages — Small Mobile ── */
+@media (max-width: 400px) {
+  .project-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-num {
+    font-size: 1.2rem;
+  }
+
+  .approach-steps {
+    gap: 0.8rem;
+  }
+}
