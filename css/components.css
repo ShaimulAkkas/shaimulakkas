@@ -640,6 +640,17 @@
   gap: 1rem;
 }
 
+.cert-category {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0 0 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
 .cert-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -649,6 +660,57 @@
   gap: 1rem;
   align-items: flex-start;
   transition: border-color var(--duration-normal) ease;
+}
+
+.cert-card.cert-featured {
+  border-color: rgba(45, 212, 191, 0.35);
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.07), rgba(45, 212, 191, 0.015));
+}
+
+/* ── Badges (image only) ── */
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.8rem;
+  margin-top: 1rem;
+}
+
+.badge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  transition: transform var(--duration-normal) ease;
+}
+
+.badge-item:hover {
+  transform: translateY(-4px);
+}
+
+.badge-item img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.badge-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.badge-item:hover .badge-title {
+  color: var(--primary);
 }
 
 .cert-card:hover {
@@ -666,6 +728,15 @@
   justify-content: center;
   font-size: 1.2rem;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.cert-icon img {
+  width: 24px;
+  height: 24px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .cert-body .cert-name {

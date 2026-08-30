@@ -10,6 +10,7 @@ const translations = {
     "nav.experience": "Experience",
     "nav.projects": "Projects",
     "nav.certificates": "Certificates",
+    "nav.badges": "Badges",
     "nav.blog": "Blog",
     "nav.contact": "Contact",
 
@@ -168,6 +169,7 @@ const translations = {
     "nav.experience": "অভিজ্ঞতা",
     "nav.projects": "প্রকল্প",
     "nav.certificates": "সার্টিফিকেট",
+    "nav.badges": "ব্যাজ",
     "nav.blog": "ব্লগ",
     "nav.contact": "যোগাযোগ",
 
