@@ -169,12 +169,11 @@ const translations = {
     "nav.experience": "অভিজ্ঞতা",
     "nav.projects": "প্রকল্প",
     "nav.certificates": "সার্টিফিকেট",
-    "nav.badges": "ব্যাজ",
     "nav.blog": "ব্লগ",
     "nav.contact": "যোগাযোগ",
 
     // Hero
-    "hero.greeting": "// হ্যালো, ওয়ার্ল্ড",
+    "hero.greeting": "// হ্যালো, বিশ্ব",
     "hero.title.line": "আইটি প্রশিক্ষক",
     "hero.title.org": "GAMPI, চট্টগ্রাম",
     "hero.badge.available": "সুযোগের জন্য উপলব্ধ",
@@ -189,12 +188,12 @@ const translations = {
 
     // Career Objective
     "objective.label": "কর্মজীবনের উদ্দেশ্য",
-    "objective.text": "একটি গতিশীল প্রতিষ্ঠানে ভূমিকা অনুসন্ধানকারী বিস্তারিত-মনোযোগী <em>আইটি পেশাদার</em>, যেখানে আমি সিস্টেম কর্মক্ষমতা অপ্টিমাইজ করতে, এন্ড-ইউজারদের সমর্থন করতে এবং পরিচালনাগত দক্ষতা চালিত করতে হাতে-কলমে প্রাবিধিক দক্ষতা এবং সমস্যা-সমাধান ক্ষমতা ব্যবহার করতে পারি।",
+    "objective.text": "একটি গতিশীল প্রতিষ্ঠানে ভূমিকা প্রত্যাশী বিস্তারিত মনোযোগী <em>আইটি পেশাদার</em>, যেখানে আমি সিস্টেমের কর্মক্ষমতা অপটিমাইজ করতে, ব্যবহারকারীদের সহায়তা করতে এবং পরিচালনাগত দক্ষতা বাড়াতে হাতে-কলমে কারিগরি দক্ষতা ও সমস্যা সমাধানের সক্ষমতা কাজে লাগাতে পারি।",
 
     // About
     "about.label": "পরিচিতি",
-    "about.p1": "হ্যালো, আমি <em>শাইমুল</em> — বাংলাদেশের চট্টগ্রামে অবস্থিত একজন আইটি পেশাদার, যার প্রযুক্তিগত সমস্যা সমাধান এবং অন্যদের শেখানোর আগ্রহ রয়েছে। আমি বর্তমানে গৌসুল আজাম মাইজবান্ধারী পলিটেকনিক ইনস্টিটিউটে আইটি প্রশিক্ষক হিসেবে কাজ করি, যেখানে আমি জটিল প্রাবিধিক ধারণাগুলিকে হাতে-কলমে ব্যবহারিক শেখার অভিজ্ঞতায় রূপান্তরিত করি।",
-    "about.p2": "পিসি নেটওয়ার্ক তৈরি ও ট্রাবলশুটিং থেকে সিসিটিভি সিস্টেম কনফিগার করা এবং ডেটা কমিউনিকেশনের মৌলিক বিষয় শেখানো পর্যন্ত — আমি <em>প্রযুক্তি ও শিক্ষা</em>-এর ছেদে সফল হই। আইটি সাপোর্ট টেকনিশিয়ান (NTVQF লেভেল I) সার্টিফাইড, কম্পিউটার অফিস অ্যাপ্লিকেশন এবং গ্রাফিক ডিজাইনে অতিরিক্ত প্রশিক্ষণ সহ।",
+    "about.p1": "হ্যালো, আমি <em>শাইমুল</em> — চট্টগ্রাম, বাংলাদেশে অবস্থিত একজন আইটি পেশাদার, যিনি প্রযুক্তিগত সমস্যা সমাধান এবং অন্যদের শেখাতে আগ্রহী। আমি বর্তমানে গাউছুল আজম মাইজভান্ডারী পলিটেকনিক ইনস্টিটিউটে আইটি প্রশিক্ষক হিসেবে কর্মরত, যেখানে জটিল প্রযুক্তিগত ধারণাগুলোকে হাতে-কলমে ব্যবহারিক শেখার অভিজ্ঞতায় রূপান্তর করি।",
+    "about.p2": "পিসি নেটওয়ার্ক তৈরি ও সমস্যা সমাধান থেকে শুরু করে সিসিটিভি সিস্টেম কনফিগারেশন এবং ডেটা কমিউনিকেশনের মৌলিক বিষয় শেখানো পর্যন্ত — আমি <em>প্রযুক্তি ও শিক্ষার</em> সংযোগস্থলে কাজ করতে স্বাচ্ছন্দ্যবোধ করি। আইটি সাপোর্ট টেকনিশিয়ান (NTVQF লেভেল-১) সার্টিফাইড, কম্পিউটার অফিস অ্যাপ্লিকেশন ও গ্রাফিক ডিজাইনে অতিরিক্ত প্রশিক্ষণপ্রাপ্ত।",
     "about.years": "২+",
     "about.years.label": "বছরের অভিজ্ঞতা",
     "about.cert": "NTVQF",
@@ -207,7 +206,7 @@ const translations = {
     "info.name": "পুরো নাম",
     "info.name.val": "শাইমুল আক্কাস শাহিন",
     "info.address": "ঠিকানা",
-    "info.address.val": "গ্রাম: বাংশখালা, ডাকঘর: ইলশা, থানা: বাংশখালি, জেলা: চট্টগ্রাম",
+    "info.address.val": "গ্রাম: বাঁশখালা, ডাকঘর: ইলশা, থানা: বাঁশখালী, জেলা: চট্টগ্রাম",
     "info.role": "বর্তমান পদ",
     "info.role.val": "আইটি প্রশিক্ষক @ GAMPI",
     "info.phone": "ফোন",
@@ -219,40 +218,39 @@ const translations = {
     "info.since.sub": "আইটি প্রশিক্ষক",
 
     // Skills
-    "skills.label": "দক্ষতা",
-    "skills.hardware.title": "হার্ডওয়্যার ও ট্রাবলশুটিং",
-    "skills.hardware.desc": "পিসি সংযোজন, ডায়াগনস্টিক্স, ডেস্কটপ, প্রিন্টার এবং পেরিফেরাল মেরামত।",
-    "skills.network.title": "নেটওয়ার্ক সেটআপ ও কনফিগ",
-    "skills.network.desc": "LAN/WAN সেটআপ, VLAN কনফিগারেশন, MikroTik রাউটার এবং Cisco Packet Tracer।",
-    "skills.doc.title": "ডকুমেন্ট ম্যানেজমেন্ট",
-    "skills.doc.desc": "অফিসিয়াল চিঠি, পরিপত্র, রিপোর্ট এবং প্রাতিষ্ঠানিক প্রোফাইল (বাংলা ও ইংরেজি)।",
+    "skills.label": "// দক্ষতা",
+    "skills.hardware.title": "হার্ডওয়্যার ও সমস্যা সমাধান",
+    "skills.hardware.desc": "পিসি সংযোজন, ডায়াগনস্টিকস, ডেস্কটপ, প্রিন্টার ও পেরিফেরাল মেরামত।",
+    "skills.network.title": "নেটওয়ার্ক সেটআপ ও কনফিগারেশন",
+    "skills.network.desc": "LAN/WAN সেটআপ, VLAN কনফিগারেশন, MikroTik রাউটার ও Cisco Packet Tracer।",
+    "skills.doc.title": "ডকুমেন্ট ব্যবস্থাপনা",
+    "skills.doc.desc": "অফিসিয়াল চিঠি, পরিপত্র, প্রতিবেদন ও প্রাতিষ্ঠানিক প্রোফাইল (বাংলা ও ইংরেজি)।",
     "skills.cctv.title": "সিসিটিভি সিস্টেম",
-    "skills.cctv.desc": "সিসিটিভি নজরদারি সিস্টেমের স্থাপন ও রক্ষণাবেক্ষণ।",
+    "skills.cctv.desc": "সিসিটিভি নজরদারি সিস্টেম স্থাপন ও রক্ষণাবেক্ষণ।",
     "skills.os.title": "অপারেটিং সিস্টেম",
     "skills.os.desc": "Windows 7/10/11 এবং Linux (Ubuntu, Kali Linux)।",
-    "skills.design.title": "ডিজাইন সুইট",
+    "skills.design.title": "ডিজাইন স্যুট",
     "skills.design.desc": "Adobe Photoshop ও Illustrator; MS Office (Word, Excel, PowerPoint, Access)।",
 
     // Experience
-    "exp.label": "অভিজ্ঞতা",
+    "exp.label": "// অভিজ্ঞতা",
     "exp.trainer.title": "আইটি প্রশিক্ষক",
-    "exp.trainer.org": "গৌসুল আজাম মাইজবান্ধারী পলিটেকনিক ইনস্টিটিউট",
-    "exp.trainer.desc": "আইটি সাপোর্ট মৌলিক বিষয়, ডেটা কমিউনিকেশন এবং নেটওয়ার্কিং সম্পর্কিত বিষয়ে (যেমন: TCP/IP, OSI মডেল) আকর্ষণীয় বক্তৃতা এবং প্রায়োগিক সেশন প্রদান করেছেন। সাধারণ আইটি সমস্যা ট্রাবলশুটিং, নেটওয়ার্ক ডিভাইস কনফিগারেশন এবং ডেটা কমিউনিকেশন সমাধান বাস্তবায়নে হাতে-কলমে প্রশিক্ষণ প্রদান করেছেন।",
-    "exp.lab.title": "কম্পিউটার ল্যাব সহকারী",
-    "exp.lab.org": "গৌসুল আজাম মাইজবান্ধারী পলিটেকনিক ইনস্টিটিউট",
-    "exp.lab.desc": "কম্পিউটার ল্যাবের হার্ডওয়্যার, সফটওয়্যার ইনস্টলেশন এবং নেটওয়ার্ক ইনফ্রাস্ট্রাকচার সংযোগ রক্ষণাবেক্ষণ করেছেন। প্রায়োগিক ল্যাব ক্লাসে ঊর্ধ্বতন প্রশিক্ষকদের সমর্থন করেছেন এবং শিক্ষার্থীদের প্রাবিধিক ট্রাবলশুটিংয়ে সহায়তা করেছেন।",
+    "exp.trainer.org": "গাউছুল আজম মাইজভান্ডারী পলিটেকনিক ইনস্টিটিউট",
+    "exp.trainer.desc": "আইটি সাপোর্টের মৌলিক বিষয়, ডেটা কমিউনিকেশন ও নেটওয়ার্কিং (যেমন: TCP/IP, OSI মডেল) নিয়ে আকর্ষণীয় লেকচার ও ব্যবহারিক সেশন পরিচালনা করেছি। সাধারণ আইটি সমস্যা সমাধান, নেটওয়ার্ক ডিভাইস কনফিগারেশন এবং ডেটা কমিউনিকেশন সমাধান বাস্তবায়নে হাতে-কলমে প্রশিক্ষণ দিয়েছি।",
+    "exp.lab.org": "গাউছুল আজম মাইজভান্ডারী পলিটেকনিক ইনস্টিটিউট",
+    "exp.lab.desc": "কম্পিউটার ল্যাবের হার্ডওয়্যার, সফটওয়্যার ইনস্টলেশন ও নেটওয়ার্ক অবকাঠামো রক্ষণাবেক্ষণ করেছি। ব্যবহারিক ল্যাব ক্লাসে সিনিয়র প্রশিক্ষকদের সহায়তা করেছি এবং শিক্ষার্থীদের কারিগরি সমস্যা সমাধানে সহযোগিতা করেছি।",
 
     // Education
-    "edu.label": "শিক্ষা",
+    "edu.label": "// শিক্ষা",
     "edu.diploma.degree": "প্রকৌশলে ডিপ্লোমা — কম্পিউটার প্রযুক্তি",
-    "edu.diploma.inst": "বাংশখালি পলিটেকনিক ইনস্টিটিউট (বোর্ড: চট্টগ্রাম)",
+    "edu.diploma.inst": "বাঁশখালী পলিটেকনিক ইনস্টিটিউট (বোর্ড: চট্টগ্রাম)",
     "edu.diploma.year": "পাসের বছর: ২০২৪ · GPA ৩.৪৮ / ৪.০০",
     "edu.ssc.degree": "মাধ্যমিক স্কুল সার্টিফিকেট (S.S.C.)",
     "edu.ssc.inst": "কাথারিয়া বাগমারা হাই স্কুল (বোর্ড: চট্টগ্রাম)",
     "edu.ssc.year": "পাসের বছর: ২০১৯ · GPA ৩.৪৪ / ৫.০০ · ব্যবসায় শিক্ষা",
 
     // Certificates
-    "cert.label": "সার্টিফিকেট",
+    "cert.label": "// সার্টিফিকেট",
     "cert.it.name": "আইটি সাপোর্ট টেকনিশিয়ান, লেভেল-১",
     "cert.it.title": "জাতীয় দক্ষতা সার্টিফিকেট-I",
     "cert.it.org": "BTEB (NTVQF)",
@@ -271,9 +269,88 @@ const translations = {
     "cert.design.result": "A+",
     "cert.design.duration": "০৬ মাস",
     "cert.design.year": "২০২৫",
+    "cert.opswat.name": "ক্রিটিক্যাল ইনফ্রাস্ট্রাকচার প্রোটেকশনে পরিচয়",
+    "cert.opswat.title": "সিআইপি প্রোগ্রাম — ০.৫০ সিপিই",
+    "cert.opswat.org": "OPSWAT Academy",
+    "cert.opswat.result": "সম্পন্ন",
+    "cert.opswat.year": "২০২৫",
+
+    // Tier 2: Professional Development
+    "cert.aianalytics.name": "এআই-চালিত বিশ্লেষণ",
+    "cert.aianalytics.title": "পেশাদার প্রশিক্ষণ কোর্স",
+    "cert.aianalytics.org": "গ্রামীণফোন",
+    "cert.aianalytics.result": "সম্পন্ন",
+    "cert.aianalytics.year": "২০২৬",
+
+    "cert.netai.name": "এআই দিয়ে নেটওয়ার্ক স্মার্টার",
+    "cert.netai.title": "নেটওয়ার্কিং-এ এআই প্রশিক্ষণ",
+    "cert.netai.org": "গ্রামীণফোন",
+    "cert.netai.result": "সম্পন্ন",
+    "cert.netai.year": "২০২৬",
+
+    "cert.fbmarketing.name": "ফেসবুক মার্কেটিং কোর্স",
+    "cert.fbmarketing.title": "ডিজিটাল মার্কেটিং প্রশিক্ষণ",
+    "cert.fbmarketing.org": "গ্রামীণফোন",
+    "cert.fbmarketing.result": "সম্পন্ন",
+    "cert.fbmarketing.year": "২০২৬",
+
+    "cert.personalbranding.name": "এআই যুগে পারসোনাল ব্র্যান্ডিং",
+    "cert.personalbranding.title": "পেশাদার উন্নতির প্রশিক্ষণ",
+    "cert.personalbranding.org": "গ্রামীণফোন",
+    "cert.personalbranding.result": "সম্পন্ন",
+    "cert.personalbranding.year": "২০২৬",
+
+    "cert.digitalliteracy.name": "যুবকদের জন্য ডিজিটাল লিটারেসি",
+    "cert.digitalliteracy.title": "ডিজিটাল লিটারেসি কোর্স",
+    "cert.digitalliteracy.org": "সার্টিফাইড",
+    "cert.digitalliteracy.result": "সম্পন্ন",
+    "cert.digitalliteracy.year": "২০২২",
+
+    // Tier 3: Global & Leadership
+    "cert.climatelaw.name": "জলবায়ু পরিবর্তন আন্তর্জাতিক আইনি কাঠামো",
+    "cert.climatelaw.title": "অনলাইন সার্টিফিকেশন কোর্স",
+    "cert.climatelaw.org": "সংযুক্ত রাষ্ট্র",
+    "cert.climatelaw.result": "সম্পন্ন",
+    "cert.climatelaw.year": "২০২৬",
+
+    "cert.netzero.name": "নেট জিরো ১০১: কী, কেন ও কীভাবে",
+    "cert.netzero.title": "সম্পন্নতার সার্টিফিকেট",
+    "cert.netzero.org": "সংযুক্ত রাষ্ট্র",
+    "cert.netzero.result": "সম্পন্ন",
+    "cert.netzero.year": "২০২৬",
+
+    "cert.zerofellow.name": "জিরো অলিম্পিয়াড — ফেলোশিপ",
+    "cert.zerofellow.title": "জাতীয় প্রতিযোগিতা ফেলোশিপ",
+    "cert.zerofellow.org": "জিরো অলিম্পিয়াড",
+    "cert.zerofellow.result": "ফেলো",
+    "cert.zerofellow.year": "২০২৬",
+
+    "cert.zeroparticipation.name": "জিরো অলিম্পিয়াড — অংশগ্রহণ",
+    "cert.zeroparticipation.title": "জাতীয় প্রতিযোগিতা রাউন্ড ১",
+    "cert.zeroparticipation.org": "জিরো অলিম্পিয়াড",
+    "cert.zeroparticipation.result": "অংশগ্রহণকারী",
+    "cert.zeroparticipation.year": "২০২৬",
+
+    "cert.uniquespeaker.name": "কিভাবে ইউনিক স্পিকার হতে হয়",
+    "cert.uniquespeaker.title": "অনলাইন ওয়ার্কশপ",
+    "cert.uniquespeaker.org": "নেক্সটজেন ইয়ুথ সোসাইটি · রাফসান সাবাব",
+    "cert.uniquespeaker.result": "সম্পন্ন",
+    "cert.uniquespeaker.year": "২০২৬",
+
+    "cert.psychology.name": "টিমওয়ার্কের মনোবিজ্ঞান",
+    "cert.psychology.title": "সফলতার জন্য গোষ্ঠীর গতিবিদ্যা বোঝা",
+    "cert.psychology.org": "ইউনিভার্সিটি অফ দ্য পিপল",
+    "cert.psychology.result": "সম্পন্ন",
+    "cert.psychology.year": "২০২৬",
+
+    "cert.anthropic.name": "এআই ফ্লুয়েন্সি: ফ্রেমওয়ার্ক ও ফাউন্ডেশনস",
+    "cert.anthropic.title": "পেশাদার উন্নতি — এআই সাক্ষরতা",
+    "cert.anthropic.org": "Anthropic",
+    "cert.anthropic.result": "সম্পন্ন",
+    "cert.anthropic.year": "২০২৬",
 
     // Languages
-    "lang.label": "ভাষা",
+    "lang.label": "// ভাষা",
     "lang.bangla": "বাংলা",
     "lang.bangla.level": "মাতৃভাষী",
     "lang.english": "ইংরেজি",
@@ -316,8 +393,17 @@ const translations = {
     "contact.phone": "+৮৮০ ১৮৫৯-৮১১০২১",
     "contact.linkedin": "linkedin.com/in/shaimul-akkas",
     "contact.github": "github.com/ShaimulAkkas",
-    "contact.address": "গ্রাম: বাংশখালা, ডাকঘর: ইলশা, থানা: বাংশখালি, জেলা: চট্টগ্রাম",
+    "contact.address": "গ্রাম: বাঁশখালা, ডাকঘর: ইলশা, থানা: বাঁশখালী, জেলা: চট্টগ্রাম",
     "contact.btn": "আমাকে একটি বার্তা পাঠান",
     "contact.btn.note": "আপনার ইমেইল ক্লায়েন্ট খুলবে",
+
+    // Badges (Verified Digital Badges)
+    "badge.paris.name": "প্যারিস চুক্তি — মডিউল ৩",
+    "badge.kyoto.name": "ক্যোটো প্রোটোকল — মডিউল ২",
+    "badge.climate.name": "জলবায়ু পরিবর্তন কনভেনশন — মডিউল ১",
+    "badge.credly.name": "OPSWAT — সিআইপি পরিচয় (Credly)",
+    "badge.unlock.name": "জেন এআই: ফাউন্ডেশনাল কনসেপ্টস আনলক",
+    "badge.beyond.name": "জেন এআই: বিযন্ড দ্য চ্যাটবট",
+    "badge.intro.name": "জেনারেটিভ এআই-এ পরিচয়"
   }
 };

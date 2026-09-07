@@ -101,21 +101,14 @@
     </div>
   </section>
 
-  <!-- ═══ CAREER OBJECTIVE ═══ -->
-  <section class="section" id="objective">
-    <div class="wrapper">
-      <p class="section-label animate-in" data-i18n="objective.label">Career Objective</p>
-      <p class="about-text animate-in delay-1" data-i18n-html="objective.text">
-        Detail-oriented <em>IT professional</em> seeking a role in a dynamic organization where I can leverage hands-on technical skills and problem-solving abilities to optimize system performance, support end-users, and drive operational efficiency.
-      </p>
-    </div>
-  </section>
-
   <!-- ═══ ABOUT ═══ -->
   <section class="section" id="about">
     <div class="wrapper">
       <p class="section-label animate-in" data-i18n="about.label">// About</p>
-      <div class="about-content animate-in delay-1">
+      <p class="about-text animate-in delay-1" data-i18n-html="objective.text" style="margin-bottom: 1.2rem; padding: 1rem 1.2rem; background: var(--primary-dim); border-left: 3px solid var(--primary); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+        Detail-oriented <em>IT professional</em> seeking a role in a dynamic organization where I can leverage hands-on technical skills and problem-solving abilities to optimize system performance, support end-users, and drive operational efficiency.
+      </p>
+      <div class="about-content animate-in delay-2">
         <p class="about-text" data-i18n-html="about.p1">
           Hi, I'm <em>Shaimul</em> — an IT professional based in Chittagong, Bangladesh with a passion for
           solving technical problems and helping others learn. I currently work as an IT Trainer at
@@ -130,7 +123,7 @@
         </p>
         <div class="about-highlights" style="margin-top: 2rem;">
           <div class="highlight-item">
-            <span class="highlight-num" data-i18n="about.years">2+</span>
+            <span class="highlight-num" data-i18n="about.years" data-count="2">2+</span>
             <span class="highlight-label" data-i18n="about.years.label">Years Experience</span>
           </div>
           <div class="highlight-item">
@@ -138,7 +131,7 @@
             <span class="highlight-label" data-i18n="about.cert.label">Level 1 Certified</span>
           </div>
           <div class="highlight-item">
-            <span class="highlight-num" data-i18n="about.students">50+</span>
+            <span class="highlight-num" data-i18n="about.students" data-count="50">50+</span>
             <span class="highlight-label" data-i18n="about.students.label">Students Trained</span>
           </div>
         </div>
@@ -149,7 +142,7 @@
   <!-- ═══ EXPERIENCE ═══ -->
   <section class="section" id="experience">
     <div class="wrapper">
-      <p class="section-label animate-in" data-i18n="exp.label">Experience</p>
+      <p class="section-label animate-in" data-i18n="exp.label">// Experience</p>
       <div class="timeline">
         <div class="timeline-item animate-in delay-1">
           <div class="timeline-year">Oct 2024 — Now</div>
@@ -258,7 +251,7 @@
   <!-- ═══ SKILLS ═══ -->
   <section class="section" id="skills">
     <div class="wrapper">
-      <p class="section-label animate-in" data-i18n="skills.label">Skills</p>
+      <p class="section-label animate-in" data-i18n="skills.label">// Skills</p>
       <div class="skills-grid stagger-children">
         <div class="skill-card">
           <span class="skill-icon">🔧</span>
@@ -297,7 +290,7 @@
   <!-- ═══ EDUCATION ═══ -->
   <section class="section" id="education">
     <div class="wrapper">
-      <p class="section-label animate-in" data-i18n="edu.label">Education</p>
+      <p class="section-label animate-in" data-i18n="edu.label">// Education</p>
       <div class="edu-card animate-in delay-1">
         <div class="edu-icon">🎓</div>
         <div class="edu-body">
@@ -320,9 +313,18 @@
   <!-- ═══ CERTIFICATES ═══ -->
   <section class="section" id="certificates">
     <div class="wrapper">
-      <p class="section-label animate-in" data-i18n="cert.label">Certificates</p>
+      <p class="section-label animate-in" data-i18n="cert.label">// Certificates</p>
+
+      <div class="cert-filters animate-in">
+        <button class="cert-filter active" data-filter="all">All</button>
+        <button class="cert-filter" data-filter="national">National</button>
+        <button class="cert-filter" data-filter="professional">Professional</button>
+        <button class="cert-filter" data-filter="global">Global</button>
+        <button class="cert-filter" data-filter="badges">Badges</button>
+      </div>
 
       <!-- Tier 1: National & Core Technical — Highest Priority -->
+      <div class="cert-tier" data-tier="national">
       <p class="cert-category animate-in">◆ National Certification — Core Credentials</p>
       <div class="cert-grid stagger-children">
 
@@ -385,31 +387,33 @@
         <div class="cert-card cert-featured" data-cert-url="https://drive.google.com/file/d/155BOh1W4Sxlq77rIZbG4pITgfgU_ztkz/preview">
           <div class="cert-icon"><img src="https://www.google.com/s2/favicons?domain=opswat.com&sz=64" alt="OPSWAT"></div>
           <div class="cert-body">
-            <p class="cert-name">Introduction to Critical Infrastructure Protection</p>
-            <p class="cert-title">CIP Program — 0.50 CPE</p>
-            <p class="cert-org">OPSWAT Academy</p>
+            <p class="cert-name" data-i18n="cert.opswat.name">Introduction to Critical Infrastructure Protection</p>
+            <p class="cert-title" data-i18n="cert.opswat.title">CIP Program — 0.50 CPE</p>
+            <p class="cert-org" data-i18n="cert.opswat.org">OPSWAT Academy</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">2025</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.opswat.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.opswat.year">2025</span>
             </div>
           </div>
         </div>
 
       </div>
+      </div>
 
       <!-- Tier 2: Professional Development -->
+      <div class="cert-tier" data-tier="professional">
       <p class="cert-category animate-in" style="margin-top: 2.2rem;">◆ Professional Development — Industry Skills</p>
       <div class="cert-grid stagger-children">
 
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1gEiHroKJw_IEf4Ndd_kNWKx1uwcThV7f/preview">
           <div class="cert-icon"><img src="https://s3.ap-south-1.amazonaws.com/live.grameenphone.academy/settings/01JHQEE2XPJ15MQQ4D5KNSV7CP.png" alt="Grameenphone"></div>
           <div class="cert-body">
-            <p class="cert-name">AI-Powered Analytics</p>
-            <p class="cert-title">Professional Training Course</p>
-            <p class="cert-org">Grameenphone</p>
+            <p class="cert-name" data-i18n="cert.aianalytics.name">AI-Powered Analytics</p>
+            <p class="cert-title" data-i18n="cert.aianalytics.title">Professional Training Course</p>
+            <p class="cert-org" data-i18n="cert.aianalytics.org">Grameenphone</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">Aug 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.aianalytics.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.aianalytics.year">Aug 2026</span>
             </div>
           </div>
         </div>
@@ -417,12 +421,12 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1KNDV2ZOr7RUFoqNYkXI7d8moRxBE8hPg/preview">
           <div class="cert-icon"><img src="https://s3.ap-south-1.amazonaws.com/live.grameenphone.academy/settings/01JHQEE2XPJ15MQQ4D5KNSV7CP.png" alt="Grameenphone"></div>
           <div class="cert-body">
-            <p class="cert-name">Network Smarter with AI</p>
-            <p class="cert-title">AI in Networking Training</p>
-            <p class="cert-org">Grameenphone</p>
+            <p class="cert-name" data-i18n="cert.netai.name">Network Smarter with AI</p>
+            <p class="cert-title" data-i18n="cert.netai.title">AI in Networking Training</p>
+            <p class="cert-org" data-i18n="cert.netai.org">Grameenphone</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">May 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.netai.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.netai.year">May 2026</span>
             </div>
           </div>
         </div>
@@ -430,12 +434,12 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1IuA2qnOsJAneBKhjEXRG6rSycGYMM5E9/preview">
           <div class="cert-icon"><img src="https://s3.ap-south-1.amazonaws.com/live.grameenphone.academy/settings/01JHQEE2XPJ15MQQ4D5KNSV7CP.png" alt="Grameenphone"></div>
           <div class="cert-body">
-            <p class="cert-name">Facebook Marketing Course</p>
-            <p class="cert-title">Digital Marketing Training</p>
-            <p class="cert-org">Grameenphone</p>
+            <p class="cert-name" data-i18n="cert.fbmarketing.name">Facebook Marketing Course</p>
+            <p class="cert-title" data-i18n="cert.fbmarketing.title">Digital Marketing Training</p>
+            <p class="cert-org" data-i18n="cert.fbmarketing.org">Grameenphone</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">Aug 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.fbmarketing.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.fbmarketing.year">Aug 2026</span>
             </div>
           </div>
         </div>
@@ -443,12 +447,12 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1ugq-zSBEN3v99Ot69deuvUGSwyY0R1Qc/preview">
           <div class="cert-icon"><img src="https://s3.ap-south-1.amazonaws.com/live.grameenphone.academy/settings/01JHQEE2XPJ15MQQ4D5KNSV7CP.png" alt="Grameenphone"></div>
           <div class="cert-body">
-            <p class="cert-name">Personal Branding in AI Era</p>
-            <p class="cert-title">Professional Development Training</p>
-            <p class="cert-org">Grameenphone</p>
+            <p class="cert-name" data-i18n="cert.personalbranding.name">Personal Branding in AI Era</p>
+            <p class="cert-title" data-i18n="cert.personalbranding.title">Professional Development Training</p>
+            <p class="cert-org" data-i18n="cert.personalbranding.org">Grameenphone</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">Jul 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.personalbranding.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.personalbranding.year">Jul 2026</span>
             </div>
           </div>
         </div>
@@ -456,31 +460,47 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1XgSBJMcipTIXknTw-dtUtzmzOpc9QEMM/preview">
           <div class="cert-icon"><img src="https://www.google.com/s2/favicons?domain=skillsportal.gov.bd&sz=64" alt="Digital Literacy"></div>
           <div class="cert-body">
-            <p class="cert-name">Digital Literacy for Youth</p>
-            <p class="cert-title">Digital Literacy Course</p>
-            <p class="cert-org">Certified</p>
+            <p class="cert-name" data-i18n="cert.digitalliteracy.name">Digital Literacy for Youth</p>
+            <p class="cert-title" data-i18n="cert.digitalliteracy.title">Digital Literacy Course</p>
+            <p class="cert-org" data-i18n="cert.digitalliteracy.org">Certified</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">Sep 2022</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.digitalliteracy.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.digitalliteracy.year">Sep 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1VgVlvXhIjGQ6-ZtojwBaXB4gHLUJnorx/preview">
+          <div class="cert-icon"><img src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=64" alt="Anthropic"></div>
+          <div class="cert-body">
+            <p class="cert-name" data-i18n="cert.anthropic.name">AI Fluency Framework & Foundations</p>
+            <p class="cert-title" data-i18n="cert.anthropic.title">Professional Development — AI Literacy</p>
+            <p class="cert-org" data-i18n="cert.anthropic.org">Anthropic</p>
+            <div class="cert-meta">
+              <span class="cert-badge cert-badge-success" data-i18n="cert.anthropic.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.anthropic.year">2026</span>
+              <a href="https://verify.skilljar.com/c/mcn45m6mndgt" target="_blank" rel="noopener noreferrer" class="cert-verify" title="Verify Certificate">🔗 Verify</a>
             </div>
           </div>
         </div>
 
       </div>
+      </div>
 
       <!-- Tier 3: Global & Leadership -->
+      <div class="cert-tier" data-tier="global">
       <p class="cert-category animate-in" style="margin-top: 2.2rem;">◆ Global & Leadership — Community Impact</p>
       <div class="cert-grid stagger-children">
 
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1GD9QjEVvqFHHfPHZzLh9n-tCpa7HoS_4/preview">
           <div class="cert-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/UN_emblem_blue.svg" alt="United Nations"></div>
           <div class="cert-body">
-            <p class="cert-name">Climate Change International Legal Regime</p>
-            <p class="cert-title">Online Certification Course</p>
-            <p class="cert-org">United Nations</p>
+            <p class="cert-name" data-i18n="cert.climatelaw.name">Climate Change International Legal Regime</p>
+            <p class="cert-title" data-i18n="cert.climatelaw.title">Online Certification Course</p>
+            <p class="cert-org" data-i18n="cert.climatelaw.org">United Nations</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">Apr 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.climatelaw.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.climatelaw.year">Apr 2026</span>
             </div>
           </div>
         </div>
@@ -488,12 +508,12 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1eep7DrZo-EZf8APpcix9ZzEC8KNt4lDc/preview">
           <div class="cert-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/UN_emblem_blue.svg" alt="United Nations"></div>
           <div class="cert-body">
-            <p class="cert-name">Net Zero 101: What, Why & How</p>
-            <p class="cert-title">Certificate of Completion</p>
-            <p class="cert-org">United Nations</p>
+            <p class="cert-name" data-i18n="cert.netzero.name">Net Zero 101: What, Why & How</p>
+            <p class="cert-title" data-i18n="cert.netzero.title">Certificate of Completion</p>
+            <p class="cert-org" data-i18n="cert.netzero.org">United Nations</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">Apr 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.netzero.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.netzero.year">Apr 2026</span>
             </div>
           </div>
         </div>
@@ -501,12 +521,12 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1GApMMr2uxRTb7YCV_lFj3YqvWhlZ5f4M/preview">
           <div class="cert-icon"><img src="https://www.google.com/s2/favicons?domain=zeroolympiad.com&sz=64" alt="Zero Olympiad"></div>
           <div class="cert-body">
-            <p class="cert-name">Zero Olympiad — Fellowship</p>
-            <p class="cert-title">National Competition Fellowship</p>
-            <p class="cert-org">Zero Olympiad</p>
+            <p class="cert-name" data-i18n="cert.zerofellow.name">Zero Olympiad — Fellowship</p>
+            <p class="cert-title" data-i18n="cert.zerofellow.title">National Competition Fellowship</p>
+            <p class="cert-org" data-i18n="cert.zerofellow.org">Zero Olympiad</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Fellow</span>
-              <span class="cert-year">May 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.zerofellow.result">Fellow</span>
+              <span class="cert-year" data-i18n="cert.zerofellow.year">May 2026</span>
             </div>
           </div>
         </div>
@@ -514,12 +534,12 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1vcPoQTKkcR-VrJBY8IVGQOMzAG8WrzhI/preview">
           <div class="cert-icon"><img src="https://www.google.com/s2/favicons?domain=zeroolympiad.com&sz=64" alt="Zero Olympiad"></div>
           <div class="cert-body">
-            <p class="cert-name">Zero Olympiad — Participation</p>
-            <p class="cert-title">National Competition Round 1</p>
-            <p class="cert-org">Zero Olympiad</p>
+            <p class="cert-name" data-i18n="cert.zeroparticipation.name">Zero Olympiad — Participation</p>
+            <p class="cert-title" data-i18n="cert.zeroparticipation.title">National Competition Round 1</p>
+            <p class="cert-org" data-i18n="cert.zeroparticipation.org">Zero Olympiad</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Participated</span>
-              <span class="cert-year">May 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.zeroparticipation.result">Participated</span>
+              <span class="cert-year" data-i18n="cert.zeroparticipation.year">May 2026</span>
             </div>
           </div>
         </div>
@@ -527,12 +547,12 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/13Woah2kwkTvB0Rl3p5Zn5UdwiEhlRt6B/preview">
           <div class="cert-icon"><img src="https://www.google.com/s2/favicons?domain=nextgenyouthsociety.org&sz=64" alt="NextGen Youth"></div>
           <div class="cert-body">
-            <p class="cert-name">How to Become a Unique Speaker</p>
-            <p class="cert-title">Online Workshop</p>
-            <p class="cert-org">NextGen Youth Society · Rafsan Sabab</p>
+            <p class="cert-name" data-i18n="cert.uniquespeaker.name">How to Become a Unique Speaker</p>
+            <p class="cert-title" data-i18n="cert.uniquespeaker.title">Online Workshop</p>
+            <p class="cert-org" data-i18n="cert.uniquespeaker.org">NextGen Youth Society · Rafsan Sabab</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">22 Aug 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.uniquespeaker.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.uniquespeaker.year">22 Aug 2026</span>
             </div>
           </div>
         </div>
@@ -540,46 +560,63 @@
         <div class="cert-card" data-cert-url="https://drive.google.com/file/d/1MLdLBPr4VyiPWtJ-WDAFgjtu5w1q2ZMs/preview">
           <div class="cert-icon"><img src="https://www.google.com/s2/favicons?domain=uopeople.edu&sz=64" alt="University of the People"></div>
           <div class="cert-body">
-            <p class="cert-name">The Psychology of Teamwork</p>
-            <p class="cert-title">Understanding Group Dynamics for Success</p>
-            <p class="cert-org">University of the People</p>
+            <p class="cert-name" data-i18n="cert.psychology.name">The Psychology of Teamwork</p>
+            <p class="cert-title" data-i18n="cert.psychology.title">Understanding Group Dynamics for Success</p>
+            <p class="cert-org" data-i18n="cert.psychology.org">University of the People</p>
             <div class="cert-meta">
-              <span class="cert-badge cert-badge-success">Completed</span>
-              <span class="cert-year">20 May 2026</span>
+              <span class="cert-badge cert-badge-success" data-i18n="cert.psychology.result">Completed</span>
+              <span class="cert-year" data-i18n="cert.psychology.year">20 May 2026</span>
             </div>
           </div>
         </div>
 
       </div>
+      </div>
 
       <!-- Verified Digital Badges (inside Certificates) -->
+      <div class="cert-tier" data-tier="badges">
       <p class="cert-category animate-in" style="margin-top: 2.2rem;">◆ Verified Digital Badges</p>
       <div class="badge-grid stagger-children">
 
         <a href="https://unccelearn.org/badges/badge.php?hash=b6ef190e8703a9efccff613c85ba0773a551dbb0" target="_blank" rel="noopener noreferrer" class="badge-item">
-          <img src="assets/badges/badge-paris-agreement.png" alt="The Paris Agreement — Module 3">
-          <span class="badge-title">The Paris Agreement — Module 3</span>
+          <img src="assets/badges/badge-paris-agreement.webp" alt="The Paris Agreement — Module 3" loading="lazy" decoding="async">
+          <span class="badge-title" data-i18n="badge.paris.name">The Paris Agreement — Module 3</span>
         </a>
 
         <a href="https://unccelearn.org/badges/badge.php?hash=24ebba69a9ce68a9dfbd5325e97119b03844ece0" target="_blank" rel="noopener noreferrer" class="badge-item">
-          <img src="assets/badges/badge-kyoto-protocol.png" alt="The Kyoto Protocol — Module 2">
-          <span class="badge-title">The Kyoto Protocol — Module 2</span>
+          <img src="assets/badges/badge-kyoto-protocol.webp" alt="The Kyoto Protocol — Module 2" loading="lazy" decoding="async">
+          <span class="badge-title" data-i18n="badge.kyoto.name">The Kyoto Protocol — Module 2</span>
         </a>
 
         <a href="https://unccelearn.org/badges/badge.php?hash=44fd55e8f5d429922f660819319da217773cbd8e" target="_blank" rel="noopener noreferrer" class="badge-item">
-          <img src="assets/badges/badge-climate-convention.png" alt="The Climate Change Convention — Module 1">
-          <span class="badge-title">The Climate Change Convention — Module 1</span>
+          <img src="assets/badges/badge-climate-convention.webp" alt="The Climate Change Convention — Module 1" loading="lazy" decoding="async">
+          <span class="badge-title" data-i18n="badge.climate.name">The Climate Change Convention — Module 1</span>
         </a>
 
         <a href="https://www.credly.com/badges/f6c409d1-c328-4a95-a260-dfca6de58f4c" target="_blank" rel="noopener noreferrer" class="badge-item">
-          <img src="assets/badges/credly-opswat-cip.png" alt="OPSWAT Introduction to CIP — Credly">
-          <span class="badge-title">OPSWAT — Introduction to CIP</span>
+          <img src="assets/badges/credly-opswat-cip.webp" alt="OPSWAT Introduction to CIP — Credly" loading="lazy" decoding="async">
+          <span class="badge-title" data-i18n="badge.credly.name">OPSWAT — Introduction to CIP</span>
+        </a>
+
+        <a href="https://www.skills.google/public_profiles/b0056184-d211-41a5-bd4e-5065d6f7e5a3/badges/25368715" target="_blank" rel="noopener noreferrer" class="badge-item">
+          <img src="assets/badges/skills-unlock-foundational.webp" alt="Gen AI: Unlock Foundational Concepts" loading="lazy" decoding="async">
+          <span class="badge-title" data-i18n="badge.unlock.name">Gen AI: Unlock Foundational Concepts</span>
+        </a>
+
+        <a href="https://www.skills.google/public_profiles/b0056184-d211-41a5-bd4e-5065d6f7e5a3/badges/24927865" target="_blank" rel="noopener noreferrer" class="badge-item">
+          <img src="assets/badges/skills-beyond-chatbot.webp" alt="Gen AI: Beyond the Chatbot" loading="lazy" decoding="async">
+          <span class="badge-title" data-i18n="badge.beyond.name">Gen AI: Beyond the Chatbot</span>
+        </a>
+
+        <a href="https://www.skills.google/public_profiles/b0056184-d211-41a5-bd4e-5065d6f7e5a3/badges/23962921" target="_blank" rel="noopener noreferrer" class="badge-item">
+          <img src="assets/badges/skills-intro-generative-ai.webp" alt="Introduction to Generative AI" loading="lazy" decoding="async">
+          <span class="badge-title" data-i18n="badge.intro.name">Introduction to Generative AI</span>
         </a>
 
       </div>
+      </div>
 
       </div>
-    </div>
   </section>
 
   <!-- ═══ PERSONAL INFO ═══ -->
@@ -625,7 +662,7 @@
   <!-- ═══ LANGUAGES ═══ -->
   <section class="section" id="languages">
     <div class="wrapper">
-      <p class="section-label animate-in" data-i18n="lang.label">Languages</p>
+      <p class="section-label animate-in" data-i18n="lang.label">// Languages</p>
       <div class="lang-grid stagger-children">
         <div class="lang-card">
           <div class="lang-name">
@@ -656,6 +693,9 @@
   <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
     <div class="wrapper">
+      <div class="footer-top">
+        <a href="#home" class="footer-back">↑ Back to Top</a>
+      </div>
       <p class="footer-name">Shaimul Akkas Shahin</p>
       <p class="footer-line" data-i18n="footer.line">IT Trainer · GAMPI · Chittagong, Bangladesh</p>
       <div class="footer-socials">
@@ -664,6 +704,7 @@
         <a href="https://shaimulakkas.github.io/shaimulakkas/" target="_blank" rel="noopener noreferrer" data-i18n="footer.website">Website</a>
         <a href="mailto:shaimulakkas@gmail.com" data-i18n="footer.email">Email</a>
       </div>
+      <p class="footer-copy">© 2026 Shaimul Akkas Shahin. All rights reserved.</p>
     </div>
   </footer>
 
@@ -722,6 +763,74 @@
       overlay.addEventListener('click', closeCertModal);
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('open')) closeCertModal();
+      });
+    })();
+  </script>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+  <script>
+    (function() {
+      const btn = document.getElementById('scroll-top');
+      window.addEventListener('scroll', () => {
+        btn.classList.toggle('visible', window.scrollY > 400);
+      });
+      btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+
+  <!-- Animated Counters -->
+  <script>
+    (function() {
+      const counters = document.querySelectorAll('[data-count]');
+      let animated = false;
+      function animateCounters() {
+        if (animated) return;
+        const first = counters[0];
+        if (!first) return;
+        const rect = first.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.85) {
+          animated = true;
+          counters.forEach(el => {
+            const target = parseInt(el.getAttribute('data-count'));
+            const suffix = el.textContent.replace(/[0-9]/g, '');
+            let current = 0;
+            const step = Math.max(1, Math.floor(target / 40));
+            const timer = setInterval(() => {
+              current += step;
+              if (current >= target) {
+                current = target;
+                clearInterval(timer);
+              }
+              el.textContent = current + suffix;
+            }, 30);
+          });
+        }
+      }
+      window.addEventListener('scroll', animateCounters);
+      animateCounters();
+    })();
+  </script>
+
+  <!-- Certificate Filters -->
+  <script>
+    (function() {
+      const filters = document.querySelectorAll('.cert-filter');
+      const tiers = document.querySelectorAll('.cert-tier');
+
+      filters.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filters.forEach(f => f.classList.remove('active'));
+          btn.classList.add('active');
+          const tier = btn.getAttribute('data-filter');
+
+          tiers.forEach(t => {
+            const tTier = t.getAttribute('data-tier');
+            t.style.display = (tier === 'all' || tTier === tier) ? '' : 'none';
+          });
+        });
       });
     })();
   </script>
