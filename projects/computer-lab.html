@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Complete Computer Lab Setup & Deployment — 30+ PCs, LAN cabling, diagnostics, 25% downtime reduction.">
+  <meta name="description" content="Complete Computer Lab Setup & Deployment — 50+ PCs across 3 labs, LAN cabling, diagnostics, 25% downtime reduction.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/animations.css">
   <link rel="stylesheet" href="../css/responsive.css">
-  <title>Computer Lab Setup & Deployment — Shaimul Akkas Shahin</title>
+  <title>Complete Computer Lab Setup & Deployment — Shaimul Akkas Shahin</title>
 </head>
 <body>
 
@@ -69,25 +69,46 @@
 
       <a href="index.html" class="back-link animate-in">← Back to Projects</a>
 
-      <div class="project-hero project-hero-lab animate-in delay-1">
-        <span class="project-hero-icon">🖥️</span>
+      <!-- Hero Slideshow -->
+      <div class="hero-slideshow animate-in delay-1" id="heroSlideshow">
+        <img src="../assets/lab-photos/Software Lab of GAMPI.jpg" alt="Software Lab — workstations being assembled" class="active">
+        <img src="../assets/lab-photos/Software Lab of GAMPI 1.jpg" alt="Software Lab — monitor unboxing and setup">
+        <img src="../assets/lab-photos/Software Lab of GAMPI2.jpg" alt="Software Lab — workstation arrangement and cabling">
+        <img src="../assets/lab-photos/Software Lab of GAMPI3.jpg" alt="Software Lab — active workstations with Windows desktops">
+        <img src="../assets/lab-photos/Software Lab of GAMPI4.jpg" alt="Software Lab — peripheral wiring and network setup">
+        <img src="../assets/lab-photos/Software Lab of GAMPI5.jpeg" alt="Software Lab — side view of workstation row">
+        <img src="../assets/lab-photos/Software Lab of GAMPI6.jpeg" alt="Software Lab — wide angle of computer lab setup">
+        <img src="../assets/lab-photos/Software Lab of GAMPI7.jpeg" alt="Software Lab — completed rows with whiteboards">
+        <img src="../assets/lab-photos/Software Lab of GAMPI8.jpeg" alt="Software Lab — final deployment inspection">
+        <img src="../assets/lab-photos/Office Application Lab 1.jpg" alt="Office Application Lab — setup and positioning">
+        <img src="../assets/lab-photos/Office Application Lab 2.jpg" alt="Office Application Lab — workstation cable management">
+        <img src="../assets/lab-photos/Office Application Lab 3.jpg" alt="Office Application Lab — monitor and keyboard layout">
+        <img src="../assets/lab-photos/Office Application Lab 4.jpg" alt="Office Application Lab — power strip and UPS routing">
+        <img src="../assets/lab-photos/Office Application Lab 5.jpeg" alt="Office Application Lab — fully configured training station">
+        <img src="../assets/lab-photos/IMG-20250520-WA0011.jpg" alt="IT & Hardware Lab — hardware assembly and testing">
+        <div class="slideshow-caption" id="slideshowCaption">Software Lab — workstations being assembled</div>
+        <div class="slideshow-controls" id="slideshowControls"></div>
       </div>
 
       <div class="animate-in delay-2" style="margin-bottom: 2rem;">
         <h1 style="margin-bottom: 0.5rem;">Complete Computer Lab Setup & Deployment</h1>
         <p class="project-org" style="font-size: 0.88rem; margin-bottom: 0.8rem;">Gausul Azam Maizbhandari Polytechnic Institute</p>
         <div class="project-meta">
-          <span class="meta-badge">📅 Jan 2024</span>
-          <span class="meta-badge">👤 Lab Infrastructure Lead</span>
-          <span class="meta-badge">🏫 Single Lab</span>
+          <span class="meta-badge">📅 Jan 2024 – Present</span>
+          <span class="meta-badge">👤 Lab Assistant → IT Trainer</span>
+          <span class="meta-badge">🏫 3 Labs</span>
           <span class="meta-badge meta-badge-done">✅ Completed</span>
         </div>
       </div>
 
       <div class="project-stats stagger-children">
         <div class="stat-card">
-          <span class="stat-num" data-count="30">0</span><span class="stat-num">+</span>
+          <span class="stat-num" data-count="50">0</span><span class="stat-num">+</span>
           <span class="stat-label">PCs Deployed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Labs Set Up</span>
         </div>
         <div class="stat-card">
           <span class="stat-num">25%</span>
@@ -97,94 +118,237 @@
           <span class="stat-num">0</span>
           <span class="stat-label">Session Delays</span>
         </div>
-        <div class="stat-card">
-          <span class="stat-num" data-count="40">0</span><span class="stat-num">+</span>
-          <span class="stat-label">Hours Saved Monthly</span>
-        </div>
       </div>
 
+      <!-- ═══ TAB NAVIGATION ═══ -->
       <div class="project-section animate-in">
         <h3>The Challenge</h3>
-        <p>The polytechnic's computer lab needed a complete overhaul. Outdated workstations, unreliable network connectivity, and frequent hardware failures were causing regular session delays for students. There was no standardized imaging, no preventive maintenance schedule, and the LAN infrastructure was unstable — affecting daily practical classes.</p>
+        <p>The polytechnic's computer labs needed a complete overhaul. Outdated workstations, unreliable network connectivity, and frequent hardware failures were causing regular session delays for students. There was no standardized imaging, no preventive maintenance schedule, and the LAN infrastructure was unstable — affecting daily practical classes across all three labs.</p>
       </div>
 
       <div class="project-section animate-in">
-        <h3>My Approach</h3>
-        <p>I managed the end-to-end deployment from hardware assembly to network setup, ensuring every workstation was ready for daily use with zero downtime during practical sessions.</p>
-        <div class="approach-steps">
-          <div class="approach-step">
-            <span class="step-num">01</span>
-            <div>
-              <p class="step-title">Hardware Assembly & Imaging</p>
-              <p class="step-desc">Assembled 30+ PC workstations from components, installed OS images, configured drivers, and deployed to lab stations.</p>
-            </div>
-          </div>
-          <div class="approach-step">
-            <span class="step-num">02</span>
-            <div>
-              <p class="step-title">LAN Infrastructure</p>
-              <p class="step-desc">Executed RJ-45 Cat6 cabling, patch panel crimping, switch configuration, and static/dynamic IP allocations across all workstations.</p>
-            </div>
-          </div>
-          <div class="approach-step">
-            <span class="step-num">03</span>
-            <div>
-              <p class="step-title">Diagnostics & Testing</p>
-              <p class="step-desc">Performed stress testing, bench diagnostics, and validated each workstation before going live to ensure reliability.</p>
-            </div>
-          </div>
-          <div class="approach-step">
-            <span class="step-num">04</span>
-            <div>
-              <p class="step-title">Preventive Maintenance</p>
-              <p class="step-desc">Established routine maintenance schedules, dust cleaning, driver updates, and performance monitoring for long-term lab health.</p>
-            </div>
-          </div>
+        <h3>Lab Setup Details</h3>
+        <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem;">Click each tab to explore the setup process for that specific lab.</p>
+
+        <div class="lab-tabs" role="tablist">
+          <button class="lab-tab active" role="tab" data-tab="software" aria-selected="true">
+            💻 Software Lab
+          </button>
+          <button class="lab-tab" role="tab" data-tab="office" aria-selected="false">
+            📊 Office Application Lab
+          </button>
+          <button class="lab-tab" role="tab" data-tab="hardware" aria-selected="false">
+            🔧 IT & Hardware Lab
+          </button>
         </div>
-      </div>
 
-      <div class="project-section animate-in">
-        <h3>Lab Architecture</h3>
-        <div class="architecture-placeholder">
-          <div class="arch-inner">
-            <span class="arch-icon">🗺️</span>
-            <p class="arch-title">Lab Network Topology</p>
-            <p class="arch-desc">30+ Workstations · 2 Core Switches · Patch Panel · Cat6 Cabling · DHCP Server</p>
-            <div class="arch-diagram">
-              <div class="arch-node arch-core">🗄️ Core Switch<br><small>24-Port Managed</small></div>
-              <div class="arch-branches">
-                <div class="arch-node">🖥️ Workstations 1-15<br><small>Row A</small></div>
-                <div class="arch-node">🖥️ Workstations 16-30<br><small>Row B</small></div>
-                <div class="arch-node">🖨️ Printers & Peripherals<br><small>Shared</small></div>
+        <!-- TAB: Software Lab -->
+        <div class="lab-tab-panel active" id="panel-software" role="tabpanel">
+          <div class="lab-panel-header">
+            <span class="lab-panel-icon">💻</span>
+            <div class="lab-panel-info">
+              <h4>Software Lab</h4>
+              <div class="lab-panel-meta">
+                <span>📅 Jan – Sep 2024</span>
+                <span>👤 Computer Lab Assistant</span>
+                <span>🖥️ 20 Workstations</span>
               </div>
             </div>
-            <p class="arch-note">[ Replace with actual lab layout diagram ]</p>
+          </div>
+
+          <p style="margin-bottom: 1.5rem;">Configured 20 workstations for software development and programming classes. Each station was imaged with development tools, compilers, and IDEs to support curriculum from Python basics to web development.</p>
+
+          <div class="approach-steps">
+            <div class="approach-step">
+              <span class="step-num">01</span>
+              <div>
+                <p class="step-title">OS Imaging & Setup</p>
+                <p class="step-desc">Installed Windows 10/11 and Ubuntu Linux dual-boot on all 20 workstations using disk imaging tools. Standardized driver packages for consistent hardware compatibility.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">02</span>
+              <div>
+                <p class="step-title">Development Environment</p>
+                <p class="step-desc">Pre-installed VS Code, Python 3.x, Java JDK, Node.js, and web browsers. Configured environment variables and PATH settings for each user profile.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">03</span>
+              <div>
+                <p class="step-title">LAN & Network Config</p>
+                <p class="step-desc">RJ-45 Cat6 cabling, patch panel wiring, and DHCP configuration. Each workstation assigned to subnet 192.168.10.0/24 with internet access for research.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">04</span>
+              <div>
+                <p class="step-title">Student Access & Maintenance</p>
+                <p class="step-desc">Created user accounts, set up shared folders for class submissions, and established weekly maintenance schedule — dust cleaning, driver updates, disk cleanup.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-group" style="margin-top: 1.5rem;">
+            <p class="tech-group-label">Software Installed</p>
+            <div class="tags">
+              <span class="tag">VS Code</span>
+              <span class="tag">Python 3.x</span>
+              <span class="tag">Java JDK</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Ubuntu Linux</span>
+              <span class="tag">Windows 10/11</span>
+              <span class="tag">Firefox / Chrome</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: Office Application Lab -->
+        <div class="lab-tab-panel" id="panel-office" role="tabpanel">
+          <div class="lab-panel-header">
+            <span class="lab-panel-icon">📊</span>
+            <div class="lab-panel-info">
+              <h4>Office Application Lab</h4>
+              <div class="lab-panel-meta">
+                <span>📅 Jan – Sep 2024</span>
+                <span>👤 Computer Lab Assistant</span>
+                <span>🖥️ 20 Workstations</span>
+              </div>
+            </div>
+          </div>
+
+          <p style="margin-bottom: 1.5rem;">Deployed 20 workstations dedicated to office productivity training. Each station configured with the full Microsoft Office suite and internet access for online coursework.</p>
+
+          <div class="approach-steps">
+            <div class="approach-step">
+              <span class="step-num">01</span>
+              <div>
+                <p class="step-title">OS & Office Suite Deployment</p>
+                <p class="step-desc">Installed Windows 10/11 with Microsoft Office 2019/365 on all 20 workstations. Activated licenses, configured user profiles, and verified all applications function correctly.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">02</span>
+              <div>
+                <p class="step-title">Printer & Peripheral Setup</p>
+                <p class="step-desc">Connected shared printers via network, configured print queues, and set up scanner access. Installed printer drivers on each workstation for seamless printing during classes.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">03</span>
+              <div>
+                <p class="step-title">Network & Internet Access</p>
+                <p class="step-desc">Cat6 LAN cabling and switch configuration for all 20 stations. DHCP range 192.168.20.0/24 for office lab subnet. DNS configured for reliable internet access.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">04</span>
+              <div>
+                <p class="step-title">Class Readiness & Maintenance</p>
+                <p class="step-desc">Pre-configured template documents for instructor use, set up auto-save recovery, and established maintenance routine — weekly updates, disk defragmentation, and dust cleaning.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-group" style="margin-top: 1.5rem;">
+            <p class="tech-group-label">Software Installed</p>
+            <div class="tags">
+              <span class="tag">Microsoft Office 2019/365</span>
+              <span class="tag">Word</span>
+              <span class="tag">Excel</span>
+              <span class="tag">PowerPoint</span>
+              <span class="tag">Access</span>
+              <span class="tag">Windows 10/11</span>
+              <span class="tag">Shared Printers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: IT & Hardware Lab -->
+        <div class="lab-tab-panel" id="panel-hardware" role="tabpanel">
+          <div class="lab-panel-header">
+            <span class="lab-panel-icon">🔧</span>
+            <div class="lab-panel-info">
+              <h4>IT & Hardware Lab</h4>
+              <div class="lab-panel-meta">
+                <span>📅 Oct 2024 – Present</span>
+                <span>👤 IT Trainer</span>
+                <span>🖥️ 10 Workstations</span>
+              </div>
+            </div>
+          </div>
+
+          <p style="margin-bottom: 1.5rem;">Built and deployed 10 workstations from scratch — assembled components, installed OS, configured networking, and set up hardware diagnostics tools. This lab serves as the hands-on training ground for IT infrastructure courses.</p>
+
+          <div class="approach-steps">
+            <div class="approach-step">
+              <span class="step-num">01</span>
+              <div>
+                <p class="step-title">Full Hardware Assembly</p>
+                <p class="step-desc">Assembled 10 PCs from components — motherboards, CPUs, RAM, storage, PSUs. Bench-tested each unit before installation. Mixed brands: HP, Dell, custom builds with Starex and Esonic monitors.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">02</span>
+              <div>
+                <p class="step-title">OS Imaging & Diagnostics Tools</p>
+                <p class="step-desc">Installed Windows 10/11 with hardware diagnostics utilities, VMware Workstation for virtualization training, and disk imaging tools for rapid deployment and recovery.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">03</span>
+              <div>
+                <p class="step-title">Cable Management & LAN</p>
+                <p class="step-desc">Under-desk cable routing, RJ-45 Cat6 crimping, and patch panel wiring. Organized power strips and UPS units for each workstation row. Subnet 192.168.30.0/24.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">04</span>
+              <div>
+                <p class="step-title">Training-Ready Configuration</p>
+                <p class="step-desc">Pre-loaded course materials, set up screen sharing for demonstrations, configured BIOS/UEFI settings for hardware training access, and established preventive maintenance schedule.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-group" style="margin-top: 1.5rem;">
+            <p class="tech-group-label">Software & Tools</p>
+            <div class="tags">
+              <span class="tag">Windows 10/11</span>
+              <span class="tag">VMware Workstation</span>
+              <span class="tag">Hardware Diagnostics</span>
+              <span class="tag">Disk Imaging Tools</span>
+              <span class="tag">BIOS/UEFI Access</span>
+              <span class="tag">HP / Dell / Custom Builds</span>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- ═══ SHARED: My Approach (overall) ═══ -->
       <div class="project-section animate-in">
-        <h3>Key Highlights</h3>
-        <div class="highlights-grid">
+        <h3>My Approach — Across All Labs</h3>
+        <p>Managed the end-to-end deployment across all three labs — from hardware assembly to network setup to software configuration — ensuring every workstation was ready for daily use with zero downtime during practical sessions.</p>
+        <div class="highlights-grid" style="margin-top: 1.5rem;">
           <div class="highlight-card">
             <span class="highlight-icon">🔧</span>
             <div>
               <p class="highlight-title">Full Hardware Assembly</p>
-              <p class="highlight-desc">Built 30+ PCs from components — motherboards, RAM, storage, PSUs — tested before deployment.</p>
+              <p class="highlight-desc">Built 50+ PCs from components — motherboards, RAM, storage, PSUs — bench-tested before deployment across all 3 labs.</p>
             </div>
           </div>
           <div class="highlight-card">
             <span class="highlight-icon">🔌</span>
             <div>
               <p class="highlight-title">Cat6 LAN Cabling</p>
-              <p class="highlight-desc">Complete RJ-45 crimping, patch panel wiring, and switch configuration for all workstations.</p>
+              <p class="highlight-desc">Complete RJ-45 crimping, patch panel wiring, switch configuration, and IP allocation across 3 separate subnets.</p>
             </div>
           </div>
           <div class="highlight-card">
             <span class="highlight-icon">⚡</span>
             <div>
               <p class="highlight-title">25% Downtime Reduction</p>
-              <p class="highlight-desc">Standardized imaging and preventive maintenance eliminated recurring hardware failures.</p>
+              <p class="highlight-desc">Standardized imaging and preventive maintenance eliminated recurring hardware failures across all labs.</p>
             </div>
           </div>
           <div class="highlight-card">
@@ -197,110 +361,144 @@
         </div>
       </div>
 
+      <!-- ═══ Lab Architecture ═══ -->
       <div class="project-section animate-in">
-        <h3>Results</h3>
-        <p>The lab now runs <strong>30+ workstations</strong> with <strong>zero session delays</strong> for daily practical classes. Downtime reduced by <strong>25%</strong> through standardized imaging and preventive maintenance. The network infrastructure supports stable LAN connectivity with proper IP management, and the maintenance schedule ensures long-term reliability.</p>
-      </div>
-
-      <div class="project-section animate-in">
-        <h3>Technology Stack</h3>
-        <div class="tech-group">
-          <p class="tech-group-label">Hardware</p>
-          <div class="tags">
-            <span class="tag">Desktop Components</span>
-            <span class="tag">RJ-45 Cat6 Cable</span>
-            <span class="tag">Patch Panels</span>
-            <span class="tag">Managed Switches</span>
-            <span class="tag">Printers</span>
-          </div>
-        </div>
-        <div class="tech-group">
-          <p class="tech-group-label">Software</p>
-          <div class="tags">
-            <span class="tag">Windows 10/11</span>
-            <span class="tag">Linux (Ubuntu)</span>
-            <span class="tag">Disk Imaging Tools</span>
-          </div>
-        </div>
-        <div class="tech-group">
-          <p class="tech-group-label">Protocols</p>
-          <div class="tags">
-            <span class="tag">DHCP</span>
-            <span class="tag">Static IP</span>
-            <span class="tag">TCP/IP</span>
+        <h3>Lab Architecture</h3>
+        <div class="architecture-placeholder">
+          <div class="arch-inner">
+            <span class="arch-icon">🗺️</span>
+            <p class="arch-title">3-Lab Network Topology</p>
+            <p class="arch-desc">50+ Workstations · 3 Subnets · 4 Core Switches · Patch Panels · Cat6 Cabling · DHCP</p>
+            <div class="arch-diagram">
+              <div class="arch-node arch-core">🗄️ Core Switches<br><small>4× 24-Port Managed</small></div>
+              <div class="arch-branches">
+                <div class="arch-node">💻 Software Lab<br><small>20 PCs · 192.168.10.0/24</small></div>
+                <div class="arch-node">📊 Office Lab<br><small>20 PCs · 192.168.20.0/24</small></div>
+                <div class="arch-node">🔧 Hardware Lab<br><small>10 PCs · 192.168.30.0/24</small></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- ═══ Configuration Snippet ═══ -->
       <div class="project-section animate-in">
         <h3>Configuration Snippet</h3>
-        <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem;">DHCP configuration for lab workstation IP allocation:</p>
+        <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem;">DHCP configuration for all 3 lab subnets:</p>
         <div class="config-block">
           <div class="config-header">
             <span class="config-dot config-dot-red"></span>
             <span class="config-dot config-dot-yellow"></span>
             <span class="config-dot config-dot-green"></span>
-            <span class="config-title">dhcp-config.sh</span>
+            <span class="config-title">dhcp-labs.conf</span>
           </div>
-          <pre class="config-code"><code># Lab DHCP Range Configuration
+          <pre class="config-code"><code># === Software Lab ===
 # Subnet: 192.168.10.0/24
-# Gateway: 192.168.10.1
-
-# Static reservations for printers
-dhcp-host=AA:BB:CC:DD:EE:01,192.168.10.201,printer-main
-dhcp-host=AA:BB:CC:DD:EE:02,192.168.10.202,printer-secondary
-
-# Dynamic range for workstations
 dhcp-range=192.168.10.50,192.168.10.199,255.255.255.0,12h
+dhcp-option=6,8.8.8.8,8.8.4.4
 
-# DNS
-dhcp-option=6,8.8.8.8,8.8.4.4</code></pre>
+# === Office Application Lab ===
+# Subnet: 192.168.20.0/24
+dhcp-range=192.168.20.50,192.168.20.199,255.255.255.0,12h
+dhcp-host=AA:BB:CC:DD:EE:10,192.168.20.201,printer-office
+
+# === IT & Hardware Lab ===
+# Subnet: 192.168.30.0/24
+dhcp-range=192.168.30.50,192.168.30.199,255.255.255.0,12h
+dhcp-host=AA:BB:CC:DD:EE:20,192.168.30.201,printer-hw</code></pre>
         </div>
       </div>
 
+      <!-- ═══ Results ═══ -->
       <div class="project-section animate-in">
-        <h3>Before & After</h3>
-        <div class="before-after-grid">
-          <div class="before-after-card">
-            <div class="before-after-img placeholder-img placeholder-before">
-              <span>📸</span>
-              <p>Before: Mixed old PCs,<br>tangled cables, no labeling</p>
-            </div>
-            <p class="before-after-label">Before</p>
-          </div>
-          <div class="before-after-card">
-            <div class="before-after-img placeholder-img placeholder-after">
-              <span>📸</span>
-              <p>After: Uniform workstations,<br>organized cabling, clean setup</p>
-            </div>
-            <p class="before-after-label">After</p>
-          </div>
-        </div>
+        <h3>Results</h3>
+        <p>All three labs now run a combined <strong>50+ workstations</strong> with <strong>zero session delays</strong> for daily practical classes. Downtime reduced by <strong>25%</strong> through standardized imaging and preventive maintenance. Each lab has its own subnet for organized network management, and the maintenance schedule ensures long-term reliability across all labs.</p>
       </div>
 
+      <!-- ═══ Lab Photo Gallery ═══ -->
       <div class="project-section animate-in">
-        <h3>What They Said</h3>
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <span class="testimonial-mark">"</span>
-            <p>Since Shaimul set up our lab, we haven't had a single session delay. The workstations run perfectly and the network is rock solid. Our students can focus on learning instead of waiting for fixes.</p>
+        <h3>Lab Photo Gallery</h3>
+        <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 1.5rem;">Photos from the actual labs — click any image to enlarge.</p>
+        <div class="lab-gallery">
+          <div class="lab-gallery-item" data-caption="Software Lab — workstations being assembled">
+            <img src="../assets/lab-photos/Software Lab of GAMPI.jpg" alt="Software Lab — workstations being assembled" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Assembly in progress</span>
           </div>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar placeholder-avatar">
-              <span>👤</span>
-            </div>
-            <div>
-              <p class="testimonial-name">[Supervisor Name]</p>
-              <p class="testimonial-role">[Position], Gausul Azam Maizbhandari Polytechnic Institute</p>
-            </div>
+          <div class="lab-gallery-item" data-caption="Software Lab — monitor unboxing and setup">
+            <img src="../assets/lab-photos/Software Lab of GAMPI 1.jpg" alt="Software Lab — monitor unboxing" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Monitor unboxing</span>
           </div>
-          <div class="testimonial-logo placeholder-logo">
-            <span>🏫</span>
-            <p>GAMPI Logo</p>
+          <div class="lab-gallery-item" data-caption="Software Lab — workstation arrangement and cabling">
+            <img src="../assets/lab-photos/Software Lab of GAMPI2.jpg" alt="Software Lab — workstation arrangement" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Workstation layout</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Software Lab — active workstations with Windows desktops">
+            <img src="../assets/lab-photos/Software Lab of GAMPI3.jpg" alt="Software Lab — active workstations" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Windows desktops live</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Software Lab — peripheral wiring and network setup">
+            <img src="../assets/lab-photos/Software Lab of GAMPI4.jpg" alt="Software Lab — peripheral wiring" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Peripheral & network setup</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Software Lab — side view of workstation row">
+            <img src="../assets/lab-photos/Software Lab of GAMPI5.jpeg" alt="Software Lab — side view" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Side view — Row A</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Software Lab — wide angle of computer lab setup">
+            <img src="../assets/lab-photos/Software Lab of GAMPI6.jpeg" alt="Software Lab — wide angle" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Wide angle view</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Software Lab — completed rows with whiteboards">
+            <img src="../assets/lab-photos/Software Lab of GAMPI7.jpeg" alt="Software Lab — completed rows" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Completed rows</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Software Lab — final deployment inspection">
+            <img src="../assets/lab-photos/Software Lab of GAMPI8.jpeg" alt="Software Lab — final deployment" loading="lazy">
+            <span class="gallery-badge">Software Lab</span>
+            <span class="lab-gallery-caption">Final inspection</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Office Application Lab — setup and positioning">
+            <img src="../assets/lab-photos/Office Application Lab 1.jpg" alt="Office Application Lab — setup" loading="lazy">
+            <span class="gallery-badge">Office Lab</span>
+            <span class="lab-gallery-caption">Positioning & setup</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Office Application Lab — workstation cable management">
+            <img src="../assets/lab-photos/Office Application Lab 2.jpg" alt="Office Application Lab — cabling" loading="lazy">
+            <span class="gallery-badge">Office Lab</span>
+            <span class="lab-gallery-caption">Cable management</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Office Application Lab — monitor and keyboard layout">
+            <img src="../assets/lab-photos/Office Application Lab 3.jpg" alt="Office Application Lab — monitor layout" loading="lazy">
+            <span class="gallery-badge">Office Lab</span>
+            <span class="lab-gallery-caption">Monitor & keyboard layout</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Office Application Lab — power strip and UPS routing">
+            <img src="../assets/lab-photos/Office Application Lab 4.jpg" alt="Office Application Lab — power routing" loading="lazy">
+            <span class="gallery-badge">Office Lab</span>
+            <span class="lab-gallery-caption">Power & UPS routing</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="Office Application Lab — fully configured training station">
+            <img src="../assets/lab-photos/Office Application Lab 5.jpeg" alt="Office Application Lab — full station" loading="lazy">
+            <span class="gallery-badge">Office Lab</span>
+            <span class="lab-gallery-caption">Training station ready</span>
+          </div>
+          <div class="lab-gallery-item" data-caption="IT & Hardware Lab — hardware assembly and testing">
+            <img src="../assets/lab-photos/IMG-20250520-WA0011.jpg" alt="IT & Hardware Lab — assembly and testing" loading="lazy">
+            <span class="gallery-badge">Hardware Lab</span>
+            <span class="lab-gallery-caption">Assembly & testing</span>
           </div>
         </div>
       </div>
 
+      <!-- ═══ Project Nav ═══ -->
       <div class="project-nav">
         <a href="campus-network.html" class="project-nav-link project-nav-prev">
           <span class="project-nav-dir">← Previous</span>
@@ -314,6 +512,15 @@ dhcp-option=6,8.8.8.8,8.8.4.4</code></pre>
 
     </div>
   </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img src="" alt="" id="lightboxImg">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
 
   <footer class="footer">
     <div class="wrapper">
@@ -330,5 +537,127 @@ dhcp-option=6,8.8.8.8,8.8.4.4</code></pre>
 
   <script src="../js/translations.js"></script>
   <script src="../js/main.js"></script>
+
+  <!-- Lab Tabs + Slideshow Scripts -->
+  <script>
+    // ── Lab Tabs ──
+    (function() {
+      const tabs = document.querySelectorAll('.lab-tab');
+      const panels = document.querySelectorAll('.lab-tab-panel');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = tab.getAttribute('data-tab');
+
+          tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+          panels.forEach(p => p.classList.remove('active'));
+
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+          document.getElementById('panel-' + target).classList.add('active');
+        });
+      });
+    })();
+
+    // ── Hero Slideshow ──
+    (function() {
+      const slideshow = document.getElementById('heroSlideshow');
+      const images = slideshow.querySelectorAll('img');
+      const caption = document.getElementById('slideshowCaption');
+      const controls = document.getElementById('slideshowControls');
+      let current = 0;
+      let timer;
+
+      // Build dots
+      images.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'slideshow-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to image ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        controls.appendChild(dot);
+      });
+
+      function goTo(index) {
+        images[current].classList.remove('active');
+        controls.children[current].classList.remove('active');
+        current = index;
+        images[current].classList.add('active');
+        controls.children[current].classList.add('active');
+        caption.textContent = images[current].getAttribute('alt');
+        resetTimer();
+      }
+
+      function next() {
+        goTo((current + 1) % images.length);
+      }
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(next, 4000);
+      }
+
+      resetTimer();
+    })();
+
+    // ── Lightbox ──
+    (function() {
+      const items = Array.from(document.querySelectorAll('.lab-gallery-item'));
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightboxImg');
+      const caption = document.getElementById('lightboxCaption');
+      const close = document.getElementById('lightboxClose');
+      const prev = document.getElementById('lightboxPrev');
+      const next = document.getElementById('lightboxNext');
+      let current = 0;
+
+      if (!items.length || !lightbox) return;
+
+      function open(idx) {
+        current = idx;
+        render();
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeBox() {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      function render() {
+        img.src = items[current].querySelector('img').src;
+        img.alt = items[current].dataset.caption || '';
+        caption.textContent = items[current].dataset.caption || '';
+      }
+
+      function move(dir) {
+        current = (current + dir + items.length) % items.length;
+        render();
+      }
+
+      items.forEach((item, i) => {
+        item.addEventListener('click', () => open(i));
+        item.setAttribute('tabindex', '0');
+        item.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); }
+        });
+      });
+
+      close.addEventListener('click', closeBox);
+      prev.addEventListener('click', () => move(-1));
+      next.addEventListener('click', () => move(1));
+      document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('open')) return;
+        if (e.key === 'Escape') closeBox();
+        if (e.key === 'ArrowLeft') move(-1);
+        if (e.key === 'ArrowRight') move(1);
+      });
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeBox();
+      });
+    })();
+  </script>
 </body>
 </html>

@@ -101,22 +101,48 @@
     "slug": "computer-lab",
     "title": "Complete Computer Lab Setup & Deployment",
     "org": "Gausul Azam Maizbhandari Polytechnic Institute",
-    "role": "Lab Infrastructure Lead",
-    "date": "Jan 2024",
-    "scope": "Single Lab",
+    "role": "Lab Assistant → IT Trainer",
+    "date": "Jan 2024 – Present",
+    "scope": "3 Labs",
     "status": "Completed",
     "heroClass": "project-hero-lab",
     "heroIcon": "\ud83d\udda5\ufe0f",
     "stats": [
-      { "value": "30+", "label": "PCs Deployed", "count": 30 },
+      { "value": "50+", "label": "PCs Deployed", "count": 50 },
+      { "value": "3", "label": "Labs Set Up" },
       { "value": "25%", "label": "Downtime Cut" },
-      { "value": "0", "label": "Session Delays" },
-      { "value": "40+", "label": "Hours Saved Monthly", "count": 40 }
+      { "value": "0", "label": "Session Delays" }
+    ],
+    "labs": [
+      {
+        "name": "Software Lab",
+        "icon": "\ud83d\udcbb",
+        "pcs": 20,
+        "role": "Computer Lab Assistant",
+        "date": "Jan – Sep 2024",
+        "software": ["VS Code", "Python 3.x", "Java JDK", "Node.js", "Ubuntu Linux", "Windows 10/11"]
+      },
+      {
+        "name": "Office Application Lab",
+        "icon": "\ud83d\udcca",
+        "pcs": 20,
+        "role": "Computer Lab Assistant",
+        "date": "Jan – Sep 2024",
+        "software": ["Microsoft Office 2019/365", "Word", "Excel", "PowerPoint", "Access", "Windows 10/11"]
+      },
+      {
+        "name": "IT & Hardware Lab",
+        "icon": "\ud83d\udd27",
+        "pcs": 10,
+        "role": "IT Trainer",
+        "date": "Oct 2024 – Present",
+        "software": ["Windows 10/11", "VMware Workstation", "Hardware Diagnostics", "Disk Imaging Tools"]
+      }
     ],
     "sections": [
       {
         "title": "The Challenge",
-        "content": "<p>The polytechnic's computer lab needed a complete overhaul. Outdated workstations, unreliable network connectivity, and frequent hardware failures were causing regular session delays for students. There was no standardized imaging, no preventive maintenance schedule, and the LAN infrastructure was unstable \u2014 affecting daily practical classes.</p>"
+        "content": "<p>The polytechnic's computer labs needed a complete overhaul. Outdated workstations, unreliable network connectivity, and frequent hardware failures were causing regular session delays for students. There was no standardized imaging, no preventive maintenance schedule, and the LAN infrastructure was unstable \u2014 affecting daily practical classes across all three labs.</p>"
       },
       {
         "title": "My Approach",
@@ -155,7 +181,7 @@
       },
       {
         "title": "Results",
-        "content": "<p>The lab now runs <strong>30+ workstations</strong> with <strong>zero session delays</strong> for daily practical classes. Downtime reduced by <strong>25%</strong> through standardized imaging and preventive maintenance. The network infrastructure supports stable LAN connectivity with proper IP management, and the maintenance schedule ensures long-term reliability.</p>"
+        "content": "<p>All three labs now run a combined <strong>50+ workstations</strong> with <strong>zero session delays</strong> for daily practical classes. Downtime reduced by <strong>25%</strong> through standardized imaging and preventive maintenance. Each lab has its own subnet for organized network management, and the maintenance schedule ensures long-term reliability across all labs.</p>"
       },
       {
         "title": "Technology Stack",
@@ -171,21 +197,6 @@
         "config": {
           "filename": "dhcp-config.sh",
           "code": "# Lab DHCP Range Configuration\n# Subnet: 192.168.10.0/24\n# Gateway: 192.168.10.1\n\n# Static reservations for printers\ndhcp-host=AA:BB:CC:DD:EE:01,192.168.10.201,printer-main\ndhcp-host=AA:BB:CC:DD:EE:02,192.168.10.202,printer-secondary\n\n# Dynamic range for workstations\ndhcp-range=192.168.10.50,192.168.10.199,255.255.255.0,12h\n\n# DNS\ndhcp-option=6,8.8.8.8,8.8.4.4"
-        }
-      },
-      {
-        "title": "Before & After",
-        "beforeAfter": {
-          "before": { "label": "Before: Mixed old PCs, tangled cables, no labeling" },
-          "after": { "label": "After: Uniform workstations, organized cabling, clean setup" }
-        }
-      },
-      {
-        "title": "What They Said",
-        "testimonial": {
-          "quote": "Since Shaimul set up our lab, we haven't had a single session delay. The workstations run perfectly and the network is rock solid. Our students can focus on learning instead of waiting for fixes.",
-          "name": "[Supervisor Name]",
-          "role": "[Position], Gausul Azam Maizbhandari Polytechnic Institute"
         }
       }
     ],

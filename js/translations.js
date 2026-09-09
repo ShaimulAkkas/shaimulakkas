@@ -79,7 +79,7 @@ const translations = {
     "exp.trainer.title": "IT Trainer",
     "exp.trainer.org": "Gausul Azam Maizbhandari Polytechnic Institute",
     "exp.trainer.desc": "Delivered engaging lectures and practical sessions on IT support fundamentals, data communication, and Networking-related subjects (e.g., TCP/IP, OSI model). Provided hands-on training in troubleshooting common IT issues, configuring network devices, and implementing data communication solutions.",
-    "exp.lab.title": "Computer Lab Assistant",
+    "exp.lab.title": "Computer Lab Assistant → IT Trainer",
     "exp.lab.org": "Gausul Azam Maizbhandari Polytechnic Institute",
     "exp.lab.desc": "Maintained computer lab hardware, software installations, and network infrastructure connectivity. Supported senior instructors during practical lab classes and assisted students with technical troubleshooting.",
 
@@ -135,7 +135,7 @@ const translations = {
     "projects.network.title": "Campus Network Setup",
     "projects.network.desc": "Designed and configured a five-building campus area network with 700+ active devices, Cat6A/OS2 fiber cabling, Wi-Fi 6E, and 5+ VLANs.",
     "projects.lab.title": "Complete Computer Lab Setup & Deployment",
-    "projects.lab.desc": "Assembled, imaged, and deployed 30+ PC workstations with LAN setup, Cat6 cabling, and diagnostics — reducing downtime by 25%.",
+    "projects.lab.desc": "Assembled, imaged, and deployed 50+ PC workstations across 3 labs — Software, Office Application, and IT & Hardware — with LAN infrastructure, reducing downtime by 25%.",
     "projects.cctv.title": "Campus-Wide CCTV Surveillance Infrastructure Setup",
     "projects.cctv.desc": "Installed HD IP cameras, centralized NVR units, motion-detection triggers, and configured monitoring screens across the campus.",
 
@@ -371,7 +371,7 @@ const translations = {
     "projects.network.title": "ক্যাম্পাস নেটওয়ার্ক সেটআপ",
     "projects.network.desc": "৭০০+ সক্রিয় ডিভাইস, Cat6A/OS2 ফাইবার, Wi-Fi 6E এবং ৫+ VLANs সহ পাঁচ-বিল্ডিং ক্যাম্পাস এরিয়া নেটওয়ার্ক ডিজাইন ও কনফিগার করেছেন।",
     "projects.lab.title": "সম্পূর্ণ কম্পিউটার ল্যাব সেটআপ ও ডেপ্লয়মেন্ট",
-    "projects.lab.desc": "LAN সেটআপ, Cat6 ক্যাবলিং এবং ডায়াগনস্টিক্স সহ ৩০+ PC ওয়ার্কস্টেশন সংযোজন, ইমেজিং ও ডেপ্লয়মেন্ট — ডাউনটাইম ২৫% হ্রাস।",
+    "projects.lab.desc": "৩টি ল্যাবে ৫০+ PC ওয়ার্কস্টেশন সংযোজন, ইমেজিং ও ডেপ্লয়মেন্ট — সফটওয়্যার, অফিস অ্যাপ্লিকেশন এবং আইটি ও হার্ডওয়্যার — LAN অবকাঠামোসহ, ডাউনটাইম ২৫% হ্রাস।",
     "projects.cctv.title": "ক্যাম্পাস-ব্যাপী CCTV নজরদারি অবকাঠামো সেটআপ",
     "projects.cctv.desc": "HD IP ক্যামেরা, কেন্দ্রীয় NVR ইউনিট, মোশন-ডিটেকশন ট্রিগার ইনস্টল এবং ক্যাম্পাস জুড়ে মনিটরিং স্ক্রিন কনফিগার করেছেন।",
 
