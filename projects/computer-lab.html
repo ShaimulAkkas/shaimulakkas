@@ -219,7 +219,21 @@
 
           <div class="lab-network-box">
             <p class="lab-network-label">Software Lab Architecture</p>
-            <iframe class="lab-network-iframe" src="../assets/Software-Lab.html" loading="lazy" title="Software Lab network topology — 20 workstations to 24-port switch" aria-label="Software Lab network topology diagram"></iframe>
+            <div class="architecture-placeholder">
+              <div class="arch-inner">
+                <span class="arch-icon">💻</span>
+                <p class="arch-title">Software Lab — 20 Workstations</p>
+                <p class="arch-desc">Star topology: 20 PCs → 24-port managed switch → Core router</p>
+                <div class="arch-diagram">
+                  <div class="arch-node arch-core">Core Router<br><small>192.168.10.1/24</small></div>
+                  <div class="arch-branches">
+                    <div class="arch-node">🔌 24-Port Switch<br><small>Managed / VLAN-aware</small></div>
+                    <div class="arch-node">🖥️ WS-01 to WS-20<br><small>DHCP 192.168.10.10–29</small></div>
+                  </div>
+                </div>
+                <p class="arch-note">Subnet: 192.168.10.0/24 · Dual-boot Win11/Ubuntu · Dev tools pre-installed</p>
+              </div>
+            </div>
           </div>
 
           <div class="tech-group" style="margin-top: 1.5rem;">
@@ -299,7 +313,22 @@
 
           <div class="lab-network-box">
             <p class="lab-network-label">Office Lab Architecture</p>
-            <iframe class="lab-network-iframe" src="../assets/Office-Lab.html" loading="lazy" title="Office Application Lab architecture — 20 workstations to 24-port switch" aria-label="Office Application Lab architecture diagram"></iframe>
+            <div class="architecture-placeholder">
+              <div class="arch-inner">
+                <span class="arch-icon">📊</span>
+                <p class="arch-title">Office Application Lab — 20 Workstations</p>
+                <p class="arch-desc">Star topology: 20 PCs → 24-port managed switch → Core router · Shared printers</p>
+                <div class="arch-diagram">
+                  <div class="arch-node arch-core">Core Router<br><small>192.168.20.1/24</small></div>
+                  <div class="arch-branches">
+                    <div class="arch-node">🔌 24-Port Switch<br><small>Managed / VLAN-aware</small></div>
+                    <div class="arch-node">🖥️ WS-01 to WS-20<br><small>DHCP 192.168.20.10–29</small></div>
+                    <div class="arch-node">🖨️ Network Printers<br><small>IP 192.168.20.200–201</small></div>
+                  </div>
+                </div>
+                <p class="arch-note">Subnet: 192.168.20.0/24 · Win11 + Office 365 · Print queues configured</p>
+              </div>
+            </div>
           </div>
 
           <div class="tech-group" style="margin-top: 1.5rem;">
@@ -431,8 +460,23 @@
       <div class="project-section animate-in">
         <h3>Full Lab Infrastructure</h3>
         <div class="lab-network-box">
-          <p class="lab-network-label">Full Lab Infrastructure</p>
-          <iframe class="lab-network-iframe" src="../assets/Infrastructure-Lab.html" loading="lazy" title="Full lab infrastructure — core router to three 24-port switches" aria-label="Full lab infrastructure architecture diagram"></iframe>
+          <p class="lab-network-label">Full Lab Infrastructure — 3 Labs, 50+ Workstations</p>
+          <div class="architecture-placeholder">
+            <div class="arch-inner">
+              <span class="arch-icon">🏫</span>
+              <p class="arch-title">Complete Campus Lab Infrastructure</p>
+              <p class="arch-desc">Three isolated lab subnets converging at core router with internet gateway</p>
+              <div class="arch-diagram">
+                <div class="arch-node arch-core">🌐 Core Router / Gateway<br><small>Internet + Inter-VLAN Routing</small></div>
+                <div class="arch-branches">
+                  <div class="arch-node">💻 Software Lab<br><small>192.168.10.0/24 · 20 WS</small></div>
+                  <div class="arch-node">📊 Office Lab<br><small>192.168.20.0/24 · 20 WS</small></div>
+                  <div class="arch-node">🔧 Hardware Lab<br><small>192.168.30.0/24 · 10 WS</small></div>
+                </div>
+              </div>
+              <p class="arch-note">Each lab: dedicated 24-port switch · Cat6 cabling · Separate DHCP scope · PRTG monitored</p>
+            </div>
+          </div>
         </div>
       </div>
 
