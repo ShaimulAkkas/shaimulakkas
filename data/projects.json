@@ -44,8 +44,7 @@
             { "icon": "\ud83c\udfeb", "label": "Building 3", "sub": "School Labs" },
             { "icon": "\ud83c\udfe0", "label": "Building 4", "sub": "Hostel" },
             { "icon": "\ud83c\udfd7\ufe0f", "label": "Building 5", "sub": "Workshop" }
-          ],
-          "note": "[ Replace with actual network diagram from draw.io ]"
+          ]
         }
       },
       {
@@ -78,21 +77,6 @@
           "filename": "mikrotik-vlan-config.rsc",
           "code": "# Create VLAN interfaces\n/interface vlan add name=vlan10-office vlan-id=10 interface=ether1\n/interface vlan add name=vlan20-lab vlan-id=20 interface=ether1\n/interface vlan add name=vlan30-college vlan-id=30 interface=ether1\n/interface vlan add name=vlan40-schools vlan-id=40 interface=ether1\n/interface vlan add name=vlan50-hostel vlan-id=50 interface=ether1\n\n# DHCP Networks\n/ip dhcp-server network add address=10.10.10.0/24 gateway=10.10.10.1 dns-server=8.8.8.8\n/ip dhcp-server network add address=10.10.20.0/24 gateway=10.10.20.1 dns-server=8.8.8.8\n\n# Firewall Rules\n/ip firewall filter add chain=forward src-address=10.10.10.0/24 action=accept\n/ip firewall filter add chain=forward src-address=10.10.20.0/24 action=accept"
         }
-      },
-      {
-        "title": "Before & After",
-        "beforeAfter": {
-          "before": { "label": "Before: Ad-hoc cabling, no labeling, no organization" },
-          "after": { "label": "After: Structured cabling, labeled patch panels, clean racks" }
-        }
-      },
-      {
-        "title": "What They Said",
-        "testimonial": {
-          "quote": "Shaimul designed and implemented our entire campus network from scratch. The system has been running reliably with 700+ devices connected. His work transformed our connectivity.",
-          "name": "[Supervisor Name]",
-          "role": "[Position], Gausul Azam Maizbhandari Polytechnic Institute"
-        }
       }
     ],
     "tags": ["networking", "mikrotik", "fiber", "wifi", "monitoring"]
@@ -120,7 +104,7 @@
         "pcs": 20,
         "role": "Computer Lab Assistant",
         "date": "Jan – Sep 2024",
-        "software": ["VS Code", "Python 3.x", "Java JDK", "Node.js", "Ubuntu Linux", "Windows 10/11"]
+        "software": ["VS Code", "Python 3.x", "Java JDK", "Node.js", "Ubuntu Linux", "Windows 11"]
       },
       {
         "name": "Office Application Lab",
@@ -128,7 +112,7 @@
         "pcs": 20,
         "role": "Computer Lab Assistant",
         "date": "Jan – Sep 2024",
-        "software": ["Microsoft Office 2019/365", "Word", "Excel", "PowerPoint", "Access", "Windows 10/11"]
+        "software": ["Microsoft Office 2019/365", "Word", "Excel", "PowerPoint", "Access", "Windows 11"]
       },
       {
         "name": "IT & Hardware Lab",
@@ -136,7 +120,7 @@
         "pcs": 10,
         "role": "IT Trainer",
         "date": "Oct 2024 – Present",
-        "software": ["Windows 10/11", "VMware Workstation", "Hardware Diagnostics", "Disk Imaging Tools"]
+        "software": ["Windows 11", "VMware Workstation", "Hardware Diagnostics", "Disk Imaging Tools"]
       }
     ],
     "sections": [
@@ -166,8 +150,7 @@
             { "icon": "\ud83d\udda5\ufe0f", "label": "Workstations 1-15", "sub": "Row A" },
             { "icon": "\ud83d\udda5\ufe0f", "label": "Workstations 16-30", "sub": "Row B" },
             { "icon": "\ud83d\udda8\ufe0f", "label": "Printers & Peripherals", "sub": "Shared" }
-          ],
-          "note": "[ Replace with actual lab layout diagram ]"
+          ]
         }
       },
       {
@@ -187,17 +170,9 @@
         "title": "Technology Stack",
         "techGroups": [
           { "label": "Hardware", "tags": ["Desktop Components", "RJ-45 Cat6 Cable", "Patch Panels", "Managed Switches", "Printers"] },
-          { "label": "Software", "tags": ["Windows 10/11", "Linux (Ubuntu)", "Disk Imaging Tools"] },
+          { "label": "Software", "tags": ["Windows 11", "Linux (Ubuntu)", "Disk Imaging Tools"] },
           { "label": "Protocols", "tags": ["DHCP", "Static IP", "TCP/IP"] }
         ]
-      },
-      {
-        "title": "Configuration Snippet",
-        "configNote": "DHCP configuration for lab workstation IP allocation:",
-        "config": {
-          "filename": "dhcp-config.sh",
-          "code": "# Lab DHCP Range Configuration\n# Subnet: 192.168.10.0/24\n# Gateway: 192.168.10.1\n\n# Static reservations for printers\ndhcp-host=AA:BB:CC:DD:EE:01,192.168.10.201,printer-main\ndhcp-host=AA:BB:CC:DD:EE:02,192.168.10.202,printer-secondary\n\n# Dynamic range for workstations\ndhcp-range=192.168.10.50,192.168.10.199,255.255.255.0,12h\n\n# DNS\ndhcp-option=6,8.8.8.8,8.8.4.4"
-        }
       }
     ],
     "tags": ["hardware", "networking", "lab", "cabling"]
@@ -245,8 +220,7 @@
             { "icon": "\ud83d\udcf9", "label": "NVR Unit 1", "sub": "Labs + Classrooms" },
             { "icon": "\ud83d\udcf9", "label": "NVR Unit 2", "sub": "Admin + Entrance" },
             { "icon": "\ud83c\udf10", "label": "Network Backbone", "sub": "Ethernet Cabling" }
-          ],
-          "note": "[ Replace with actual CCTV layout diagram ]"
+          ]
         }
       },
       {
@@ -276,21 +250,6 @@
         "config": {
           "filename": "nvr-motion-config.yaml",
           "code": "# Motion Detection Configuration\nmotion_detection:\n  enabled: true\n  sensitivity: medium\n  zones:\n    - name: \"computer-lab\"\n      cameras: [cam-01, cam-02, cam-03]\n      schedule: \"24/7\"\n      alerts: [email, push]\n    - name: \"classroom\"\n      cameras: [cam-04, cam-05]\n      schedule: \"08:00-18:00\"\n      alerts: [push]\n    - name: \"admin-area\"\n      cameras: [cam-06]\n      schedule: \"24/7\"\n      alerts: [email, push]\n\n# Recording Schedule\nrecording:\n  mode: \"continuous\"\n  retention_days: 30\n  resolution: \"1080p\"\n  fps: 25"
-        }
-      },
-      {
-        "title": "Before & After",
-        "beforeAfter": {
-          "before": { "label": "Before: No surveillance, unmonitored campus areas" },
-          "after": { "label": "After: HD cameras everywhere, centralized monitoring, 24/7 recording" }
-        }
-      },
-      {
-        "title": "What They Said",
-        "testimonial": {
-          "quote": "The CCTV system Shaimul installed gives us complete peace of mind. We can monitor every corner of the campus from one screen, and the motion detection alerts have already helped us prevent incidents.",
-          "name": "[Supervisor Name]",
-          "role": "[Position], Gausul Azam Maizbhandari Polytechnic Institute"
         }
       }
     ],

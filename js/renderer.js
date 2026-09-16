@@ -157,11 +157,11 @@ const Renderer = (() => {
         <nav class="breadcrumb animate-in" aria-label="Breadcrumb">
           <a href="${BASE}/index.html">Home</a>
           <span class="breadcrumb-sep">/</span>
-          <a href="${BASE}/projects/index.html">Projects</a>
+          <a href="${BASE}/projects.html">Projects</a>
           <span class="breadcrumb-sep">/</span>
           <span class="breadcrumb-current">${esc(project.title)}</span>
         </nav>
-        <a href="${BASE}/projects/index.html" class="back-link animate-in">← Back to Projects</a>
+        <a href="${BASE}/projects.html" class="back-link animate-in">← Back to Projects</a>
       `;
 
       // Hero

@@ -160,6 +160,16 @@ const translations = {
     "contact.address": "Vill: Banskhala, P.O: Ilsha, P.S: Banskhali, Dist: Chattogram",
     "contact.btn": "Send me a Message",
     "contact.btn.note": "Opens your email client",
+
+    // Badges (Verified Digital Badges)
+    "badge.switchlab.name": "SwitchLab — Meet the CLI",
+    "badge.paris.name": "The Paris Agreement — Module 3",
+    "badge.kyoto.name": "The Kyoto Protocol — Module 2",
+    "badge.climate.name": "The Climate Change Convention — Module 1",
+    "badge.credly.name": "OPSWAT — Introduction to CIP",
+    "badge.unlock.name": "Gen AI: Unlock Foundational Concepts",
+    "badge.beyond.name": "Gen AI: Beyond the Chatbot",
+    "badge.intro.name": "Introduction to Generative AI"
   },
 
   bn: {
@@ -398,6 +408,7 @@ const translations = {
     "contact.btn.note": "আপনার ইমেইল ক্লায়েন্ট খুলবে",
 
     // Badges (Verified Digital Badges)
+    "badge.switchlab.name": "SwitchLab — CLI পরিচিতি — Cisco IOS (১০০/১০০)",
     "badge.paris.name": "প্যারিস চুক্তি — মডিউল ৩",
     "badge.kyoto.name": "ক্যোটো প্রোটোকল — মডিউল ২",
     "badge.climate.name": "জলবায়ু পরিবর্তন কনভেনশন — মডিউল ১",

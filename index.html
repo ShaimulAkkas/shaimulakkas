@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Shaimul Akkas Shahin — IT Professional & IT Trainer at GAMPI, Chittagong. Specializing in IT support, networking, and technical education.">
-  <meta name="keywords" content="IT support, networking, instructor, Chittagong, Bangladesh, portfolio">
-  <meta name="author" content="Shaimul Akkas Shahin">
+  <link rel="canonical" href="https://shaimulakkas.github.io/shaimulakkas/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Shaimul Akkas Shahin — IT Professional">
-  <meta property="og:description" content="IT Professional & IT Trainer at GAMPI, Chittagong. Specializing in IT support, networking, and technical education.">
+  <meta property="og:description" content="Shaimul Akkas Shahin — IT Professional & IT Trainer at GAMPI, Chittagong. Specializing in IT support, networking, and technical education.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://shaimulakkas.github.io/shaimulakkas">
+  <meta property="og:url" content="https://shaimulakkas.github.io/shaimulakkas/">
+  <meta name="twitter:card" content="summary">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="IT support, networking, instructor, Chittagong, Bangladesh, portfolio">
+  <meta name="author" content="Shaimul Akkas Shahin">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,18 +47,18 @@
   <!-- Navigation -->
   <nav class="navbar" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <span class="logo-dot"></span>
         Shaimul Akkas
       </a>
       <div class="nav-links">
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#experience" data-i18n="nav.experience">Experience</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+        <a href="index.html#certificates" data-i18n="nav.certificates">Certificates</a>
         <a href="blog/index.html" data-i18n="nav.blog">Blog</a>
-        <a href="contact/index.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
         <div class="nav-mobile-toggles">
           <button class="toggle-btn lang-btn" id="lang-toggle-mobile" aria-label="Switch to Bangla">বাং</button>
           <button class="toggle-btn" id="theme-toggle-mobile" aria-label="Switch to light mode">☀️</button>
@@ -94,7 +97,7 @@
           </div>
           <div class="hero-actions">
             <a href="https://drive.google.com/drive/folders/1uC_KHN95enurDqXLPVsoKIA-lGxgDFIM?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary">⬇ <span data-i18n="hero.btn.cv">Download CV</span></a>
-            <a href="contact/index.html" class="btn btn-outline"><span data-i18n="hero.btn.contact">Get in Touch →</span></a>
+            <a href="contact.html" class="btn btn-outline"><span data-i18n="hero.btn.contact">Get in Touch →</span></a>
           </div>
         </div>
       </div>
@@ -247,7 +250,7 @@
         </a>
 
       </div>
-      <p class="animate-in" style="margin-top: 1.5rem;"><a href="projects/index.html" style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--primary);">View All Projects →</a></p>
+      <p class="animate-in" style="margin-top: 1.5rem;"><a href="projects.html" style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--primary);">View All Projects →</a></p>
     </div>
   </section>
 
@@ -581,6 +584,11 @@
       <p class="cert-category animate-in" style="margin-top: 2.2rem;">◆ Verified Digital Badges</p>
       <div class="badge-grid stagger-children">
 
+        <a href="https://switchlab.dev/s?k=domain&amp;n=shaimulakkas&amp;t=Meet+the+CLI&amp;s=100&amp;c=16&amp;a=100&amp;th=Running+configuration%7CShow+commands%7CVerification&amp;v=cisco-ios" target="_blank" rel="noopener noreferrer" class="badge-item">
+          <img src="assets/badges/badge-switchlab.png" alt="SwitchLab — Meet the CLI — Cisco IOS — 100/100 — Shaimul Akkas" loading="lazy" decoding="async">
+          <span class="badge-title" data-i18n="badge.switchlab.name">SwitchLab — Meet the CLI</span>
+        </a>
+
         <a href="https://unccelearn.org/badges/badge.php?hash=b6ef190e8703a9efccff613c85ba0773a551dbb0" target="_blank" rel="noopener noreferrer" class="badge-item">
           <img src="assets/badges/badge-paris-agreement.webp" alt="The Paris Agreement — Module 3" loading="lazy" decoding="async">
           <span class="badge-title" data-i18n="badge.paris.name">The Paris Agreement — Module 3</span>
@@ -725,117 +733,6 @@
     </div>
   </div>
 
-  <script>
-    (function() {
-      const modal = document.getElementById('cert-modal');
-      const overlay = document.getElementById('cert-modal-overlay');
-      const closeBtn = document.getElementById('cert-modal-close');
-      const iframe = document.getElementById('cert-modal-iframe');
-
-      function openCertModal(url) {
-        iframe.src = url;
-        modal.classList.add('open');
-        modal.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeCertModal() {
-        modal.classList.remove('open');
-        modal.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
-        setTimeout(() => { iframe.src = ''; }, 300);
-      }
-
-      document.querySelectorAll('.cert-card[data-cert-url]').forEach(card => {
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', () => {
-          const url = card.getAttribute('data-cert-url');
-          if (url) openCertModal(url);
-        });
-      });
-
-      document.querySelectorAll('.cert-card[data-badge-url]').forEach(card => {
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', () => {
-          const url = card.getAttribute('data-badge-url');
-          if (url) window.open(url, '_blank', 'noopener');
-        });
-      });
-
-      closeBtn.addEventListener('click', closeCertModal);
-      overlay.addEventListener('click', closeCertModal);
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('open')) closeCertModal();
-      });
-    })();
-  </script>
-
-  <!-- Scroll to Top -->
   <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
-  <script>
-    (function() {
-      const btn = document.getElementById('scroll-top');
-      window.addEventListener('scroll', () => {
-        btn.classList.toggle('visible', window.scrollY > 400);
-      });
-      btn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    })();
-  </script>
-
-  <!-- Animated Counters -->
-  <script>
-    (function() {
-      const counters = document.querySelectorAll('[data-count]');
-      let animated = false;
-      function animateCounters() {
-        if (animated) return;
-        const first = counters[0];
-        if (!first) return;
-        const rect = first.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.85) {
-          animated = true;
-          counters.forEach(el => {
-            const target = parseInt(el.getAttribute('data-count'));
-            const suffix = el.textContent.replace(/[0-9]/g, '');
-            let current = 0;
-            const step = Math.max(1, Math.floor(target / 40));
-            const timer = setInterval(() => {
-              current += step;
-              if (current >= target) {
-                current = target;
-                clearInterval(timer);
-              }
-              el.textContent = current + suffix;
-            }, 30);
-          });
-        }
-      }
-      window.addEventListener('scroll', animateCounters);
-      animateCounters();
-    })();
-  </script>
-
-  <!-- Certificate Filters -->
-  <script>
-    (function() {
-      const filters = document.querySelectorAll('.cert-filter');
-      const tiers = document.querySelectorAll('.cert-tier');
-
-      filters.forEach(btn => {
-        btn.addEventListener('click', () => {
-          filters.forEach(f => f.classList.remove('active'));
-          btn.classList.add('active');
-          const tier = btn.getAttribute('data-filter');
-
-          tiers.forEach(t => {
-            const tTier = t.getAttribute('data-tier');
-            t.style.display = (tier === 'all' || tTier === tier) ? '' : 'none';
-          });
-        });
-      });
-    })();
-  </script>
 </body>
 </html>

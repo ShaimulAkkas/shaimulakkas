@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Complete Computer Lab Setup & Deployment — 50+ PCs across 3 labs, LAN cabling, diagnostics, 25% downtime reduction.">
+  <link rel="canonical" href="https://shaimulakkas.github.io/shaimulakkas/projects/computer-lab.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Complete Computer Lab Setup & Deployment — Shaimul Akkas Shahin">
+  <meta property="og:description" content="Complete Computer Lab Setup & Deployment — 50+ PCs across 3 labs, LAN cabling, diagnostics, 25% downtime reduction.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shaimulakkas.github.io/shaimulakkas/projects/computer-lab.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="robots" content="index, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -35,10 +44,11 @@
       <div class="nav-links">
         <a href="../index.html#about" data-i18n="nav.about">About</a>
         <a href="../index.html#experience" data-i18n="nav.experience">Experience</a>
-        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../projects.html" class="active" data-i18n="nav.projects">Projects</a>
         <a href="../index.html#skills" data-i18n="nav.skills">Skills</a>
+        <a href="../index.html#certificates" data-i18n="nav.certificates">Certificates</a>
         <a href="../blog/index.html" data-i18n="nav.blog">Blog</a>
-        <a href="../contact/index.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <a href="../contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
         <div class="nav-mobile-toggles">
           <button class="toggle-btn lang-btn" id="lang-toggle-mobile" aria-label="Switch to Bangla">বাং</button>
           <button class="toggle-btn" id="theme-toggle-mobile" aria-label="Switch to light mode">☀️</button>
@@ -62,12 +72,12 @@
       <nav class="breadcrumb animate-in" aria-label="Breadcrumb">
         <a href="../index.html">Home</a>
         <span class="breadcrumb-sep">/</span>
-        <a href="index.html">Projects</a>
+        <a href="../projects.html">Projects</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Computer Lab Setup</span>
       </nav>
 
-      <a href="index.html" class="back-link animate-in">← Back to Projects</a>
+      <a href="../projects.html" class="back-link animate-in">← Back to Projects</a>
 
       <!-- Hero Slideshow -->
       <div class="hero-slideshow animate-in delay-1" id="heroSlideshow">
@@ -166,31 +176,50 @@
             <div class="approach-step">
               <span class="step-num">01</span>
               <div>
-                <p class="step-title">OS Imaging & Setup</p>
-                <p class="step-desc">Installed Windows 10/11 and Ubuntu Linux dual-boot on all 20 workstations using disk imaging tools. Standardized driver packages for consistent hardware compatibility.</p>
+                <p class="step-title">Hardware Assembly</p>
+                <p class="step-desc">Assembled all 20 workstations from components — motherboard, processor, RAM, storage, and PSU installation — followed by monitor, keyboard, and mouse setup on each desk.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">02</span>
               <div>
-                <p class="step-title">Development Environment</p>
-                <p class="step-desc">Pre-installed VS Code, Python 3.x, Java JDK, Node.js, and web browsers. Configured environment variables and PATH settings for each user profile.</p>
+                <p class="step-title">OS Setup</p>
+                <p class="step-desc">Installed Windows 11 and Ubuntu Linux dual-boot on all 20 workstations using disk imaging tools. Standardized driver packages for consistent hardware compatibility.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">03</span>
               <div>
-                <p class="step-title">LAN & Network Config</p>
-                <p class="step-desc">RJ-45 Cat6 cabling, patch panel wiring, and DHCP configuration. Each workstation assigned to subnet 192.168.10.0/24 with internet access for research.</p>
+                <p class="step-title">LAN & Network Configuration</p>
+                <p class="step-desc">Installed LAN outlets wired to the 24-port switch, with each PC connected to its LAN outlet using CAT6 cable. Configured DHCP and assigned every workstation to subnet 192.168.10.0/24 with internet access for research.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">04</span>
               <div>
-                <p class="step-title">Student Access & Maintenance</p>
-                <p class="step-desc">Created user accounts, set up shared folders for class submissions, and established weekly maintenance schedule — dust cleaning, driver updates, disk cleanup.</p>
+                <p class="step-title">Configure Environment</p>
+                <p class="step-desc">Installed the required software — VS Code, Python 3.x, Java JDK, Node.js, and web browsers. Configured environment variables and PATH settings for each user profile.</p>
               </div>
             </div>
+            <div class="approach-step">
+              <span class="step-num">05</span>
+              <div>
+                <p class="step-title">Student Access</p>
+                <p class="step-desc">Created user accounts for different batches, set up shared folders for class submissions, and configured permissions for each student profile.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">06</span>
+              <div>
+                <p class="step-title">Maintenance</p>
+                <p class="step-desc">Established a monthly maintenance schedule — dust cleaning, software updates, driver updates, and disk cleanup to keep all workstations running smoothly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lab-network-box">
+            <p class="lab-network-label">Software Lab Architecture</p>
+            <iframe class="lab-network-iframe" src="../assets/Software-Lab.html" loading="lazy" title="Software Lab network topology — 20 workstations to 24-port switch" aria-label="Software Lab network topology diagram"></iframe>
           </div>
 
           <div class="tech-group" style="margin-top: 1.5rem;">
@@ -201,7 +230,7 @@
               <span class="tag">Java JDK</span>
               <span class="tag">Node.js</span>
               <span class="tag">Ubuntu Linux</span>
-              <span class="tag">Windows 10/11</span>
+              <span class="tag">Windows 11</span>
               <span class="tag">Firefox / Chrome</span>
             </div>
           </div>
@@ -227,31 +256,50 @@
             <div class="approach-step">
               <span class="step-num">01</span>
               <div>
-                <p class="step-title">OS & Office Suite Deployment</p>
-                <p class="step-desc">Installed Windows 10/11 with Microsoft Office 2019/365 on all 20 workstations. Activated licenses, configured user profiles, and verified all applications function correctly.</p>
+                <p class="step-title">Hardware Assembly</p>
+                <p class="step-desc">Assembled all 20 workstations from components — motherboard, processor, RAM, storage, and PSU installation — followed by monitor, keyboard, and mouse setup on each desk.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">02</span>
               <div>
-                <p class="step-title">Printer & Peripheral Setup</p>
-                <p class="step-desc">Connected shared printers via network, configured print queues, and set up scanner access. Installed printer drivers on each workstation for seamless printing during classes.</p>
+                <p class="step-title">OS Setup</p>
+                <p class="step-desc">Installed Windows 11 with Microsoft Office 2019/365 on all 20 workstations using disk imaging tools. Activated licenses, configured user profiles, and verified all applications function correctly.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">03</span>
               <div>
-                <p class="step-title">Network & Internet Access</p>
-                <p class="step-desc">Cat6 LAN cabling and switch configuration for all 20 stations. DHCP range 192.168.20.0/24 for office lab subnet. DNS configured for reliable internet access.</p>
+                <p class="step-title">LAN & Network Configuration</p>
+                <p class="step-desc">Installed LAN outlets wired to the 24-port switch, with each PC connected to its LAN outlet using CAT6 cable. Configured DHCP and assigned every workstation to subnet 192.168.20.0/24 with internet access for online coursework.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">04</span>
               <div>
-                <p class="step-title">Class Readiness & Maintenance</p>
-                <p class="step-desc">Pre-configured template documents for instructor use, set up auto-save recovery, and established maintenance routine — weekly updates, disk defragmentation, and dust cleaning.</p>
+                <p class="step-title">Configure Environment</p>
+                <p class="step-desc">Connected shared printers via network, configured print queues, and set up scanner access. Installed printer drivers on each workstation for seamless printing during classes.</p>
               </div>
             </div>
+            <div class="approach-step">
+              <span class="step-num">05</span>
+              <div>
+                <p class="step-title">Student Access</p>
+                <p class="step-desc">Created user accounts for different batches, set up shared folders for class submissions, and configured permissions for each student profile.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">06</span>
+              <div>
+                <p class="step-title">Maintenance</p>
+                <p class="step-desc">Established a monthly maintenance schedule — dust cleaning, software updates, driver updates, and disk cleanup to keep all workstations running smoothly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lab-network-box">
+            <p class="lab-network-label">Office Lab Architecture</p>
+            <iframe class="lab-network-iframe" src="../assets/Office-Lab.html" loading="lazy" title="Office Application Lab architecture — 20 workstations to 24-port switch" aria-label="Office Application Lab architecture diagram"></iframe>
           </div>
 
           <div class="tech-group" style="margin-top: 1.5rem;">
@@ -262,7 +310,7 @@
               <span class="tag">Excel</span>
               <span class="tag">PowerPoint</span>
               <span class="tag">Access</span>
-              <span class="tag">Windows 10/11</span>
+              <span class="tag">Windows 11</span>
               <span class="tag">Shared Printers</span>
             </div>
           </div>
@@ -288,29 +336,43 @@
             <div class="approach-step">
               <span class="step-num">01</span>
               <div>
-                <p class="step-title">Full Hardware Assembly</p>
-                <p class="step-desc">Assembled 10 PCs from components — motherboards, CPUs, RAM, storage, PSUs. Bench-tested each unit before installation. Mixed brands: HP, Dell, custom builds with Starex and Esonic monitors.</p>
+                <p class="step-title">Hardware Assembly</p>
+                <p class="step-desc">Assembled 10 PCs from components — motherboards, CPUs, RAM, storage, and PSUs. Bench-tested each unit before installation. Mixed brands: HP, Dell, custom builds with Starex and Esonic monitors.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">02</span>
               <div>
-                <p class="step-title">OS Imaging & Diagnostics Tools</p>
-                <p class="step-desc">Installed Windows 10/11 with hardware diagnostics utilities, VMware Workstation for virtualization training, and disk imaging tools for rapid deployment and recovery.</p>
+                <p class="step-title">OS Setup</p>
+                <p class="step-desc">Installed Windows 11 on all 10 workstations using disk imaging tools. Configured BIOS/UEFI settings for hardware training access and installed standardized driver packages.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">03</span>
               <div>
-                <p class="step-title">Cable Management & LAN</p>
-                <p class="step-desc">Under-desk cable routing, RJ-45 Cat6 crimping, and patch panel wiring. Organized power strips and UPS units for each workstation row. Subnet 192.168.30.0/24.</p>
+                <p class="step-title">LAN & Network Configuration</p>
+                <p class="step-desc">Installed LAN outlets wired to the 24-port switch, with each PC connected to its LAN outlet using CAT6 cable. Under-desk cable routing, RJ-45 Cat6 crimping, and patch panel wiring. Subnet 192.168.30.0/24.</p>
               </div>
             </div>
             <div class="approach-step">
               <span class="step-num">04</span>
               <div>
-                <p class="step-title">Training-Ready Configuration</p>
-                <p class="step-desc">Pre-loaded course materials, set up screen sharing for demonstrations, configured BIOS/UEFI settings for hardware training access, and established preventive maintenance schedule.</p>
+                <p class="step-title">Configure Environment</p>
+                <p class="step-desc">Installed VMware Workstation for virtualization training, hardware diagnostics utilities, and disk imaging tools for rapid deployment and recovery.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">05</span>
+              <div>
+                <p class="step-title">Student Access</p>
+                <p class="step-desc">Created user accounts for different batches, pre-loaded course materials, and set up screen sharing for instructor demonstrations.</p>
+              </div>
+            </div>
+            <div class="approach-step">
+              <span class="step-num">06</span>
+              <div>
+                <p class="step-title">Maintenance</p>
+                <p class="step-desc">Established a monthly maintenance schedule — dust cleaning, software updates, driver updates, and disk cleanup to keep all workstations running smoothly.</p>
               </div>
             </div>
           </div>
@@ -318,7 +380,7 @@
           <div class="tech-group" style="margin-top: 1.5rem;">
             <p class="tech-group-label">Software & Tools</p>
             <div class="tags">
-              <span class="tag">Windows 10/11</span>
+              <span class="tag">Windows 11</span>
               <span class="tag">VMware Workstation</span>
               <span class="tag">Hardware Diagnostics</span>
               <span class="tag">Disk Imaging Tools</span>
@@ -365,51 +427,12 @@
         </div>
       </div>
 
-      <!-- ═══ Lab Architecture ═══ -->
+      <!-- ═══ Full Lab Infrastructure ═══ -->
       <div class="project-section animate-in">
-        <h3>Lab Architecture</h3>
-        <div class="architecture-placeholder">
-          <div class="arch-inner">
-            <span class="arch-icon">🗺️</span>
-            <p class="arch-title">3-Lab Network Topology</p>
-            <p class="arch-desc">50+ Workstations · 3 Subnets · 4 Core Switches · Patch Panels · Cat6 Cabling · DHCP</p>
-            <div class="arch-diagram">
-              <div class="arch-node arch-core">🗄️ Core Switches<br><small>4× 24-Port Managed</small></div>
-              <div class="arch-branches">
-                <div class="arch-node">💻 Software Lab<br><small>20 PCs · 192.168.10.0/24</small></div>
-                <div class="arch-node">📊 Office Lab<br><small>20 PCs · 192.168.20.0/24</small></div>
-                <div class="arch-node">🔧 Hardware Lab<br><small>10 PCs · 192.168.30.0/24</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ═══ Configuration Snippet ═══ -->
-      <div class="project-section animate-in">
-        <h3>Configuration Snippet</h3>
-        <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem;">DHCP configuration for all 3 lab subnets:</p>
-        <div class="config-block">
-          <div class="config-header">
-            <span class="config-dot config-dot-red"></span>
-            <span class="config-dot config-dot-yellow"></span>
-            <span class="config-dot config-dot-green"></span>
-            <span class="config-title">dhcp-labs.conf</span>
-          </div>
-          <pre class="config-code"><code># === Software Lab ===
-# Subnet: 192.168.10.0/24
-dhcp-range=192.168.10.50,192.168.10.199,255.255.255.0,12h
-dhcp-option=6,8.8.8.8,8.8.4.4
-
-# === Office Application Lab ===
-# Subnet: 192.168.20.0/24
-dhcp-range=192.168.20.50,192.168.20.199,255.255.255.0,12h
-dhcp-host=AA:BB:CC:DD:EE:10,192.168.20.201,printer-office
-
-# === IT & Hardware Lab ===
-# Subnet: 192.168.30.0/24
-dhcp-range=192.168.30.50,192.168.30.199,255.255.255.0,12h
-dhcp-host=AA:BB:CC:DD:EE:20,192.168.30.201,printer-hw</code></pre>
+        <h3>Full Lab Infrastructure</h3>
+        <div class="lab-network-box">
+          <p class="lab-network-label">Full Lab Infrastructure</p>
+          <iframe class="lab-network-iframe" src="../assets/Infrastructure-Lab.html" loading="lazy" title="Full lab infrastructure — core router to three 24-port switches" aria-label="Full lab infrastructure architecture diagram"></iframe>
         </div>
       </div>
 
@@ -541,7 +564,7 @@ dhcp-host=AA:BB:CC:DD:EE:20,192.168.30.201,printer-hw</code></pre>
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
     <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
-    <img src="" alt="" id="lightboxImg">
+    <img src="" alt="Laboratory gallery image" id="lightboxImg">
     <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
     <div class="lightbox-caption" id="lightboxCaption"></div>
   </div>

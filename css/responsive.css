@@ -512,4 +512,10 @@
   .approach-steps {
     gap: 0.8rem;
   }
+
+  .lab-network-iframe {
+    height: 70vh;
+    min-height: 420px;
+    max-height: 620px;
+  }
 }

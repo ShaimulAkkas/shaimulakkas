@@ -108,7 +108,7 @@
     { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
   );
 
-  document.querySelectorAll('.animate-in, .animate-left, .animate-right, .animate-scale, .stagger-children').forEach((el) => {
+  document.querySelectorAll('.animate-in, .stagger-children').forEach((el) => {
     animateObserver.observe(el);
   });
 
@@ -192,7 +192,7 @@
           if (entry.isIntersecting) {
             const id = entry.target.id;
             document.querySelectorAll('.nav-links a').forEach((link) => {
-              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id || link.getAttribute('href').endsWith('#' + id));
             });
           }
         });
@@ -204,16 +204,38 @@
   }
 
   // ── Smooth scroll for anchor links ──
+  const smoothScrollHandler = (e) => {
+    const href = e.currentTarget.getAttribute('href');
+    const targetId = href.split('#')[1];
+    if (!targetId) return;
+    const target = document.querySelector('#' + targetId);
+    if (target) {
+      e.preventDefault();
+      const navHeight = navbar ? navbar.offsetHeight : 0;
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+    }
+  };
+
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', smoothScrollHandler);
+  });
+
+  document.querySelectorAll('a[href*="#"]:not([href^="#"])').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href');
+      const hrefParts = this.getAttribute('href').split('#');
+      if (hrefParts.length < 2) return;
+      const pagePart = hrefParts[0];
+      const targetId = '#' + hrefParts[1];
       if (targetId === '#') return;
+      if (pagePart && pagePart !== 'index.html' && pagePart !== window.location.pathname.split('/').pop()) return;
       const target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
         const navHeight = navbar ? navbar.offsetHeight : 0;
         const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        history.replaceState(null, '', targetId);
       }
     });
   });
@@ -235,18 +257,24 @@
     }, 60);
   }
 
-  // ── Stat Counter Animation ──
-  const statNums = document.querySelectorAll('.stat-num[data-count]');
-  if (statNums.length > 0) {
+  // ── Animated counters (stats + about highlights) ──
+  const counterEls = document.querySelectorAll('.stat-num[data-count], .highlight-num[data-count]');
+  if (counterEls.length > 0) {
+    const toLocalizedDigits = (num) => {
+      const str = String(num);
+      return currentLang === 'bn' ? str.replace(/\d/g, (d) => '০১২৩৪৫৬৭৮৯'[d]) : str;
+    };
     const animateCounter = (el) => {
-      const target = parseInt(el.getAttribute('data-count'), 10);
+      const original = el.textContent;
+      const target = parseInt(el.getAttribute('data-count'), 10) || 0;
+      const suffix = original.replace(/[0-9০-৯]+/g, '');
       const duration = 1500;
       const start = performance.now();
       const step = (now) => {
         const elapsed = now - start;
         const progress = Math.min(elapsed / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(eased * target);
+        el.textContent = toLocalizedDigits(Math.round(eased * target)) + suffix;
         if (progress < 1) requestAnimationFrame(step);
       };
       requestAnimationFrame(step);
@@ -261,7 +289,78 @@
       });
     }, { threshold: 0.5 });
 
-    statNums.forEach((el) => counterObserver.observe(el));
+    counterEls.forEach((el) => counterObserver.observe(el));
+  }
+
+  // ── Scroll to top button ──
+  const scrollTopBtn = document.getElementById('scroll-top');
+  if (scrollTopBtn) {
+    const handleScrollTop = () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    };
+    window.addEventListener('scroll', handleScrollTop, { passive: true });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ── Certificate modal ──
+  const certModal = document.getElementById('cert-modal');
+  if (certModal) {
+    const certOverlay = document.getElementById('cert-modal-overlay');
+    const certCloseBtn = document.getElementById('cert-modal-close');
+    const certIframe = document.getElementById('cert-modal-iframe');
+
+    const closeCertModal = () => {
+      certModal.classList.remove('open');
+      certModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      setTimeout(() => { certIframe.src = ''; }, 300);
+    };
+
+    document.querySelectorAll('.cert-card[data-cert-url]').forEach((card) => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const url = card.getAttribute('data-cert-url');
+        if (url) {
+          certIframe.src = url;
+          certModal.classList.add('open');
+          certModal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    document.querySelectorAll('.cert-card[data-badge-url]').forEach((card) => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const url = card.getAttribute('data-badge-url');
+        if (url) window.open(url, '_blank', 'noopener');
+      });
+    });
+
+    if (certCloseBtn) certCloseBtn.addEventListener('click', closeCertModal);
+    if (certOverlay) certOverlay.addEventListener('click', closeCertModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && certModal.classList.contains('open')) closeCertModal();
+    });
+  }
+
+  // ── Certificate filters ──
+  const certFilters = document.querySelectorAll('.cert-filter');
+  if (certFilters.length > 0) {
+    const certTiers = document.querySelectorAll('.cert-tier');
+    certFilters.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        certFilters.forEach((f) => f.classList.remove('active'));
+        btn.classList.add('active');
+        const tier = btn.getAttribute('data-filter');
+        certTiers.forEach((t) => {
+          const tTier = t.getAttribute('data-tier');
+          t.style.display = (tier === 'all' || tTier === tier) ? '' : 'none';
+        });
+      });
+    });
   }
 
 })();
