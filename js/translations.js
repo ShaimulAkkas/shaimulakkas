@@ -20,7 +20,7 @@ const translations = {
     "hero.title.org": "GAMPI, Chittagong",
     "hero.badge.available": "Available for opportunities",
     "hero.badge.location": "Chittagong, Bangladesh",
-    "hero.badge.education": "Diploma in Engineering — 2024",
+    "hero.badge.education": "Diploma in Engineering — 2023",
     "hero.badge.email": "shaimulakkas@gmail.com",
     "hero.badge.linkedin": "LinkedIn",
     "hero.badge.github": "GitHub",
@@ -73,6 +73,10 @@ const translations = {
     "skills.os.desc": "Windows 7/10/11 and Linux (Ubuntu, Kali Linux).",
     "skills.design.title": "Design Suite",
     "skills.design.desc": "Adobe Photoshop & Illustrator; MS Office (Word, Excel, PowerPoint, Access).",
+    "skills.python.title": "Python Programming",
+    "skills.python.desc": "Core Python, data structures, OOP, and scripting for automation and problem solving.",
+    "skills.docker.title": "Docker & Containers",
+    "skills.docker.desc": "Image and container management, Dockerfile builds, volumes, and container networking.",
 
     // Experience
     "exp.label": "Experience",
@@ -87,7 +91,7 @@ const translations = {
     "edu.label": "Education",
     "edu.diploma.degree": "Diploma in Engineering — Computer Technology",
     "edu.diploma.inst": "Banshkhali Polytechnic Institute (Board: Chittagong)",
-    "edu.diploma.year": "Passing Year: 2024 · GPA 3.48 / 4.00",
+    "edu.diploma.year": "Passing Year: 2023 · GPA 3.48 / 4.00",
     "edu.ssc.degree": "Secondary School Certificate (S.S.C.)",
     "edu.ssc.inst": "Katharia Bagmara High School (Board: Chittagong)",
     "edu.ssc.year": "Passing Year: 2019 · GPA 3.44 / 5.00 · Business Studies",
@@ -188,7 +192,7 @@ const translations = {
     "hero.title.org": "GAMPI, চট্টগ্রাম",
     "hero.badge.available": "সুযোগের জন্য উপলব্ধ",
     "hero.badge.location": "চট্টগ্রাম, বাংলাদেশ",
-    "hero.badge.education": "প্রকৌশলে ডিপ্লোমা — ২০২৪",
+    "hero.badge.education": "প্রকৌশলে ডিপ্লোমা — ২০২৩",
     "hero.badge.email": "shaimulakkas@gmail.com",
     "hero.badge.linkedin": "লিংকডইন",
     "hero.badge.github": "গিটহাব",
@@ -241,12 +245,17 @@ const translations = {
     "skills.os.desc": "Windows 7/10/11 এবং Linux (Ubuntu, Kali Linux)।",
     "skills.design.title": "ডিজাইন স্যুট",
     "skills.design.desc": "Adobe Photoshop ও Illustrator; MS Office (Word, Excel, PowerPoint, Access)।",
+    "skills.python.title": "পাইথন প্রোগ্রামিং",
+    "skills.python.desc": "মূল পাইথন, ডেটা স্ট্রাকচার, OOP এবং অটোমেশন ও সমস্যা সমাধানের জন্য স্ক্রিপ্টিং।",
+    "skills.docker.title": "ডকার ও কন্টেইনার",
+    "skills.docker.desc": "ইমেজ ও কন্টেইনার ব্যবস্থাপনা, Dockerfile বিল্ড, ভলিউম এবং কন্টেইনার নেটওয়ার্কিং।",
 
     // Experience
     "exp.label": "// অভিজ্ঞতা",
     "exp.trainer.title": "আইটি প্রশিক্ষক",
     "exp.trainer.org": "গাউছুল আজম মাইজভান্ডারী পলিটেকনিক ইনস্টিটিউট",
     "exp.trainer.desc": "আইটি সাপোর্টের মৌলিক বিষয়, ডেটা কমিউনিকেশন ও নেটওয়ার্কিং (যেমন: TCP/IP, OSI মডেল) নিয়ে আকর্ষণীয় লেকচার ও ব্যবহারিক সেশন পরিচালনা করেছি। সাধারণ আইটি সমস্যা সমাধান, নেটওয়ার্ক ডিভাইস কনফিগারেশন এবং ডেটা কমিউনিকেশন সমাধান বাস্তবায়নে হাতে-কলমে প্রশিক্ষণ দিয়েছি।",
+    "exp.lab.title": "কম্পিউটার ল্যাব সহকারী → আইটি প্রশিক্ষক",
     "exp.lab.org": "গাউছুল আজম মাইজভান্ডারী পলিটেকনিক ইনস্টিটিউট",
     "exp.lab.desc": "কম্পিউটার ল্যাবের হার্ডওয়্যার, সফটওয়্যার ইনস্টলেশন ও নেটওয়ার্ক অবকাঠামো রক্ষণাবেক্ষণ করেছি। ব্যবহারিক ল্যাব ক্লাসে সিনিয়র প্রশিক্ষকদের সহায়তা করেছি এবং শিক্ষার্থীদের কারিগরি সমস্যা সমাধানে সহযোগিতা করেছি।",
 
@@ -254,7 +263,7 @@ const translations = {
     "edu.label": "// শিক্ষা",
     "edu.diploma.degree": "প্রকৌশলে ডিপ্লোমা — কম্পিউটার প্রযুক্তি",
     "edu.diploma.inst": "বাঁশখালী পলিটেকনিক ইনস্টিটিউট (বোর্ড: চট্টগ্রাম)",
-    "edu.diploma.year": "পাসের বছর: ২০২৪ · GPA ৩.৪৮ / ৪.০০",
+    "edu.diploma.year": "পাসের বছর: ২০২৩ · GPA ৩.৪৮ / ৪.০০",
     "edu.ssc.degree": "মাধ্যমিক স্কুল সার্টিফিকেট (S.S.C.)",
     "edu.ssc.inst": "কাথারিয়া বাগমারা হাই স্কুল (বোর্ড: চট্টগ্রাম)",
     "edu.ssc.year": "পাসের বছর: ২০১৯ · GPA ৩.৪৪ / ৫.০০ · ব্যবসায় শিক্ষা",
@@ -315,6 +324,18 @@ const translations = {
     "cert.digitalliteracy.org": "সার্টিফাইড",
     "cert.digitalliteracy.result": "সম্পন্ন",
     "cert.digitalliteracy.year": "২০২২",
+
+    "cert.pythonbasics.name": "পাইথনের মূলভিত্তি",
+    "cert.pythonbasics.title": "পাইথন প্রোগ্রামিং কোর্স",
+    "cert.pythonbasics.org": "ইউনিয়াথিনা",
+    "cert.pythonbasics.result": "সম্পন্ন",
+    "cert.pythonbasics.year": "২০২৬",
+
+    "cert.dockerabs.name": "শুরু করার জন্য ডকার",
+    "cert.dockerabs.title": "কন্টেইনারাইজেশন মূলভিত্তি কোর্স",
+    "cert.dockerabs.org": "কোডক্লাউড",
+    "cert.dockerabs.result": "সম্পন্ন",
+    "cert.dockerabs.year": "২০২৬",
 
     // Tier 3: Global & Leadership
     "cert.climatelaw.name": "জলবায়ু পরিবর্তন আন্তর্জাতিক আইনি কাঠামো",

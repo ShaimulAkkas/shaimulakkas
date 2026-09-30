@@ -254,5 +254,79 @@
       }
     ],
     "tags": ["cctv", "security", "networking", "nvr"]
+  },
+  {
+    "slug": "attendance-device",
+    "title": "Attendance Device Installation & Maintenance",
+    "org": "Gausul Azam Maizbhandari Polytechnic Institute",
+    "role": "IT Trainer",
+    "date": "Jan 2025",
+    "scope": "2 Devices",
+    "status": "Completed",
+    "heroClass": "project-hero-attendance",
+    "heroIcon": "\ud83d\udc46",
+    "stats": [
+      { "value": "300+", "label": "Students Enrolled", "count": 300 },
+      { "value": "40+", "label": "Staff Enrolled", "count": 40 },
+      { "value": "2", "label": "Terminals Deployed" },
+      { "value": "3", "label": "Verification Modes" }
+    ],
+    "sections": [
+      {
+        "title": "The Challenge",
+        "content": "<p>Institute attendance was being recorded manually on paper registers every day. The system had no central record, so calculating a student's present percentage meant counting dozens of register pages by hand. Paper registers were also easy to mark attendance for someone who was not present, and there was no reliable proof of attendance to support exam eligibility. Compiling the monthly report consumed a large part of the office's administrative time.</p>"
+      },
+      {
+        "title": "My Approach",
+        "content": "<p>I selected and deployed two biometric attendance terminals, connected them to the attendance database over the campus LAN, and handled the full enrolment and reporting workflow \u2014 from mounting the hardware to producing the monthly attendance report.</p>",
+        "steps": [
+          { "num": "01", "title": "Device Selection & Placement", "desc": "Selected two ZKTeco terminals supporting fingerprint, face recognition, and RFID card verification. Placed one at the main entrance for students and a second at the office entrance for teachers and staff, keeping the two groups on separate devices." },
+          { "num": "02", "title": "Installation & Network Setup", "desc": "Mounted both terminals, wired them into the campus LAN with Cat6, and assigned static IP addresses so the attendance server could reach each device reliably instead of depending on DHCP leases." },
+          { "num": "03", "title": "Enrolment & Data Sync", "desc": "Enrolled 300+ students and 40+ teaching and support staff across fingerprint, face, and RFID methods, then connected both devices to the ZKTime/ZKBio attendance database so records pushed automatically." },
+          { "num": "04", "title": "Reporting Integration", "desc": "Configured scheduled time synchronisation so device clocks never drifted, and set up the ZKTime reporting workflow so the monthly attendance report could be generated and exported instead of compiled by hand." }
+        ]
+      },
+      {
+        "title": "System Architecture",
+        "architecture": {
+          "icon": "\ud83d\uddfa\ufe0f",
+          "title": "Attendance System Layout",
+          "desc": "2 ZKTeco Terminals \u00b7 Static IP on Campus LAN \u00b7 ZKTime/ZKBio Database \u00b7 Scheduled Reports",
+          "core": "\ud83c\udda5\ufe0f ZKTime / ZKBio Server",
+          "coreSub": "Central Attendance Database",
+          "branches": [
+            { "icon": "\ud83d\udc46", "label": "Student Terminal", "sub": "Main Entrance \u00b7 300+" },
+            { "icon": "\ud83e\udded\ud83c\udfe2", "label": "Staff Terminal", "sub": "Office Entrance \u00b7 40+" },
+            { "icon": "\ud83c\udf10", "label": "Campus LAN", "sub": "Static IP \u00b7 NTP Time Sync" }
+          ]
+        }
+      },
+      {
+        "title": "Key Highlights",
+        "highlights": [
+          { "icon": "\ud83d\udc46", "title": "Multi-Modal Verification", "desc": "Fingerprint, face recognition, and RFID card \u2014 so a damaged finger or a forgotten card does not stop someone being marked present." },
+          { "icon": "\ud83d\udd00", "title": "Separate Student & Staff Devices", "desc": "Two dedicated terminals keep the large student population and the smaller staff population on independent, clearly separated records." },
+          { "icon": "\ud83c\udf10", "title": "Static IP on Campus LAN", "desc": "Both terminals hold fixed addresses, so the attendance server connects to them reliably with no manual reconnection after a power cut." },
+          { "icon": "\ud83d\udcca", "title": "Automated Monthly Reports", "desc": "Attendance data pushes to the database continuously, so the monthly report is generated rather than assembled by hand." }
+        ]
+      },
+      {
+        "title": "Maintenance Routine",
+        "content": "<p>Ongoing work to keep both terminals accurate and reporting reliably:</p>\n        <ul class=\"setup-list\">\n          <li><strong>Biometric Enrolment</strong> \u2014 enrolling new students and staff, and re-enrolling when a template fails to read</li>\n          <li><strong>Template Backup</strong> \u2014 backing up fingerprint and face templates after every enrolment batch so a device failure is recoverable</li>\n          <li><strong>Time Synchronisation</strong> \u2014 monitoring clock drift and keeping both terminals on the correct network time</li>\n          <li><strong>Log Export &amp; Sync Troubleshooting</strong> \u2014 resolving failed pushes to the database and correcting wrong times in exported reports</li>\n          <li><strong>Firmware Updates</strong> \u2014 applying device firmware updates and adding new users to the database</li>\n          <li><strong>Sensor Cleaning</strong> \u2014 routine cleaning of the fingerprint sensor, camera lens, and RFID reader surface</li>\n        </ul>"
+      },
+      {
+        "title": "Results",
+        "content": "<p>Attendance for <strong>300+ students</strong> and <strong>40+ staff</strong> is now captured automatically at the point of entry, with no paper registers in the process. Because every record is tied to a biometric or card identity, marking attendance for someone who is not present is no longer possible. Records are available centrally as they are captured rather than reconstructed at month end, which removed most of the manual work from the monthly attendance report.</p>"
+      },
+      {
+        "title": "Technology Stack",
+        "techGroups": [
+          { "label": "Hardware", "tags": ["ZKTeco Biometric Terminals", "Fingerprint Sensor", "Face Recognition Camera", "RFID Card Reader", "UPS"] },
+          { "label": "Software", "tags": ["ZKTime", "ZKBio", "ZKTime Web Server"] },
+          { "label": "Infrastructure", "tags": ["Cat6 Cabling", "Static IP Addressing", "NTP Time Sync", "TCP/IP"] }
+        ]
+      }
+    ],
+    "tags": ["biometric", "zkteco", "attendance", "networking"]
   }
 ]
