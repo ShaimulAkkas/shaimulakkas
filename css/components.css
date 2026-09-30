@@ -926,6 +926,11 @@
   background: linear-gradient(135deg, rgba(248, 113, 113, 0.1), rgba(239, 68, 68, 0.06));
 }
 
+.project-thumb-attendance {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(45, 212, 191, 0.06));
+}
+
+
 .project-thumb img {
   width: 100%;
   height: 100%;
@@ -1079,6 +1084,7 @@
   padding: 3rem;
 }
 
+.contact-card h1,
 .contact-card h2 {
   margin-bottom: 1rem;
 }
@@ -1450,6 +1456,9 @@
 .project-hero-cctv {
   background: linear-gradient(135deg, rgba(248, 113, 113, 0.12), rgba(239, 68, 68, 0.08));
 }
+.project-hero-attendance {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(45, 212, 191, 0.08));
+}
 
 /* Project Meta Badges */
 .project-meta {
@@ -1518,7 +1527,7 @@
   margin-bottom: 3rem;
 }
 
-.project-section h3 {
+.project-section h2 {
   font-family: var(--font-display);
   font-size: 1.1rem;
   color: var(--text);
@@ -2068,7 +2077,7 @@
 .lab-panel-info {
   flex: 1;
 }
-.lab-panel-info h4 {
+.lab-panel-info h3 {
   margin: 0 0 0.25rem;
   font-size: 1rem;
 }
@@ -2277,4 +2286,34 @@
   }
   .lightbox-prev { left: 0.4rem; }
   .lightbox-next { right: 0.4rem; }
+}
+
+/* Software & Environment Setup list */
+.setup-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.setup-list li {
+  position: relative;
+  padding-left: 1.3rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+.setup-list li::before {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 0.6rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.setup-list li strong {
+  color: var(--text);
+  font-weight: 500;
 }
