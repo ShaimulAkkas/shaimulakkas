@@ -31,6 +31,60 @@ const Renderer = (() => {
     return el.innerHTML;
   }
 
+  /* ── SEO meta for client-rendered views ──
+     These shells are thin duplicates of the static pages, so they are noindexed
+     and canonicalised to the real URL. Without this they compete with the very
+     pages they are meant to render. */
+  function setMeta({ canonical, title, description, image, type }) {
+    const set = (sel, attr, value) => {
+      if (!value) return;
+      let el = document.head.querySelector(sel);
+      if (!el) {
+        el = document.createElement('meta');
+        const [k, v] = sel.replace(/[<>]/g, '').split(/\s+/);
+        el.setAttribute(k, v.replace(/["']/g, ''));
+        document.head.appendChild(el);
+      }
+      el.setAttribute(attr, value);
+    };
+
+    let link = document.head.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      document.head.appendChild(link);
+    }
+    link.setAttribute('href', canonical);
+
+    if (title) document.title = title;
+    set('meta[name="description"]', 'content', description);
+    set('meta[property="og:title"]', 'content', title);
+    set('meta[property="og:description"]', 'content', description);
+    set('meta[property="og:url"]', 'content', canonical);
+    if (type) set('meta[property="og:type"]', 'content', type);
+    if (image) {
+      set('meta[property="og:image"]', 'content', image);
+      set('meta[name="twitter:image"]', 'content', image);
+    }
+  }
+
+  const OG_FALLBACK = `${isLive ? 'https://shaimulakkas.github.io/shaimulakkas' : location.origin}/assets/og/og-default.jpg`;
+
+  /* canonical should be absolute so there is no ambiguity about origin */
+  function absUrl(p) {
+    return `${location.origin}${BASE}${p.startsWith('/') ? p : `/${p}`}`;
+  }
+
+  function projectDescription(p) {
+    if (p.description) return p.description;
+    const bits = [];
+    if (p.role) bits.push(p.role);
+    if (p.scope) bits.push(p.scope.toLowerCase());
+    bits.push(`project at ${p.org || 'GAMPI'}`);
+    const topics = (p.tags || []).join(', ');
+    return `${p.title} — ${bits.join(' ')}.${topics ? ` Topics: ${topics}.` : ''}`;
+  }
+
   /* ── Blog Listing ── */
   async function renderBlogList(containerId) {
     const container = document.getElementById(containerId);
@@ -80,6 +134,13 @@ const Renderer = (() => {
       }
 
       document.title = `${post.title} — Shaimul Akkas Shahin`;
+      setMeta({
+        canonical: absUrl(`/blog/${post.slug}.html`),
+        title: `${post.title} — Shaimul Akkas Shahin`,
+        description: post.excerpt || `${post.title} by Shaimul Akkas Shahin.`,
+        image: OG_FALLBACK,
+        type: 'article'
+      });
       if (titleEl) titleEl.textContent = post.title;
       if (dateEl) dateEl.textContent = formatDate(post.date);
 
@@ -145,6 +206,13 @@ const Renderer = (() => {
       }
 
       document.title = `${project.title} — Shaimul Akkas Shahin`;
+      setMeta({
+        canonical: absUrl(`/projects/${project.slug}.html`),
+        title: `${project.title} — Shaimul Akkas Shahin`,
+        description: projectDescription(project),
+        image: OG_FALLBACK,
+        type: 'article'
+      });
 
       const currentIdx = projects.indexOf(project);
       const prevProject = projects[(currentIdx - 1 + projects.length) % projects.length];

@@ -15,11 +15,11 @@ const translations = {
     "nav.contact": "Contact",
 
     // Hero
-    "hero.greeting": "// Hello, World",
+    "hero.greeting": "Hello, World",
     "hero.title.line": "IT Trainer",
-    "hero.title.org": "GAMPI, Chittagong",
+    "hero.title.org": "GAMPI, Chattogram",
     "hero.badge.available": "Available for opportunities",
-    "hero.badge.location": "Chittagong, Bangladesh",
+    "hero.badge.location": "Chattogram, Bangladesh",
     "hero.badge.education": "Diploma in Engineering — 2023",
     "hero.badge.email": "shaimulakkas@gmail.com",
     "hero.badge.linkedin": "LinkedIn",
@@ -34,7 +34,7 @@ const translations = {
 
     // About
     "about.label": "About",
-    "about.p1": "Hi, I'm <em>Shaimul</em> — an IT professional based in Chittagong, Bangladesh with a passion for solving technical problems and helping others learn. I currently work as an IT Trainer at Gausul Azam Maizbhandari Polytechnic Institute, where I turn complex technical concepts into hands-on, practical learning experiences.",
+    "about.p1": "Hi, I'm <em>Shaimul</em> — an IT professional based in Chattogram, Bangladesh with a passion for solving technical problems and helping others learn. I currently work as an IT Trainer at Gausul Azam Maizbhandari Polytechnic Institute, where I turn complex technical concepts into hands-on, practical learning experiences.",
     "about.p2": "From building and troubleshooting PC networks to configuring CCTV systems and teaching the fundamentals of data communication — I thrive at the intersection of <em>technology and education</em>. Certified IT Support Technician (NTVQF Level I), with additional training in Computer Office Applications and Graphic Design.",
     "about.years": "2+",
     "about.years.label": "Years Experience",
@@ -90,10 +90,10 @@ const translations = {
     // Education
     "edu.label": "Education",
     "edu.diploma.degree": "Diploma in Engineering — Computer Technology",
-    "edu.diploma.inst": "Banshkhali Polytechnic Institute (Board: Chittagong)",
+    "edu.diploma.inst": "Banshkhali Polytechnic Institute (Board: Chattogram)",
     "edu.diploma.year": "Passing Year: 2023 · GPA 3.48 / 4.00",
     "edu.ssc.degree": "Secondary School Certificate (S.S.C.)",
-    "edu.ssc.inst": "Katharia Bagmara High School (Board: Chittagong)",
+    "edu.ssc.inst": "Katharia Bagmara High School (Board: Chattogram)",
     "edu.ssc.year": "Passing Year: 2019 · GPA 3.44 / 5.00 · Business Studies",
 
     // Certificates
@@ -127,7 +127,7 @@ const translations = {
     "lang.japanese.level": "Learning",
 
     // Footer
-    "footer.line": "IT Trainer · GAMPI · Chittagong, Bangladesh",
+    "footer.line": "IT Trainer · GAMPI · Chattogram, Bangladesh",
     "footer.linkedin": "LinkedIn",
     "footer.github": "GitHub",
     "footer.website": "Website",
@@ -187,7 +187,7 @@ const translations = {
     "nav.contact": "যোগাযোগ",
 
     // Hero
-    "hero.greeting": "// হ্যালো, বিশ্ব",
+    "hero.greeting": "হ্যালো, বিশ্ব",
     "hero.title.line": "আইটি প্রশিক্ষক",
     "hero.title.org": "GAMPI, চট্টগ্রাম",
     "hero.badge.available": "সুযোগের জন্য উপলব্ধ",
@@ -232,7 +232,7 @@ const translations = {
     "info.since.sub": "আইটি প্রশিক্ষক",
 
     // Skills
-    "skills.label": "// দক্ষতা",
+    "skills.label": "দক্ষতা",
     "skills.hardware.title": "হার্ডওয়্যার ও সমস্যা সমাধান",
     "skills.hardware.desc": "পিসি সংযোজন, ডায়াগনস্টিকস, ডেস্কটপ, প্রিন্টার ও পেরিফেরাল মেরামত।",
     "skills.network.title": "নেটওয়ার্ক সেটআপ ও কনফিগারেশন",
@@ -251,7 +251,7 @@ const translations = {
     "skills.docker.desc": "ইমেজ ও কন্টেইনার ব্যবস্থাপনা, Dockerfile বিল্ড, ভলিউম এবং কন্টেইনার নেটওয়ার্কিং।",
 
     // Experience
-    "exp.label": "// অভিজ্ঞতা",
+    "exp.label": "অভিজ্ঞতা",
     "exp.trainer.title": "আইটি প্রশিক্ষক",
     "exp.trainer.org": "গাউছুল আজম মাইজভান্ডারী পলিটেকনিক ইনস্টিটিউট",
     "exp.trainer.desc": "আইটি সাপোর্টের মৌলিক বিষয়, ডেটা কমিউনিকেশন ও নেটওয়ার্কিং (যেমন: TCP/IP, OSI মডেল) নিয়ে আকর্ষণীয় লেকচার ও ব্যবহারিক সেশন পরিচালনা করেছি। সাধারণ আইটি সমস্যা সমাধান, নেটওয়ার্ক ডিভাইস কনফিগারেশন এবং ডেটা কমিউনিকেশন সমাধান বাস্তবায়নে হাতে-কলমে প্রশিক্ষণ দিয়েছি।",
@@ -260,7 +260,7 @@ const translations = {
     "exp.lab.desc": "কম্পিউটার ল্যাবের হার্ডওয়্যার, সফটওয়্যার ইনস্টলেশন ও নেটওয়ার্ক অবকাঠামো রক্ষণাবেক্ষণ করেছি। ব্যবহারিক ল্যাব ক্লাসে সিনিয়র প্রশিক্ষকদের সহায়তা করেছি এবং শিক্ষার্থীদের কারিগরি সমস্যা সমাধানে সহযোগিতা করেছি।",
 
     // Education
-    "edu.label": "// শিক্ষা",
+    "edu.label": "শিক্ষা",
     "edu.diploma.degree": "প্রকৌশলে ডিপ্লোমা — কম্পিউটার প্রযুক্তি",
     "edu.diploma.inst": "বাঁশখালী পলিটেকনিক ইনস্টিটিউট (বোর্ড: চট্টগ্রাম)",
     "edu.diploma.year": "পাসের বছর: ২০২৩ · GPA ৩.৪৮ / ৪.০০",
@@ -269,7 +269,7 @@ const translations = {
     "edu.ssc.year": "পাসের বছর: ২০১৯ · GPA ৩.৪৪ / ৫.০০ · ব্যবসায় শিক্ষা",
 
     // Certificates
-    "cert.label": "// সার্টিফিকেট",
+    "cert.label": "সার্টিফিকেট",
     "cert.it.name": "আইটি সাপোর্ট টেকনিশিয়ান, লেভেল-১",
     "cert.it.title": "জাতীয় দক্ষতা সার্টিফিকেট-I",
     "cert.it.org": "BTEB (NTVQF)",
@@ -381,7 +381,7 @@ const translations = {
     "cert.anthropic.year": "২০২৬",
 
     // Languages
-    "lang.label": "// ভাষা",
+    "lang.label": "ভাষা",
     "lang.bangla": "বাংলা",
     "lang.bangla.level": "মাতৃভাষী",
     "lang.english": "ইংরেজি",
